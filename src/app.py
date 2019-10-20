@@ -26,6 +26,9 @@ from flask_migrate import Migrate
 
 app = Flask(__name__, static_folder='../static')
 
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+
 # Load configuration from YAML file
 __dir__ = os.path.dirname(__file__)
 app.config.update(
@@ -41,9 +44,118 @@ mwoauth = MWOAuth(
 )
 app.register_blueprint(mwoauth.bp)
 
+class User(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(255))
+    is_active = db.Column(db.Boolean, default=True)
+    is_admin = db.Column(db.Boolean, default=False)
+    language = db.Column(db.String(3))
+    translations = db.relationship('Translation', backref='user', lazy=True)
+
+class Translation(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    group = db.Column(db.String(255))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    language = db.Column(db.String(3))
+
+def logged():
+    return mwoauth.get_current_user() is not None
+
+@app.before_request
+def force_https():
+    if request.headers.get('X-Forwarded-Proto') == 'http':
+        return redirect(
+            'https://' + request.headers['Host'] +
+            request.headers['X-Original-URI'],
+            code=301
+        )
+
+def get_user():
+    return User.query.filter_by(
+        username=mwoauth.get_current_user()
+    ).first()
+
+@app.before_request
+def db_init_user():
+    if logged():
+        user = get_user()
+        if user is None:
+            user = User(
+                username=mwoauth.get_current_user(),
+                language=locales.get_locale()
+            )
+            db.session.add(user)
+            db.session.commit()
+        else:
+            if user.is_active:
+                locales.set_locale(user.language)
+            else:
+                return render_template('permission_denied.html')
+
+@app.context_processor
+def inject_base_variables():
+    return {
+        "logged": logged(),
+        "username": mwoauth.get_current_user(),
+    }
+
+def get_twn_data():
+    r = requests.get('https://translatewiki.net/w/api.php', params={
+        'action': 'query',
+        'format': 'json',
+        'meta': 'messagegroups|languageinfo',
+        "liprop": "code|name",
+    })
+    return r.json()
+
 @app.route('/')
 def index():
-    return render_template('index.html')
+    if logged():
+        data = get_twn_data()
+        return render_template(
+            'index.html',
+            messagegroups=data["query"]["messagegroups"],
+            languages=data["query"]["languageinfo"],
+            translations=Translation.query.filter_by(user=get_user())
+        )
+    else:
+        return render_template('login.html')
+
+@app.route('/edit/new', methods=['GET', 'POST'])
+def new():
+    if request.method == 'POST':
+        group = request.form.get('group')
+        language = request.form.get('language')
+        translation = Translation(
+            user=get_user(),
+            language=language,
+            group=group
+        )
+        db.session.add(translation)
+        db.session.commit()
+        return redirect(url_for('index'))
+    else:
+        data = get_twn_data()
+        return render_template(
+            'edit.html',
+            messagegroups=data["query"]["messagegroups"],
+            languages=data["query"]["languageinfo"],
+            translation=Translation(),
+        )
+
+@app.route('/edit/<path:group>', methods=['GET', 'POST'])
+def edit(group):
+    if request.method == 'POST':
+        pass
+    else:
+        data = get_twn_data()
+        translation = Translation.query.filter_by(user=get_user(), group=group).first()
+        return render_template(
+            'edit.html',
+            messagegroups=data["query"]["messagegroups"],
+            languages=data["query"]["languageinfo"],
+            translation=translation
+        )
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)

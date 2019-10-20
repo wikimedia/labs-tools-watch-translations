@@ -1,5 +1,13 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>it works</h1>
+<div class="container">
+    <h2>{{ _("you-watch") }}</h2>
+    <ul>
+        {% for translation in translations %}
+        <li><a href="edit/{{translation.group}}">{{translation.group}}</a></li>
+        {% endfor %}
+        <li><a href="edit/new">{{ _("watch-new") }}</a></li>
+    </ul>
+</div>
 {% endblock %}

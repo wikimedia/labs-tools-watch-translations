@@ -1,4 +1,13 @@
 {
-    "report-problem": "Report problem",
-    "login": "Login"
+    "introduction-please-login": "Please, <a href=\"login\">login</a>",
+    "introduction": "WatchTranslations is a tool that allows you to get notification when a message about your favourite project in TranslateWiki is not translated into language of your choice.",
+    "report-bug": "Report bug",
+    "login": "Login",
+    "logout": "Logout",
+    "welcome": "Welcome",
+    "you-watch": "You watch",
+    "watch-new": "Watch new",
+    "select-group": "Select group",
+    "select-language": "Select language",
+    "confirm": "Confirm"
 }
