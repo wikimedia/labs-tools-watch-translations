@@ -1,0 +1,9 @@
+SECRET_KEY: something
+MESSAGES_DIR: ../messages
+SQLALCHEMY_DATABASE_URI: mysql://root:password@localhost/watchTranslations
+STATIC_URL: /static/
+APPLICATION_ROOT: /
+CONSUMER_KEY: key
+CONSUMER_SECRET: secret
+OAUTH_MWURI: https://meta.wikimedia.org/w
+DEBUG: True
