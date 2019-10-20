@@ -15,8 +15,7 @@
 
 import os
 import yaml
-from flask import redirect, request, jsonify, render_template, url_for, \
-    make_response
+from flask import redirect, request, render_template, url_for
 from flask import Flask
 import requests
 from flask_jsonlocale import Locales
@@ -51,6 +50,7 @@ class User(db.Model):
     is_admin = db.Column(db.Boolean, default=False)
     language = db.Column(db.String(3))
     translations = db.relationship('Translation', backref='user', lazy=True)
+
 
 class Translation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -156,6 +156,7 @@ def edit(group):
             languages=data["query"]["languageinfo"],
             translation=translation
         )
+
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
