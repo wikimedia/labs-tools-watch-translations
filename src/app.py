@@ -15,7 +15,7 @@
 
 import os
 import yaml
-from flask import redirect, request, render_template, url_for
+from flask import redirect, request, render_template, url_for, flash
 from flask import Flask
 import requests
 from flask_jsonlocale import Locales
@@ -145,11 +145,15 @@ def new():
 
 @app.route('/edit/<path:group>', methods=['GET', 'POST'])
 def edit(group):
+    translation = Translation.query.filter_by(user=get_user(), group=group).first()
     if request.method == 'POST':
-        pass
+        translation.group = request.form.get('group')
+        translation.language = request.form.get('language')
+        db.session.commit()
+        flash(_('success-edit'))
+        return redirect(url_for('index'))
     else:
         data = get_twn_data()
-        translation = Translation.query.filter_by(user=get_user(), group=group).first()
         return render_template(
             'edit.html',
             messagegroups=data["query"]["messagegroups"],

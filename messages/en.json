@@ -9,5 +9,6 @@
     "watch-new": "Watch new",
     "select-group": "Select group",
     "select-language": "Select language",
-    "confirm": "Confirm"
+    "confirm": "Confirm",
+    "success-edit": "You successfully edited your watched component."
 }
