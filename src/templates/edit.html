@@ -12,7 +12,7 @@
         <label for="watch-language">{{ _("select-language") }}</label>
         <select name="language" id="watch-language" class="browser-default">
             {% for lang in languages %}
-            <option {% if translation.language==lang %}selected{% endif %} value="{{lang}}">{{languages[lang].name}} ({{lang}})</option>
+            <option {% if translation.language==lang %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
             {% endfor %}
         </select>
         <input class="btn wafes-effect wafes-light" type="submit" value="{{ _("confirm") }}">
