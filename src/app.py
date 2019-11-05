@@ -50,6 +50,8 @@ class User(db.Model):
     is_active = db.Column(db.Boolean, default=True)
     is_admin = db.Column(db.Boolean, default=False)
     language = db.Column(db.String(3))
+    frequency_hours = db.Column(db.Integer, nullable=False, default=24)
+    last_emailed = db.Column(db.DateTime)
     translations = db.relationship('Translation', backref='user', lazy=True)
 
 
