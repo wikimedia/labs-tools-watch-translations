@@ -53,6 +53,8 @@ class User(db.Model):
     frequency_hours = db.Column(db.Integer, nullable=False, default=24)
     last_emailed = db.Column(db.DateTime)
     translations = db.relationship('Translation', backref='user', lazy=True)
+    token_key = db.Column(db.String(255))
+    token_secret = db.Column(db.String(255))
 
 
 class Translation(db.Model):
