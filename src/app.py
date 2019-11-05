@@ -84,18 +84,25 @@ def get_user():
 def db_init_user():
     if logged():
         user = get_user()
+        access_token = session.get('mwoauth_access_token', {})
+        request_token_secret = access_token.get('secret').decode('utf-8')
+        request_token_key = access_token.get('key').decode('utf-8')
         if user is None:
             user = User(
                 username=mwoauth.get_current_user(),
-                language=locales.get_locale()
+                language=locales.get_locale(),
+                token_key=request_token_key,
+                token_secret=request_token_key,
             )
-            db.session.add(user)
-            db.session.commit()
         else:
+            user.token_key = request_token_key
+            user.token_secret = request_token_secret
             if user.is_active:
                 locales.set_locale(user.language)
             else:
                 return render_template('permission_denied.html')
+        db.session.add(user)
+        db.session.commit()
 
 @app.context_processor
 def inject_base_variables():
