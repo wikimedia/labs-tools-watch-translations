@@ -16,13 +16,16 @@
 
 import os
 import yaml
-from flask import redirect, request, render_template, url_for, flash
+from flask import redirect, request, render_template, url_for, flash, jsonify, session
 from flask import Flask
 import requests
+from requests_oauthlib import OAuth1
 from flask_jsonlocale import Locales
 from flask_mwoauth import MWOAuth
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+import smtplib
+from email.mime.text import MIMEText
 
 app = Flask(__name__, static_folder='../static')
 
@@ -79,6 +82,18 @@ def get_user():
     return User.query.filter_by(
         username=mwoauth.get_current_user()
     ).first()
+
+def mw_request(data, user=None):
+    if user is None:
+        access_token = session.get('mwoauth_access_token', {})
+        request_token_secret = access_token.get('secret').decode('utf-8')
+        request_token_key = access_token.get('key').decode('utf-8')
+    else:
+        request_token_secret = user.token_secret
+        request_token_key = user.token_key
+    auth = OAuth1(app.config.get('CONSUMER_KEY'), app.config.get('CONSUMER_SECRET'), request_token_key, request_token_secret)
+    data['format'] = 'json'
+    return requests.post('https://meta.wikimedia.org/w/api.php', data=data, auth=auth)
 
 @app.before_request
 def db_init_user():
@@ -173,6 +188,44 @@ def edit(group):
             translation=translation
         )
 
+def get_user_email(user):
+    return mw_request({
+        'action': 'query',
+        'meta': 'userinfo',
+        'uiprop': 'email'
+    }, user).json()['query']['userinfo']['email']
+
+@app.cli.command('send-changes')
+def cli_send_changes():
+    s = smtplib.SMTP('mail.tools.wmflabs.org')
+    for user in User.query.all():
+        notification = ""
+        for translation in user.translations:
+            r = requests.get('https://translatewiki.net/w/api.php', params={
+                "action": "query",
+                "format": "json",
+                "list": "messagecollection",
+                "mcgroup": translation.group,
+                "mclanguage": translation.language,
+                "mclimit": "max",
+                "mcfilter": "!optional|!ignored|!hastranslation"
+            })
+            data = r.json()
+            not_in_order = data["query"]["messagecollection"]
+            if len(not_in_order) > 0:
+                notification += "<h2>%s</h2>\n" % translation.group
+                notification += "<ul>\n"
+                for message in not_in_order:
+                    notification += "<li>%s</li>\n" % message['key']
+                notification += "</ul>\n"
+        if notification != "":
+            email = get_user_email(user)
+            msg = MIMEText(notification, 'html')
+            msg['From'] = app.config.get('FROM_EMAIL')
+            msg['To'] = email
+            msg['Subject'] = '[Watch Translations] Translations needed'
+            s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
+        break
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
