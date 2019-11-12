@@ -208,7 +208,7 @@ def cli_send_changes():
                 "mcgroup": translation.group,
                 "mclanguage": translation.language,
                 "mclimit": "max",
-                "mcfilter": "!optional|!ignored|!hastranslation"
+                "mcfilter": "!optional|!ignored|!translated"
             })
             data = r.json()
             not_in_order = data["query"]["messagecollection"]
