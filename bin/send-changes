@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source ~/venv-bastion/bin/activate
+cd ~/src
+flask send-changes
