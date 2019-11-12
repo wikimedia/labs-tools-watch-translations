@@ -225,7 +225,6 @@ def cli_send_changes():
             msg['To'] = email
             msg['Subject'] = '[Watch Translations] Translations needed'
             s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
-        break
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
