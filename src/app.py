@@ -26,6 +26,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import smtplib
 from email.mime.text import MIMEText
+from datetime import datetime
 
 app = Flask(__name__, static_folder='../static')
 
@@ -232,6 +233,7 @@ def cli_send_changes():
                 msg['To'] = email
                 msg['Subject'] = '[Watch Translations] Translations needed'
                 s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
+                user.last_emailed = datetime.now()
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
