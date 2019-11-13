@@ -154,7 +154,7 @@ def preferences():
     if logged():
         user = get_user()
         if request.method == 'POST':
-            user.frequency_hours = int(request.form.get('frequency_hours'))
+            user.frequency_hours = int(request.form.get('frequency-hours'))
             db.session.commit()
         return render_template('preferences.html', user=user)
     else:
