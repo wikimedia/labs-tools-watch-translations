@@ -193,7 +193,7 @@ def get_user_email(user):
         'action': 'query',
         'meta': 'userinfo',
         'uiprop': 'email'
-    }, user).json()['query']['userinfo']['email']
+    }, user).json().get('query', {}).get('userinfo', {}).get('email')
 
 @app.cli.command('send-changes')
 def cli_send_changes():
@@ -220,11 +220,12 @@ def cli_send_changes():
                 notification += "</ul>\n"
         if notification != "":
             email = get_user_email(user)
-            msg = MIMEText(notification, 'html')
-            msg['From'] = app.config.get('FROM_EMAIL')
-            msg['To'] = email
-            msg['Subject'] = '[Watch Translations] Translations needed'
-            s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
+            if email:
+                msg = MIMEText(notification, 'html')
+                msg['From'] = app.config.get('FROM_EMAIL')
+                msg['To'] = email
+                msg['Subject'] = '[Watch Translations] Translations needed'
+                s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
