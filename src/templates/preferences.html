@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+	<h1>{{ _('preferences') }}</h1>
+	<form method="post">
+		<label for="frequency-hours">{{ _('preferences-frequency-hours') }}</label>
+		<select name="frequency-hours" id="frequency-hours" class="form-control">
+			<option value="24" {% if user.frequency_hours == 24 %}selected{%endif%}>{{ _('every-day') }}</option>
+			<option value="168" {% if user.frequency_hours == 168 %}selected{%endif%}>{{ _('every-week') }}</option>
+		</select>
+		<input type="submit" value="{{ _('Submit') }}" class="btn btn-primary form-control">
+	</form>
+</div>
+{% endblock %}

@@ -26,7 +26,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import smtplib
 from email.mime.text import MIMEText
-from datetime import datetime
+from datetime import datetime, timedelta
 
 app = Flask(__name__, static_folder='../static')
 
@@ -149,6 +149,17 @@ def index():
     else:
         return render_template('login.html')
 
+@app.route('/preferences', methods=['GET', 'POST'])
+def preferences():
+    if logged():
+        user = get_user()
+        if request.method == 'POST':
+            user.frequency_hours = int(request.form.get('frequency_hours'))
+            db.session.commit()
+        return render_template('preferences.html', user=user)
+    else:
+        return render_template('permission_denied.html')
+
 @app.route('/edit/new', methods=['GET', 'POST'])
 def new():
     if request.method == 'POST':
@@ -206,6 +217,8 @@ def get_user_email(user):
 def cli_send_changes():
     s = smtplib.SMTP('mail.tools.wmflabs.org')
     for user in User.query.all():
+        if user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours):
+            continue
         notification = ""
         for translation in user.translations:
             r = requests.get('https://translatewiki.net/w/api.php', params={

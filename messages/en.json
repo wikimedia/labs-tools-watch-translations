@@ -12,5 +12,11 @@
     "confirm": "Confirm",
     "success-edit": "You successfully edited your watched component.",
     "success-delete": "You successfully deleted your watched component.",
-    "delete": "Delete"
+    "delete": "Delete",
+    "permission-denied": "Permission denied",
+    "preferences": "Preferences",
+    "preferences-frequency-hours": "How frequently should the tool email you?",
+    "submit": "Submit",
+    "every-day": "Every day",
+    "every-week": "Every week"
 }
