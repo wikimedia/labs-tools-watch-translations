@@ -174,10 +174,15 @@ def new():
 def edit(group):
     translation = Translation.query.filter_by(user=get_user(), group=group).first()
     if request.method == 'POST':
-        translation.group = request.form.get('group')
-        translation.language = request.form.get('language')
-        db.session.commit()
-        flash(_('success-edit'))
+        post_type = request.form.get('type', "update")
+        if post_type == "update":
+            translation.group = request.form.get('group')
+            translation.language = request.form.get('language')
+            db.session.commit()
+            flash(_('success-edit'))
+        elif post_type == "delete":
+            db.session.delete(translation)
+            flash(_('success-delete'))
         return redirect(url_for('index'))
     else:
         data = get_twn_data()

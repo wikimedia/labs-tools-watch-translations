@@ -10,5 +10,7 @@
     "select-group": "Select group",
     "select-language": "Select language",
     "confirm": "Confirm",
-    "success-edit": "You successfully edited your watched component."
+    "success-edit": "You successfully edited your watched component.",
+    "success-delete": "You successfully deleted your watched component.",
+    "delete": "Delete"
 }

@@ -3,6 +3,7 @@
 {% block content %}
 <div class="container">
     <form method="post">
+        <input type="hidden" name="type" value="edit">
         <label for="watch-group">{{ _("select-group") }}</label>
         <select class="browser-default" name="group" id="watch-group">
             {% for group in messagegroups %}
@@ -16,6 +17,10 @@
             {% endfor %}
         </select>
         <input class="btn wafes-effect wafes-light" type="submit" value="{{ _("confirm") }}">
+    </form>
+    <form method="post">
+        <input type="hidden" name="type" value="delete">
+        <input type="submit" value="{{ _("delete") }}" class="btn wafes-effect wafes-light">
     </form>
 </div>
 {% endblock %}
