@@ -247,6 +247,7 @@ def cli_send_changes():
                 msg['Subject'] = '[Watch Translations] Translations needed'
                 s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
                 user.last_emailed = datetime.now()
+                db.session.commit()
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
