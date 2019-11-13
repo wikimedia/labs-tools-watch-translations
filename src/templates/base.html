@@ -1,50 +1,44 @@
-
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title>WatchTranslations</title>
-		<!-- External CSS -->
-		<link rel="stylesheet" href="{{config.STATIC_URL}}material-icons.css">
-		<link rel="stylesheet" href="{{config.STATIC_URL}}materialize.min.css">
-
-		<!-- My CSS -->
-		<link rel="stylesheet" href="{{config.STATIC_URL}}stylesheet.css">
-	  {% block head %}{% endblock %}
-	</head>
-	<body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WatchTranslations</title>
+    <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">WatchTranslations</a>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+					<a class="nav-link" href="https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=watchtranslations">{{ _('report-bug') }}</a>
+				</li>
 				{% if logged %}
-				<nav class="light-blue lighten-1" role="navigation">
-					<div class="nav-wrapper container">
-						<a class="brand-logo" href="{{config.APPLICATION_ROOT}}">WatchTranslations</a>
-						<ul class="right hide-on-med-and-down">
-							<li><a href="https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=watchtranslations">{{ _('report-bug') }}</a></li>
-							<li><a href="logout">{{ _('logout') }}</a></li>
-							<li id="username">{{username}}</li>
-						</ul>
-					</div>
-				</nav>
+				<li class="nav-item active">
+					<a href="logout" class="nav-link">{{ _('logout') }}</a>
+				</li>
+				<li class="nav-item active">
+					<a href="#" class="nav-link">{{username}}</a>
+				</li>
 				{% else %}
-				<nav class="light-blue lighten-1" role="navigation">
-					<div class="nav-wrapper container">
-						<a class="brand-logo" href="{{config.APPLICATION_ROOT}}">WatchTranslations</a>
-						<ul class="right hide-on-med-and-down">
-							<li><a href="https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=watchtranslations">{{ _('report-bug') }}</a></li>
-							<li><a href="login">{{ _('login') }}</a></li>
-						</ul>
-					</div>
-				</nav>
+				<li class="nav-item active">
+					<a href="login" class="nav-link">{{ _('login') }}</a>
+				</li>
 				{% endif %}
-		{% with messages = get_flashed_messages() %}
-		<div class="container error-container">
-			{% if messages %}
-			{% for message in messages %}
-			</br>
-			<div class="alert alert-info">{{ message }}</div>
-			{% endfor %}
-			{% endif %}
+			</ul>
 		</div>
-		{% endwith %}
-        {% block content %}{% endblock %}
-	</body>
-</html>
+	</nav>
+	{% with messages = get_flashed_messages() %}
+	<div class="container error-container">
+	{% if messages %}
+	{% for message in messages %}
+	<div class="alert alert-info">{{ message }}</div>
+	{% endfor %}
+	{% endif %}
+	</div>
+	{% endwith %}
+	{% block content %}{% endblock %}
+</body>

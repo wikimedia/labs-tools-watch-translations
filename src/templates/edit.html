@@ -5,22 +5,22 @@
     <form method="post">
         <input type="hidden" name="type" value="edit">
         <label for="watch-group">{{ _("select-group") }}</label>
-        <select class="browser-default" name="group" id="watch-group">
+        <select class="form-control" name="group" id="watch-group">
             {% for group in messagegroups %}
             <option {% if translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{group.label}}</option>
             {% endfor %}
         </select>
         <label for="watch-language">{{ _("select-language") }}</label>
-        <select name="language" id="watch-language" class="browser-default">
+        <select name="language" id="watch-language" class="form-control">
             {% for lang in languages %}
             <option {% if translation.language==lang %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
             {% endfor %}
         </select>
-        <input class="btn wafes-effect wafes-light" type="submit" value="{{ _("confirm") }}">
+        <input class="btn btn-primary form-control" type="submit" value="{{ _("confirm") }}">
     </form>
     <form method="post">
         <input type="hidden" name="type" value="delete">
-        <input type="submit" value="{{ _("delete") }}" class="btn wafes-effect wafes-light">
+        <input type="submit" value="{{ _("delete") }}" class="btn btn-secondary btn-danger form-control">
     </form>
 </div>
 {% endblock %}
