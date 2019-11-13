@@ -182,6 +182,7 @@ def edit(group):
             flash(_('success-edit'))
         elif post_type == "delete":
             db.session.delete(translation)
+            db.session.commit()
             flash(_('success-delete'))
         return redirect(url_for('index'))
     else:
