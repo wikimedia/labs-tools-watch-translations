@@ -110,6 +110,8 @@ def db_init_user():
                 token_key=request_token_key,
                 token_secret=request_token_key,
             )
+            db.session.add(user)
+            db.session.commit()
         else:
             user.token_key = request_token_key
             user.token_secret = request_token_secret
@@ -117,8 +119,7 @@ def db_init_user():
                 locales.set_locale(user.language)
             else:
                 return render_template('permission_denied.html')
-        db.session.add(user)
-        db.session.commit()
+            db.session.commit()
 
 @app.context_processor
 def inject_base_variables():
