@@ -183,9 +183,9 @@ def new():
             translation=Translation(),
         )
 
-@app.route('/edit/<path:group>', methods=['GET', 'POST'])
-def edit(group):
-    translation = Translation.query.filter_by(user=get_user(), group=group).first()
+@app.route('/edit/<int:translation_id>', methods=['GET', 'POST'])
+def edit(translation_id):
+    translation = Translation.query.filter_by(user=get_user(), id=translation_id).first()
     if request.method == 'POST':
         post_type = request.form.get('type', "update")
         if post_type == "update":

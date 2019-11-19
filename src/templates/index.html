@@ -5,7 +5,7 @@
     <h2>{{ _("you-watch") }}</h2>
     <ul>
         {% for translation in translations %}
-        <li><a href="edit/{{translation.group}}">{{translation.group}}</a></li>
+        <li><a href="edit/{{translation.id}}">{{translation.group}}</a></li>
         {% endfor %}
         <li><a href="edit/new">{{ _("watch-new") }}</a></li>
     </ul>
