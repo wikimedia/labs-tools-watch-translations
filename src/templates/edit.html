@@ -5,17 +5,19 @@
     <form method="post">
         <input type="hidden" name="type" value="edit">
         <label for="watch-group">{{ _("select-group") }}</label>
-        <select class="form-control" name="group" id="watch-group">
+        <input class="form-control" type="text" name="group" id="watch-group" {% if translation.group %}value="{{translation.group}}"{% endif %} list="watch-group-datalist">
+        <datalist id="watch-group-datalist">
             {% for group in messagegroups %}
-            <option {% if translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{group.label}}</option>
+            <option value="{{group.id}}">{{group.label}}</option>
             {% endfor %}
-        </select>
+        </datalist>
         <label for="watch-language">{{ _("select-language") }}</label>
-        <select name="language" id="watch-language" class="form-control">
+        <input type="text" name="language" list="watch-language-list" {% if translation.language %}value="{{translation.language}}"{% endif %} class="form-control" id="watch-language">
+        <datalist name="language" id="watch-language-list">
             {% for lang in languages %}
-            <option {% if translation.language==lang %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
+            <option value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
             {% endfor %}
-        </select>
+        </datalist>
         <input class="btn btn-primary form-control" type="submit" value="{{ _("confirm") }}">
     </form>
     <form method="post">
