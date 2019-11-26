@@ -234,10 +234,10 @@ def cli_send_changes():
             data = r.json()
             not_in_order = data["query"]["messagecollection"]
             if len(not_in_order) > 0:
-                notification += "<h2>%s</h2>\n" % translation.group
+                notification += "<h2>%s (%s)</h2>\n" % (translation.group, translation.language)
                 notification += "<ul>\n"
                 for message in not_in_order:
-                    notification += "<li>%s</li>\n" % message['key']
+                    notification += "<li><a href='https://translatewiki.net/wiki/%s'>%s</a></li>\n" % (message['title'], message['key'])
                 notification += "</ul>\n"
         if notification != "":
             email = get_user_email(user)
