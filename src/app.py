@@ -16,7 +16,7 @@
 
 import os
 import yaml
-from flask import redirect, request, render_template, url_for, flash, jsonify, session
+from flask import redirect, request, render_template, url_for, flash, session
 from flask import Flask
 import click
 import requests
@@ -75,8 +75,7 @@ def logged():
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
         return redirect(
-            'https://' + request.headers['Host'] +
-            request.headers['X-Original-URI'],
+            'https://' + request.headers['Host'] + request.headers['X-Original-URI'],
             code=301
         )
 
@@ -261,6 +260,7 @@ def cli_send_changes(no_emails):
                     s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
                 user.last_emailed = datetime.now()
                 db.session.commit()
+
 
 if __name__ == "__main__":
     app.run(debug=True, threaded=True)
