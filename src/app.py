@@ -18,6 +18,7 @@ import os
 import yaml
 from flask import redirect, request, render_template, url_for, flash, jsonify, session
 from flask import Flask
+import click
 import requests
 from requests_oauthlib import OAuth1
 from flask_jsonlocale import Locales
@@ -215,8 +216,11 @@ def get_user_email(user):
     }, user).json().get('query', {}).get('userinfo', {}).get('email')
 
 @app.cli.command('send-changes')
-def cli_send_changes():
-    s = smtplib.SMTP('mail.tools.wmflabs.org')
+@click.option('--no-emails', is_flag=True)
+def cli_send_changes(no_emails):
+    s = None
+    if not no_emails:
+        s = smtplib.SMTP('mail.tools.wmflabs.org')
     for user in User.query.all():
         if user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours):
             continue
@@ -246,7 +250,10 @@ def cli_send_changes():
                 msg['From'] = app.config.get('FROM_EMAIL')
                 msg['To'] = email
                 msg['Subject'] = '[Watch Translations] Translations needed'
-                s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
+                if no_emails:
+                    print(msg)
+                else:
+                    s.sendmail(app.config.get('FROM_EMAIL'), email, msg.as_string())
                 user.last_emailed = datetime.now()
                 db.session.commit()
 
