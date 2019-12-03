@@ -220,7 +220,12 @@ def get_user_email(user):
 def cli_send_changes(no_emails):
     s = None
     if not no_emails:
-        s = smtplib.SMTP('mail.tools.wmflabs.org')
+        smtp_host = app.config.get('SMTP_HOST')
+        if not smtp_host:
+            print("No SMTP_HOST has been specified in config.yaml, so emails cannot be sent.")
+            print("If you intended to test the contents of emails, use --no-emails as a flag.")
+            return
+        s = smtplib.SMTP(smtp_host)
     for user in User.query.all():
         if user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours):
             continue

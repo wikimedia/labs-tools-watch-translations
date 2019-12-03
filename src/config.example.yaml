@@ -7,3 +7,4 @@ CONSUMER_KEY: key
 CONSUMER_SECRET: secret
 OAUTH_MWURI: https://meta.wikimedia.org/w
 DEBUG: True
+SMTP_HOST: hostname
