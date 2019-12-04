@@ -216,7 +216,8 @@ def get_user_email(user):
 
 @app.cli.command('send-changes')
 @click.option('--no-emails', is_flag=True)
-def cli_send_changes(no_emails):
+@click.option('--force', is_flag=True)
+def cli_send_changes(no_emails, force):
     s = None
     if not no_emails:
         smtp_host = app.config.get('SMTP_HOST')
@@ -226,7 +227,7 @@ def cli_send_changes(no_emails):
             return
         s = smtplib.SMTP(smtp_host)
     for user in User.query.all():
-        if user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours):
+        if user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours) and not force:
             continue
         notification = ""
         for translation in user.translations:
