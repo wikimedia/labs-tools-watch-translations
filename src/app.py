@@ -15,6 +15,7 @@
 # with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 import os
+import subprocess
 import yaml
 from flask import redirect, request, render_template, url_for, flash, session
 from flask import Flask
@@ -28,6 +29,11 @@ from flask_migrate import Migrate
 import smtplib
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta
+
+def getVersionNumber():
+    shortRevId = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
+    return shortRevId.decode('ascii').strip()
+
 
 app = Flask(__name__, static_folder='../static')
 
@@ -48,6 +54,14 @@ mwoauth = MWOAuth(
     base_url=app.config.get('OAUTH_MWURI'),
 )
 app.register_blueprint(mwoauth.bp)
+
+contactEmail = app.config.get('CONTACT_EMAIL')
+if not contactEmail:
+    print("No CONTACT_EMAIL has been set in config.yaml!")
+    print("Wikimedia policy dictates that you should provide a way for system administrators to contact you.")
+    print("You risk being IP-blocked if you do not comply.")
+    contactEmail = "no contact provided"
+useragent = "Watch-Translations-Bot/" + getVersionNumber() + " (" + contactEmail + ")"
 
 class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -94,7 +108,7 @@ def mw_request(data, user=None):
         request_token_key = user.token_key
     auth = OAuth1(app.config.get('CONSUMER_KEY'), app.config.get('CONSUMER_SECRET'), request_token_key, request_token_secret)
     data['format'] = 'json'
-    return requests.post('https://meta.wikimedia.org/w/api.php', data=data, auth=auth)
+    return requests.post('https://meta.wikimedia.org/w/api.php', data=data, auth=auth, headers={'User-Agent': useragent})
 
 @app.before_request
 def db_init_user():
@@ -134,7 +148,7 @@ def get_twn_data():
         'format': 'json',
         'meta': 'messagegroups|languageinfo',
         "liprop": "code|name",
-    })
+    }, headers={'User-Agent': useragent})
     return r.json()
 
 @app.route('/')
@@ -239,7 +253,7 @@ def cli_send_changes(no_emails, force):
                 "mclanguage": translation.language,
                 "mclimit": "max",
                 "mcfilter": "!optional|!ignored|!translated"
-            })
+            }, headers={'User-Agent': useragent})
             data = r.json()
             not_in_order = data["query"]["messagecollection"]
             if len(not_in_order) > 0:
