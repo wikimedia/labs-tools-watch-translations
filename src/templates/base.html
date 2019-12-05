@@ -10,6 +10,8 @@
 	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/bootstrap-select/1.13.11/css/bootstrap-select.css">
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!-- Static CSS -->
+	<link rel="stylesheet" href="{{config.STATIC_URL}}stylesheet.css">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -63,5 +65,10 @@
 	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
 	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
 	<script src="https://tools-static.wmflabs.org/cdnjs/ajax/libs/bootstrap-select/1.13.11/js/bootstrap-select.min.js"></script>
+	<script>
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	</script>
 </body>
 </html>

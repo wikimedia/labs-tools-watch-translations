@@ -142,6 +142,13 @@ def inject_base_variables():
         "username": mwoauth.get_current_user(),
     }
 
+@app.context_processor
+def friendly_namer():
+    def get_friendly_name(array, name):
+        return next(item['label'] for item in array if item["id"] == name)
+
+    return dict(get_friendly_name=get_friendly_name)
+
 def get_twn_data():
     r = requests.get('https://translatewiki.net/w/api.php', params={
         'action': 'query',

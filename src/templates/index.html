@@ -5,9 +5,9 @@
     <h2>{{ _("you-watch") }}</h2>
     <ul>
         {% for translation in translations %}
-        <li><a href="edit/{{translation.id}}">{{translation.group}} ({{translation.language}})</a></li>
+        <li><a href="edit/{{translation.id}}">{{get_friendly_name(messagegroups, translation.group)}} <span class="grayspan" data-toggle="tooltip" data-placement="top" title="{{languages[translation.language].name}}">({{translation.language}})</span></a></li>
         {% endfor %}
-        <li><a href="edit/new">{{ _("watch-new") }}</a></li>
+        <br><a href="edit/new">{{ _("watch-new") }}</a>
     </ul>
 </div>
 {% endblock %}
