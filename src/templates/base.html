@@ -14,18 +14,18 @@
 		<a class="navbar-brand" href="#">WatchTranslations</a>
 		<div class="collapse navbar-collapse" id="navbarNav">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 					<a class="nav-link" href="https://phabricator.wikimedia.org/maniphest/task/edit/form/1/?project=watchtranslations">{{ _('report-bug') }}</a>
 				</li>
 				{% if logged %}
-				<li class="nav-item active">
-					<a href="preferences" class="nav-link">{{ _('preferences') }}</a>
-				</li>
-				<li class="nav-item active">
-					<a href="logout" class="nav-link">{{ _('logout') }}</a>
-				</li>
-				<li class="nav-item active">
-					<a href="#" class="nav-link">{{username}}</a>
+				<li class="nav-item active dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						{{username}}
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+						<a href="preferences" class="dropdown-item">{{ _('preferences') }}</a>
+						<a href="logout" class="dropdown-item">{{ _('logout') }}</a>
+					</div>
 				</li>
 				{% else %}
 				<li class="nav-item active">
