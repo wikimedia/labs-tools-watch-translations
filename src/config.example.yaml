@@ -3,8 +3,8 @@ MESSAGES_DIR: ../messages
 SQLALCHEMY_DATABASE_URI: mysql://root:password@localhost/watchTranslations
 STATIC_URL: /static/
 APPLICATION_ROOT: /
-CONSUMER_KEY: key
-CONSUMER_SECRET: secret
+CONSUMER_KEY: dbfe50bb312d4b501e8f9d82985b2073
+CONSUMER_SECRET: e552f59d5bd8048cd1250109bbd7d8ecb7216fe1
 OAUTH_MWURI: https://meta.wikimedia.org/w
 DEBUG: True
 SMTP_HOST: hostname
