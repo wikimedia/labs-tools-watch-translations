@@ -9,7 +9,7 @@
 			<option value="24" {% if user.frequency_hours == 24 %}selected{%endif%}>{{ _('every-day') }}</option>
 			<option value="168" {% if user.frequency_hours == 168 %}selected{%endif%}>{{ _('every-week') }}</option>
 		</select>
-		<input type="submit" value="{{ _('Submit') }}" class="btn btn-primary form-control">
+		<input type="submit" value="{{ _('submit') }}" class="btn btn-primary form-control">
 	</form>
 </div>
 {% endblock %}
