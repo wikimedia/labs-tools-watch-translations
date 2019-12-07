@@ -16,6 +16,7 @@
     "permission-denied": "Text displayed on pages when unauthorised or not logged in",
     "preferences": "Heading on user preferences page and for navbar link",
     "preferences-frequency-hours": "Label for email frequency preference",
+    "preferences-pref-language": "Label for language preference",
     "submit": "Submit button text on some pages",
     "every-day": "For daily email frequency preference",
     "every-week": "For weekly email frequency preference",

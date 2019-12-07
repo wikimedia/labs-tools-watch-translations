@@ -9,6 +9,13 @@
 			<option value="24" {% if user.frequency_hours == 24 %}selected{%endif%}>{{ _('every-day') }}</option>
 			<option value="168" {% if user.frequency_hours == 168 %}selected{%endif%}>{{ _('every-week') }}</option>
 		</select>
+
+		<label for="watch-language">{{ _("preferences-pref-language") }}</label>
+		<select data-live-search="true" data-width="100%" name="pref-language" id="pref-language" class="selectpicker">
+			{% for lang in languages %}
+			<option {% if user.pref_language==lang %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
+			{% endfor %}
+		</select>
 		<input type="submit" value="{{ _('submit') }}" class="btn btn-primary form-control">
 	</form>
 </div>

@@ -69,6 +69,7 @@ class User(db.Model):
     is_active = db.Column(db.Boolean, default=True)
     is_admin = db.Column(db.Boolean, default=False)
     language = db.Column(db.String(3))
+    pref_language = db.Column(db.String(3))
     frequency_hours = db.Column(db.Integer, nullable=False, default=24)
     last_emailed = db.Column(db.DateTime)
     translations = db.relationship('Translation', backref='user', lazy=True)
@@ -175,10 +176,16 @@ def index():
 def preferences():
     if logged():
         user = get_user()
+        data = get_twn_data()
         if request.method == 'POST':
             user.frequency_hours = int(request.form.get('frequency-hours'))
+            user.pref_language = request.form.get('pref-language')
             db.session.commit()
-        return render_template('preferences.html', user=user)
+        return render_template(
+            'preferences.html',
+            user=user,
+            languages=data["query"]["languageinfo"],
+        )
     else:
         return render_template('permission_denied.html')
 
@@ -199,6 +206,7 @@ def new():
         data = get_twn_data()
         return render_template(
             'edit.html',
+            user=get_user(),
             messagegroups=data["query"]["messagegroups"],
             languages=data["query"]["languageinfo"],
             translation=Translation(),
@@ -223,6 +231,7 @@ def edit(translation_id):
         data = get_twn_data()
         return render_template(
             'edit.html',
+            user=get_user(),
             messagegroups=data["query"]["messagegroups"],
             languages=data["query"]["languageinfo"],
             translation=translation

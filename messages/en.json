@@ -16,6 +16,7 @@
     "permission-denied": "Permission denied",
     "preferences": "Preferences",
     "preferences-frequency-hours": "How frequently should the tool email you?",
+    "preferences-pref-language": "Which should be your default langauge?",
     "submit": "Submit",
     "every-day": "Every day",
     "every-week": "Every week",
