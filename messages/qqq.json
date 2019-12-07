@@ -1,0 +1,22 @@
+{
+    "introduction-please-login": "The login prompt displayed on the index page",
+    "introduction": "Description displayed on index page",
+    "report-bug": "Bug report link in navbar",
+    "login": "Login link in navbar",
+    "logout": "Logout link in navbar dropdown",
+    "welcome": "Currently unused but the word 'welcome'",
+    "you-watch": "Header on index page above list of watched groups",
+    "watch-new": "Text on button to add a new watched group",
+    "select-group": "Label above group selector on edit page",
+    "select-language": "Label above language selector on edit page",
+    "confirm": "Text on submit buttons on some pages",
+    "success-edit": "Message displayed upon successfully editing a watched group",
+    "success-delete": "Message displayed upon deleting a watched group",
+    "delete": "Button text for delete button on group edit page",
+    "permission-denied": "Text displayed on pages when unauthorised or not logged in",
+    "preferences": "Heading on user preferences page and for navbar link",
+    "preferences-frequency-hours": "Label for email frequency preference",
+    "submit": "Submit button text on some pages",
+    "every-day": "For daily email frequency preference",
+    "every-week": "For weekly email frequency preference"
+}
