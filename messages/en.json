@@ -18,5 +18,7 @@
     "preferences-frequency-hours": "How frequently should the tool email you?",
     "submit": "Submit",
     "every-day": "Every day",
-    "every-week": "Every week"
+    "every-week": "Every week",
+    "none-currently-watched-header": "You don't watch anything!",
+    "none-currently-watched": "Click the button below to start watching new translations."
 }

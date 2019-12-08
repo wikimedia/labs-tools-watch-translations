@@ -18,5 +18,7 @@
     "preferences-frequency-hours": "Label for email frequency preference",
     "submit": "Submit button text on some pages",
     "every-day": "For daily email frequency preference",
-    "every-week": "For weekly email frequency preference"
+    "every-week": "For weekly email frequency preference",
+    "none-currently-watched-header": "Header on index page when nothing is being watched",
+    "none-currently-watched": "Message on index page when nothign is being watched"
 }
