@@ -216,8 +216,8 @@ def new():
 def edit(translation_id):
     translation = Translation.query.filter_by(user=get_user(), id=translation_id).first()
     if request.method == 'POST':
-        post_type = request.form.get('type', "update")
-        if post_type == "update":
+        post_type = request.form.get('type', "edit")
+        if post_type == "edit":
             translation.group = request.form.get('group')
             translation.language = request.form.get('language')
             db.session.commit()
