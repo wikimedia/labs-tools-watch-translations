@@ -7,7 +7,7 @@
         {% for translation in translations %}
         <li><a href="edit/{{translation.id}}">{{get_friendly_name(messagegroups, translation.group)}} <span class="grayspan" data-toggle="tooltip" data-placement="top" title="{{languages[translation.language].name}}">({{translation.language}})</span></a></li>
         {% endfor %}
-        <br><a href="edit/new">{{ _("watch-new") }}</a>
     </ul>
+    <a href="edit/new" class="btn btn-primary active" role="button">{{ _("watch-new") }}</a>
 </div>
 {% endblock %}
