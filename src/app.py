@@ -312,7 +312,7 @@ def cli_send_changes(no_emails, force):
                 notification += "<h2>%s (%s)</h2>\n" % (translation.group, translation.language)
                 notification += "<ul>\n"
                 for message in not_in_order:
-                    notification += "<li><a href='https://translatewiki.net/wiki/%s'>%s</a></li>\n" % (message['title'], message['key'])
+                    notification += "<li><a href='https://translatewiki.net/w/i.php?title=Special:Translate&showMessage=%s&group=%s&language=%s&action=translate'>%s</a></li>\n" % (message['key'], translation.group, translation.language, message['key'])
                 notification += "</ul>\n"
         if notification != "":
             email = get_user_email(user)
