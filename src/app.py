@@ -86,6 +86,15 @@ class Translation(db.Model):
 def logged():
     return mwoauth.get_current_user() is not None
 
+def get_revision():
+    try:
+        output = subprocess.check_output(["git", "describe", "--always"], stderr=subprocess.STDOUT).strip().decode()
+        assert 'fatal' not in output
+        return output
+    except Exception:
+        # if somehow git version retrieving command failed, just return
+        return ''
+
 @app.before_request
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
@@ -141,6 +150,7 @@ def inject_base_variables():
     return {
         "logged": logged(),
         "username": mwoauth.get_current_user(),
+        "revision": get_revision(),
     }
 
 @app.context_processor
