@@ -167,7 +167,14 @@ def get_twn_data():
         'meta': 'messagegroups|languageinfo',
         "liprop": "code|name",
     }, headers={'User-Agent': useragent})
-    return r.json()
+    response = r.json()
+    response["query"]["languageinfo"] = dict(
+        sorted(
+            response["query"]["languageinfo"].items(),
+            key=lambda val: val[0]
+        )
+    )
+    return response
 
 @app.route('/')
 def index():
