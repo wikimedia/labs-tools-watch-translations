@@ -10,6 +10,7 @@
     "select-group": "Label above group selector on edit page",
     "select-language": "Label above language selector on edit page",
     "confirm": "Text on submit buttons on some pages",
+    "cancel": "Text on cancel button on edit page",
     "success-edit": "Message displayed upon successfully editing a watched group",
     "success-delete": "Message displayed upon deleting a watched group",
     "delete": "Button text for delete button on group edit page",

@@ -20,7 +20,14 @@
                 {% endfor %}
             </select>
         </div>
-        <input class="btn btn-primary form-control" type="submit" value="{{ _("confirm") }}">
+	<div class="row submit-btn-grp">
+            <div class="form-group col-sm-6">
+                <input class="btn btn-primary form-control" type="submit" value="{{ _("confirm") }}">
+            </div>
+            <div class="form-group col-sm-6">
+                <a class="btn btn-light form-control" href="{{ url_for('index') }}">{{ _("cancel") }}</a>
+            </div>
+	</div>
     </form>
     <form method="post">
         <input type="hidden" name="type" value="delete">
