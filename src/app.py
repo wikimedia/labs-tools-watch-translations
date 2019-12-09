@@ -194,14 +194,26 @@ def new():
     if request.method == 'POST':
         group = request.form.get('group')
         language = request.form.get('language')
-        translation = Translation(
-            user=get_user(),
-            language=language,
-            group=group
-        )
-        db.session.add(translation)
-        db.session.commit()
-        return redirect(url_for('index'))
+        same_translation = Translation.query.filter_by(user=get_user(), group=group, language=language).first()
+        if same_translation is None:
+            translation = Translation(
+                user=get_user(),
+                language=language,
+                group=group
+            )
+            db.session.add(translation)
+            db.session.commit()
+            return redirect(url_for('index'))
+        else:
+            flash(_('already-watched'))
+            data = get_twn_data()
+            return render_template(
+                'edit.html',
+                user=get_user(),
+                messagegroups=data["query"]["messagegroups"],
+                languages=data["query"]["languageinfo"],
+                translation=Translation(),
+            )
     else:
         data = get_twn_data()
         return render_template(
@@ -218,10 +230,24 @@ def edit(translation_id):
     if request.method == 'POST':
         post_type = request.form.get('type', "edit")
         if post_type == "edit":
-            translation.group = request.form.get('group')
-            translation.language = request.form.get('language')
-            db.session.commit()
-            flash(_('success-edit'))
+            group = request.form.get('group')
+            language = request.form.get('language')
+            same_translation = Translation.query.filter_by(user=get_user(), group=group, language=language).first()
+            if same_translation is None:
+                translation.group = group
+                translation.language = language
+                db.session.commit()
+                flash(_('success-edit'))
+            else:
+                flash(_('duplicate-edit'))
+                data = get_twn_data()
+                return render_template(
+                    'edit.html',
+                    user=get_user(),
+                    messagegroups=data["query"]["messagegroups"],
+                    languages=data["query"]["languageinfo"],
+                    translation=translation
+                )
         elif post_type == "delete":
             db.session.delete(translation)
             db.session.commit()

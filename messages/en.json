@@ -14,6 +14,8 @@
     "success-delete": "You successfully deleted your watched component.",
     "delete": "Delete",
     "permission-denied": "Permission denied",
+    "already-watched": "You already watch this component!",
+    "duplicate-edit": "Could not edit: would create a duplicate watched component",
     "preferences": "Preferences",
     "preferences-frequency-hours": "How frequently should the tool email you?",
     "preferences-pref-language": "Which should be your default langauge?",

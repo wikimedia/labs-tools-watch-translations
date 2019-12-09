@@ -14,6 +14,8 @@
     "success-delete": "Message displayed upon deleting a watched group",
     "delete": "Button text for delete button on group edit page",
     "permission-denied": "Text displayed on pages when unauthorised or not logged in",
+    "already-watched": "Alert displayed when trying to watch an already watched component",
+    "duplicate-edit": "Alert displayed when trying to edit a component into one that already exists",
     "preferences": "Heading on user preferences page and for navbar link",
     "preferences-frequency-hours": "Label for email frequency preference",
     "preferences-pref-language": "Label for language preference",
