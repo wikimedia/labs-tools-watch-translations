@@ -130,7 +130,6 @@ def db_init_user():
         if user is None:
             user = User(
                 username=mwoauth.get_current_user(),
-                language=locales.get_locale(),
                 token_key=request_token_key,
                 token_secret=request_token_key,
             )
@@ -139,10 +138,10 @@ def db_init_user():
         else:
             user.token_key = request_token_key
             user.token_secret = request_token_secret
-            if user.is_active:
-                locales.set_locale(user.language)
-            else:
+            if not user.is_active:
                 return render_template('permission_denied.html')
+            if user.language:
+                locales.set_locale(user.language)
             db.session.commit()
 
 @app.context_processor
