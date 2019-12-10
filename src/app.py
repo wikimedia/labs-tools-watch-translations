@@ -289,7 +289,8 @@ def get_user_email(user):
 @app.cli.command('send-changes')
 @click.option('--no-emails', is_flag=True)
 @click.option('--force', is_flag=True)
-def cli_send_changes(no_emails, force):
+@click.option('--email-inactive', is_flag=True)
+def cli_send_changes(no_emails, force, email_inactive):
     s = None
     if not no_emails:
         smtp_host = app.config.get('SMTP_HOST')
@@ -299,7 +300,7 @@ def cli_send_changes(no_emails, force):
             return
         s = smtplib.SMTP(smtp_host)
     for user in User.query.all():
-        if user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours) and not force:
+        if (not user.is_active and not email_inactive) or (user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours) and not force):
             continue
         notification = ""
         for translation in user.translations:
