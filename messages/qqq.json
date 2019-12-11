@@ -24,5 +24,7 @@
     "every-day": "For daily email frequency preference",
     "every-week": "For weekly email frequency preference",
     "none-currently-watched-header": "Header on index page when nothing is being watched",
-    "none-currently-watched": "Message on index page when nothign is being watched"
+    "none-currently-watched": "Message on index page when nothign is being watched",
+    "delete-title": "Text for deletion confirmation popup on edit page",
+    "confirm-delete-component": "Message to confirm the deletion of a component"
 }
