@@ -286,10 +286,10 @@ def get_user_email(user):
         'uiprop': 'email'
     }, user).json().get('query', {}).get('userinfo', {}).get('email')
 
-@app.cli.command('send-changes')
-@click.option('--no-emails', is_flag=True)
-@click.option('--force', is_flag=True)
-@click.option('--email-inactive', is_flag=True)
+@app.cli.command('send-changes', help="Sends change notifications to users")
+@click.option('--no-emails', is_flag=True, help="If set, the message contents will be printed instead of actually sending the messages")
+@click.option('--force', is_flag=True, help="If set, an email will be sent regardless of the email frequency chosen by the user")
+@click.option('--email-inactive', is_flag=True, help="If set, the messages will be also sent to inactive users")
 def cli_send_changes(no_emails, force, email_inactive):
     s = None
     if not no_emails:
