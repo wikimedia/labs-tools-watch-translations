@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shbib Al-Subaie"
+		]
+	},
+	"introduction-please-login": "فضلًا، <a href=\"login\">سجل الدخول</a>",
+	"introduction": "WatchTranslations هي أداةٌ تسمح لك بالحصول على تنبيهاتٍ حينما تكون هنالك رسالةٌ عن مشروعك المفضل في TranslateWiki غير مترجمةٍ للغتك المختارة.",
+	"report-bug": "أبلغ عن خطأ",
+	"login": "سجل الدخول",
+	"logout": "سجل الخروج",
+	"welcome": "مرحبًا",
+	"you-watch": "أنت تراقب",
+	"watch-new": "مراقبة جديدة",
+	"select-group": "اختيار المجموعة",
+	"select-language": "اختر اللغة",
+	"confirm": "أكّد",
+	"cancel": "ألغ",
+	"success-edit": "عدّلت بنجاح مكون المراقبة الخاص بك.",
+	"success-delete": "حذفت بنجاح مكون المراقبة الخاص بك.",
+	"delete": "احذف",
+	"permission-denied": "الإذن مرفوض",
+	"already-watched": "أنت بالفعل تُراقب هذا المكوّن!",
+	"duplicate-edit": "تعذّر التعديل: سيُنشئ هذا مكون مراقبة مكرر",
+	"preferences": "تفضيلات",
+	"preferences-frequency-hours": "كم مرة ينبغي للأداة إرسال بريد إلكتروني إليك؟",
+	"preferences-pref-language": "أيُّ اللغات ينبغي أن تكون لغتك الافتراضية؟",
+	"submit": "إرسال",
+	"every-day": "كل يوم",
+	"every-week": "كل أسبوع",
+	"none-currently-watched-header": "أنت لا تراقب أي شيء!",
+	"none-currently-watched": "اضغط على الزر أدناه لبدء مراقبة الترجمات الجديدة."
+}

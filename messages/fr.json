@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Verdy p"
+		]
+	},
+	"introduction-please-login": "Veuillez vous <a href=\"login\">connecter</a>",
+	"introduction": "WatchTranslations est un outil qui vous notifie quand un message dans votre projet favori sur translatewiki.net n’est pas traduit dans la langue de votre choix.",
+	"report-bug": "Signaler une anomalie",
+	"login": "Se connecter",
+	"logout": "Se déconnecter",
+	"welcome": "Bienvenue",
+	"you-watch": "Vous suivez",
+	"watch-new": "Suivre un nouveau",
+	"select-group": "Sélectionner un groupe",
+	"select-language": "Sélectionner une langue",
+	"confirm": "Confirmer",
+	"cancel": "Annuler",
+	"success-edit": "Vous avez modifié un composant suivi.",
+	"success-delete": "Vous avez supprimé un composant suivi.",
+	"delete": "Supprimer",
+	"permission-denied": "Autorisation refusée",
+	"already-watched": "Vous suivez déjà ce composant !",
+	"duplicate-edit": "Modification impossible : cela créerait un composant suivi en doublon.",
+	"preferences": "Préférences",
+	"preferences-frequency-hours": "À quelle fréquence l’outil devrait vous envoyer des courriels ?",
+	"preferences-pref-language": "Quelle devrait être votre langue par défaut ?",
+	"submit": "Soumettre",
+	"every-day": "Chaque jour",
+	"every-week": "Chaque semaine",
+	"none-currently-watched-header": "Vous ne suivez rien !",
+	"none-currently-watched": "Cliquez le bouton ci-dessous pour commencer à suivre les nouvelles traductions.",
+	"delete-title": "Supprimer un composant",
+	"confirm-delete-component": "Voulez-vous réellement supprimer ce composant ?"
+}

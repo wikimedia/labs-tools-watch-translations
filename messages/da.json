@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"welcome": "Velkommen",
+	"select-group": "Vælg en gruppe",
+	"select-language": "Vælg et sprog",
+	"confirm": "Bekræft",
+	"cancel": "Annullér",
+	"delete": "Slet",
+	"submit": "Indsend",
+	"every-day": "Hver dag",
+	"every-week": "Hver uger",
+	"none-currently-watched-header": "Du overvåger intet!"
+}

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robby"
+		]
+	},
+	"report-bug": "Feeler mellen",
+	"login": "Aloggen",
+	"logout": "Ausloggen",
+	"welcome": "Wëllkomm",
+	"select-language": "Sprooch eraussichen",
+	"confirm": "Confirméieren",
+	"cancel": "Ofbriechen",
+	"delete": "Läschen",
+	"permission-denied": "Autorisatioun refuséiert",
+	"preferences": "Astellungen",
+	"submit": "Schécken",
+	"every-day": "All Dag",
+	"every-week": "All Woch"
+}

@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"introduction-please-login": "請先<a href=\"login\">登入</a>",
+	"introduction": "WatchTranslations 是個當在 translatewiki.net 網站上您所感興趣的專案尚未翻譯成您所挑選的語言時，會向您通知相關訊息的工具。",
+	"report-bug": "回報程式錯誤",
+	"login": "登入",
+	"logout": "登出",
+	"welcome": "歡迎",
+	"you-watch": "您的監視",
+	"watch-new": "監視新的",
+	"select-group": "選擇一個群組",
+	"select-language": "選擇一個語言",
+	"confirm": "確認",
+	"cancel": "取消",
+	"success-edit": "您已編輯所監視的部份。",
+	"success-delete": "您已刪除所監視的部份。",
+	"delete": "刪除",
+	"permission-denied": "權限不足",
+	"already-watched": "您已監視了此部份！",
+	"duplicate-edit": "無法編輯：將會建立重複的所監視部份",
+	"preferences": "偏好設定",
+	"preferences-frequency-hours": "該工具應多久一次發給您電子郵件？",
+	"preferences-pref-language": "您的預設語言應是哪個？",
+	"submit": "提交",
+	"every-day": "每日",
+	"every-week": "每週",
+	"none-currently-watched-header": "您沒有監視任何內容！",
+	"none-currently-watched": "點擊以下按鈕來開始監視新的翻譯。",
+	"delete-title": "刪除部份",
+	"confirm-delete-component": "您確定要刪除此部份嗎？"
+}

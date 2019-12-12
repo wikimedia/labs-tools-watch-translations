@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mainframe98"
+		]
+	},
+	"introduction-please-login": "Alstublieft, <a href=\"login\">meldt u aan</a>",
+	"report-bug": "Probleem melden",
+	"login": "Aanmelden",
+	"logout": "Afmelden",
+	"welcome": "Welkom",
+	"you-watch": "U volgt",
+	"select-group": "Selecteer een groep",
+	"select-language": "Selecteer een taal",
+	"confirm": "Bevestigen",
+	"cancel": "Annuleren",
+	"delete": "Verwijderen",
+	"permission-denied": "Toegang geweigerd",
+	"already-watched": "U volgt dit component al!",
+	"preferences": "Voorkeuren",
+	"preferences-pref-language": "Welke taal moet uw standaardtaal zijn?",
+	"submit": "Verzenden",
+	"every-day": "Elke dag",
+	"every-week": "Elke week",
+	"none-currently-watched-header": "U volgt momenteel niets!"
+}

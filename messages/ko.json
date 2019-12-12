@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">로그인</a>해 주십시오",
+	"report-bug": "버그 보고",
+	"login": "로그인",
+	"logout": "로그아웃",
+	"welcome": "환영합니다",
+	"select-group": "그룹 선택",
+	"select-language": "언어 선택",
+	"confirm": "확인",
+	"cancel": "취소",
+	"delete": "삭제",
+	"permission-denied": "권한이 없습니다",
+	"preferences": "환경 설정",
+	"preferences-frequency-hours": "이 도구가 당신에게 이메일을 보내는 주기는 어떻게 합니까?",
+	"preferences-pref-language": "기본 언어를 무엇으로 하시겠습니까?",
+	"submit": "제출",
+	"every-day": "매일",
+	"every-week": "매주",
+	"none-currently-watched-header": "주시 중인 항목이 없습니다!",
+	"none-currently-watched": "새 번역의 주시를 시작하려면 아래의 버튼을 클릭하십시오."
+}

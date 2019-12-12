@@ -1,0 +1,36 @@
+{
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"דגש חזק"
+		]
+	},
+	"introduction-please-login": "נא <a href=\"login\">להיכנס</a>",
+	"introduction": "מעקב תרגומים (Watch Translations) הוא כלי שמודיע לך כשהודעה במיזמים המועדפים עליך ב־translatewiki אינה מתורגם לשפה שבחרת.",
+	"report-bug": "דיווח באג",
+	"login": "כניסה",
+	"logout": "יציאה",
+	"welcome": "ברוך בואך",
+	"you-watch": "רשימת המעקב שלך",
+	"watch-new": "לעקוב אחרי משהו חדש",
+	"select-group": "בחירת קבוצה",
+	"select-language": "בחירת שפה",
+	"confirm": "אישור",
+	"cancel": "ביטול",
+	"success-edit": "ערכת רכיב שנמצא במעקב.",
+	"success-delete": "מחקת רכיב שנמצא במעקב.",
+	"delete": "מחיקה",
+	"permission-denied": "הגישה נדחתה",
+	"already-watched": "הרכיב הזה כבר נמצא ברשימת המעקב שלך!",
+	"duplicate-edit": "לא היה אפשר לערוך: זה היה יוצר רכיב כפול במעקב",
+	"preferences": "העדפות",
+	"preferences-frequency-hours": "באיזו תדירות הכלי צריך לשלוח לך דוא״ל?",
+	"preferences-pref-language": "מה צריכה להיות שפת ברירת המחדל שלך?",
+	"submit": "שליחה",
+	"every-day": "מדי יום",
+	"every-week": "מדי שבוע",
+	"none-currently-watched-header": "אין לך שום דבר ברשימת המעקב!",
+	"none-currently-watched": "נא ללחוץ על הכפתור למטה כדי להתחיל לעקוב אחרי תרגומים חדשים.",
+	"delete-title": "מחיקת רכיב",
+	"confirm-delete-component": "האם ברצונך באמת למחוק את הרכיב הזה?"
+}

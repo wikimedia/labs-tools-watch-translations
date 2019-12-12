@@ -1,0 +1,35 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"introduction-please-login": "Lütfen <a href=\"login\">oturum açın</a>",
+	"introduction": "WatchTranslations, translatewiki.net'te en sevdiğiniz projelerdeki bir mesaj seçtiğiniz dile çevrilmediğinde sizi uyaran bir araçtır.",
+	"report-bug": "Hata bildir",
+	"login": "Giriş",
+	"logout": "Çıkış",
+	"welcome": "Hoş Geldiniz",
+	"you-watch": "İzlediğiniz",
+	"watch-new": "Yeni izle",
+	"select-group": "Bir grup seç",
+	"select-language": "Bir dil seç",
+	"confirm": "Onayla",
+	"cancel": "İptal",
+	"success-edit": "İzlenen bir bileşeni düzenlediniz.",
+	"success-delete": "İzlenen bir bileşeni sildiniz.",
+	"delete": "Sil",
+	"permission-denied": "İzin verilmedi",
+	"already-watched": "Bu bileşeni zaten izledin!",
+	"duplicate-edit": "Düzenlenemedi: yinelenen bir izlenen bileşen oluşturur",
+	"preferences": "Tercihler",
+	"preferences-frequency-hours": "Araç size ne sıklıkla e-posta göndermelidir?",
+	"preferences-pref-language": "Varsayılan diliniz hangisi olmalıdır?",
+	"submit": "Gönder",
+	"every-day": "Her gün",
+	"every-week": "Her hafta",
+	"none-currently-watched-header": "Hiçbir şey izlemiyorsunuz!",
+	"none-currently-watched": "Yeni çevirileri izlemeye başlamak için aşağıdaki düğmeyi tıklayın.",
+	"delete-title": "Bileşeni sil",
+	"confirm-delete-component": "Bu bileşeni silmek istediğinize emin misiniz?"
+}

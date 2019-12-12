@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Beta16"
+		]
+	},
+	"login": "Entra",
+	"logout": "Esci",
+	"welcome": "Benvenuto",
+	"select-language": "Seleziona una lingua",
+	"confirm": "Conferma",
+	"cancel": "Annulla",
+	"delete": "Cancella",
+	"permission-denied": "Permesso negato",
+	"preferences": "Preferenze",
+	"submit": "Invia",
+	"every-day": "Ogni giorno",
+	"every-week": "Ogni settimana"
+}
