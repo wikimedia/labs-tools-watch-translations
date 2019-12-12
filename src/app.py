@@ -16,6 +16,8 @@
 
 import os
 import subprocess
+
+import mwoauth
 import yaml
 from flask import redirect, request, render_template, url_for, flash, session
 from flask import Flask
@@ -23,7 +25,6 @@ import click
 import requests
 from requests_oauthlib import OAuth1
 from flask_jsonlocale import Locales
-from flask_mwoauth import MWOAuth
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import smtplib
@@ -48,12 +49,10 @@ app.config.update(
 locales = Locales(app)
 _ = locales.get_message
 
-mwoauth = MWOAuth(
-    consumer_key=app.config.get('CONSUMER_KEY'),
-    consumer_secret=app.config.get('CONSUMER_SECRET'),
-    base_url=app.config.get('OAUTH_MWURI'),
-)
-app.register_blueprint(mwoauth.bp)
+consumer_token = mwoauth.ConsumerToken(
+    app.config.get('CONSUMER_KEY'),
+    app.config.get('CONSUMER_SECRET'))
+handshaker = mwoauth.Handshaker(app.config.get('OAUTH_MWURI') + '/index.php', consumer_token)
 
 contactEmail = app.config.get('CONTACT_EMAIL')
 if not contactEmail:
@@ -83,8 +82,10 @@ class Translation(db.Model):
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     language = db.Column(db.String(3))
 
+
 def logged():
-    return mwoauth.get_current_user() is not None
+    return get_current_user() is not None
+
 
 def get_revision():
     try:
@@ -105,6 +106,7 @@ def get_revision_link():
         # on fail return empty repo link
         return base_link
 
+
 @app.before_request
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
@@ -113,10 +115,12 @@ def force_https():
             code=301
         )
 
+
 def get_user():
     return User.query.filter_by(
-        username=mwoauth.get_current_user()
+        username=get_current_user()
     ).first()
+
 
 def mw_request(data, user=None):
     if user is None:
@@ -130,6 +134,7 @@ def mw_request(data, user=None):
     data['format'] = 'json'
     return requests.post('https://meta.wikimedia.org/w/api.php', data=data, auth=auth, headers={'User-Agent': useragent})
 
+
 @app.before_request
 def db_init_user():
     if logged():
@@ -139,7 +144,7 @@ def db_init_user():
         request_token_key = access_token.get('key').decode('utf-8')
         if user is None:
             user = User(
-                username=mwoauth.get_current_user(),
+                username=get_current_user(),
                 token_key=request_token_key,
                 token_secret=request_token_key,
             )
@@ -154,14 +159,16 @@ def db_init_user():
                 locales.set_locale(user.language)
             db.session.commit()
 
+
 @app.context_processor
 def inject_base_variables():
     return {
         "logged": logged(),
-        "username": mwoauth.get_current_user(),
+        "username": get_current_user(),
         "revision": get_revision(),
         "revision_link": get_revision_link()
     }
+
 
 @app.context_processor
 def friendly_namer():
@@ -169,6 +176,7 @@ def friendly_namer():
         return next(item['label'] for item in array if item["id"] == name)
 
     return dict(get_friendly_name=get_friendly_name)
+
 
 def get_twn_data():
     r = requests.get('https://translatewiki.net/w/api.php', params={
@@ -186,6 +194,7 @@ def get_twn_data():
     )
     return response
 
+
 @app.route('/')
 def index():
     if logged():
@@ -198,6 +207,87 @@ def index():
         )
     else:
         return render_template('login.html')
+
+
+@app.route('/login')
+def login():
+    redirect_to, request_token = handshaker.initiate()
+    keyed_token_name = _str(request_token.key) + '_request_token'
+    keyed_next_name = _str(request_token.key) + '_next'
+    session[keyed_token_name] = \
+        dict(zip(request_token._fields, request_token))
+
+    if 'next' in request.args:
+        session[keyed_next_name] = request.args.get('next')
+    else:
+        session[keyed_next_name] = 'index'
+
+    return redirect(redirect_to)
+
+
+@app.route('/logout')
+def logout():
+    session['mwoauth_access_token'] = None
+    session['mwoauth_username'] = None
+    if 'next' in request.args:
+        return redirect(request.args['next'])
+    return redirect(url_for('index'))
+
+
+@app.route('/oauth-callback')
+def oauth_authorized():
+    request_token_key = request.args.get('oauth_token', 'None')
+    keyed_token_name = _str(request_token_key) + '_request_token'
+    keyed_next_name = _str(request_token_key) + '_next'
+
+    if keyed_token_name not in session:
+        raise Exception("OAuth callback failed. Can't find keyed token in session. Are cookies disabled?")
+
+    access_token = handshaker.complete(
+        mwoauth.RequestToken(**session[keyed_token_name]),
+        request.query_string)
+    session['mwoauth_access_token'] = \
+        dict(zip(access_token._fields, access_token))
+
+    next_url = url_for(session[keyed_next_name])
+    del session[keyed_next_name]
+    del session[keyed_token_name]
+
+    username = get_current_user(False)
+    flash(u'You were signed in, %s!' % username)
+
+    return redirect(next_url)
+
+
+def _str(val):
+    """
+    Ensures that the val is the default str() type for python2 or 3
+    """
+    if str == bytes:
+        if isinstance(val, str):
+            return val
+        else:
+            return str(val)
+    else:
+        if isinstance(val, str):
+            return val
+        else:
+            return str(val, 'ascii')
+
+
+def get_current_user(cached=True):
+    if cached:
+        return session.get('mwoauth_username')
+
+    # Get user info
+    identity = handshaker.identify(
+        mwoauth.AccessToken(**session['mwoauth_access_token']))
+
+    # Store user info in session
+    session['mwoauth_username'] = identity['username']
+
+    return session['mwoauth_username']
+
 
 @app.route('/preferences', methods=['GET', 'POST'])
 def preferences():
