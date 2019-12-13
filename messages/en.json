@@ -27,5 +27,6 @@
     "none-currently-watched-header": "You don't watch anything!",
     "none-currently-watched": "Click the button below to start watching new translations.",
     "delete-title": "Delete component",
-    "confirm-delete-component": "Are you sure you want to delete this component?"
+    "confirm-delete-component": "Are you sure you want to delete this component?",
+    "success-create": "You created a new watched component."
 }

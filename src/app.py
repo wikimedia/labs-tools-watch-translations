@@ -235,6 +235,7 @@ def new():
             )
             db.session.add(translation)
             db.session.commit()
+            flash(_('success-create'), 'success')
             return redirect(url_for('index'))
         else:
             flash(_('already-watched'), 'error')
