@@ -95,6 +95,16 @@ def get_revision():
         # if somehow git version retrieving command failed, just return
         return ''
 
+def get_revision_link():
+    base_link = "https://gerrit.wikimedia.org/g/labs/tools/watch-translations/"
+    try:
+        output = subprocess.check_output(["git", "rev-parse", "HEAD"], stderr=subprocess.STDOUT).strip().decode()
+        assert 'fatal' not in output
+        return base_link + "+/" + output
+    except Exception:
+        # on fail return empty repo link
+        return base_link
+
 @app.before_request
 def force_https():
     if request.headers.get('X-Forwarded-Proto') == 'http':
@@ -150,6 +160,7 @@ def inject_base_variables():
         "logged": logged(),
         "username": mwoauth.get_current_user(),
         "revision": get_revision(),
+        "revision_link": get_revision_link()
     }
 
 @app.context_processor
