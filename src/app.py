@@ -207,11 +207,16 @@ def preferences():
         if request.method == 'POST':
             user.frequency_hours = int(request.form.get('frequency-hours'))
             user.pref_language = request.form.get('pref-language')
+            user.language = request.form.get('pref-locale')
             db.session.commit()
+            if user.language:
+                locales.set_locale(user.language)
         return render_template(
             'preferences.html',
             user=user,
             languages=data["query"]["languageinfo"],
+            locales_list=sorted(locales.get_locales()),
+            current_locale=locales.get_locale()
         )
     else:
         return render_template('permission_denied.html')
