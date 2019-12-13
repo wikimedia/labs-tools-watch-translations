@@ -42,11 +42,11 @@
 			</ul>
 		</div>
 	</nav>
-	{% with messages = get_flashed_messages() %}
+	{% with messages = get_flashed_messages(with_categories=true) %}
 	<div class="container error-container">
 	{% if messages %}
-	{% for message in messages %}
-		<div class="alert alert-info alert-dismissible fade show" role="alert">
+	{% for category, message in messages %}
+		<div class="alert alert-{% if category=='message' %}info{% elif category=='error' %}danger{% else %}{{ category }}{% endif %} alert-dismissible fade show" role="alert">
 			{{ message }}
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 				<span aria-hidden="true">&times;</span>

@@ -237,7 +237,7 @@ def new():
             db.session.commit()
             return redirect(url_for('index'))
         else:
-            flash(_('already-watched'))
+            flash(_('already-watched'), 'error')
             data = get_twn_data()
             return render_template(
                 'edit.html',
@@ -269,9 +269,9 @@ def edit(translation_id):
                 translation.group = group
                 translation.language = language
                 db.session.commit()
-                flash(_('success-edit'))
+                flash(_('success-edit'), 'success')
             else:
-                flash(_('duplicate-edit'))
+                flash(_('duplicate-edit'), 'error')
                 data = get_twn_data()
                 return render_template(
                     'edit.html',
@@ -283,7 +283,7 @@ def edit(translation_id):
         elif post_type == "delete":
             db.session.delete(translation)
             db.session.commit()
-            flash(_('success-delete'))
+            flash(_('success-delete'), 'success')
         return redirect(url_for('index'))
     else:
         data = get_twn_data()
