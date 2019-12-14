@@ -80,7 +80,7 @@ class Translation(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     group = db.Column(db.String(255))
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
-    language = db.Column(db.String(3))
+    language = db.Column(db.String(10))
 
 
 def logged():
