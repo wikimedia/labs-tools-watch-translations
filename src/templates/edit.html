@@ -8,7 +8,7 @@
             <label for="watch-group">{{ _("select-group") }}</label>
             <select data-live-search="true" data-width="100%" class="selectpicker" name="group" id="watch-group">
                 {% for group in messagegroups %}
-                <option {% if translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{group.label}}</option>
+                <option {% if translation is not none and translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{group.label}}</option>
                 {% endfor %}
             </select>
         </div>
@@ -16,39 +16,43 @@
             <label for="watch-language">{{ _("select-language") }}</label>
             <select data-live-search="true" data-width="100%" name="language" id="watch-language" class="selectpicker">
                 {% for lang in languages %}
-                <option {% if translation.language==lang or (translation.language is none and user.pref_language==lang) %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
+                <option {% if translation is not none and translation.language==lang or (translation.language is none and user.pref_language==lang) %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
                 {% endfor %}
             </select>
         </div>
         <div class="row submit-btn-grp">
-            <div class="form-group col-sm-6">
-                <input class="btn btn-primary form-control" type="submit" value="{{ _("confirm") }}">
+            <div class="form-group col-sm-6 full-width-cols">
+                <input class="btn btn-primary form-control" type="submit" value="{{ _("add" if translation is none else "confirm") }}">
             </div>
-            <div class="form-group col-sm-6">
+            <div class="form-group col-md-6 full-width-cols">
                 <a class="btn btn-light form-control" href="{{ url_for('index') }}">{{ _("cancel") }}</a>
             </div>
-	    </div>
-    </form>
-    <button type="button" class="btn btn-primary btn-danger form-control" data-toggle="modal" data-target="#deletePrompt">{{ _("delete") }}</button>
-    <div class="modal fade" id="deletePrompt" tabindex="-1" role="dialog" aria-labelledby="deletePromptLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="deletePromptLabel">{{ _("delete-title") }}</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">{{ _("confirm-delete-component") }}</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ _("cancel") }}</button>
-            <form method="post">
-                <input type="hidden" name="type" value="delete">
-                <input type="submit" value="{{ _("delete") }}" class="btn btn-secondary btn-danger">
-            </form>
-          </div>
         </div>
-      </div>
+    </form>
+    {% if translation is not none %}
+    <div class="row">
+        <button type="button" class="btn btn-primary btn-danger form-control" data-toggle="modal" data-target="#deletePrompt">{{ _("delete") }}</button>
     </div>
+    <div class="modal fade" id="deletePrompt" tabindex="-1" role="dialog" aria-labelledby="deletePromptLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deletePromptLabel">{{ _("delete-title") }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">{{ _("confirm-delete-component") }}</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ _("cancel") }}</button>
+                    <form method="post">
+                        <input type="hidden" name="type" value="delete">
+                        <input type="submit" value="{{ _("delete") }}" class="btn btn-secondary btn-danger">
+                    </form>
+                </div>
+            </div>
+          </div>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}

@@ -5,18 +5,16 @@
 	<h1>{{ _('preferences') }}</h1>
 	<form method="post">
 		<label for="frequency-hours">{{ _('preferences-frequency-hours') }}</label>
-		<select name="frequency-hours" id="frequency-hours" class="form-control">
+		<select name="frequency-hours" id="frequency-hours" class="form-control selectpicker">
 			<option value="24" {% if user.frequency_hours == 24 %}selected{%endif%}>{{ _('every-day') }}</option>
 			<option value="168" {% if user.frequency_hours == 168 %}selected{%endif%}>{{ _('every-week') }}</option>
 		</select>
-
 		<label for="pref-language">{{ _("preferences-pref-language") }}</label>
 		<select data-live-search="true" data-width="100%" name="pref-language" id="pref-language" class="selectpicker">
 			{% for lang in languages %}
 			<option {% if user.pref_language==lang %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
 			{% endfor %}
 		</select>
-
 		<label for="pref-locale">{{ _("preferences-pref-locale") }}</label>
 		<select data-live-search="true" data-width="100%" name="pref-locale" id="pref-locale" class="selectpicker">
 			{% for lang in locales_list %}{% if lang != 'qqq' %}

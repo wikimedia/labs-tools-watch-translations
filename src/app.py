@@ -154,7 +154,7 @@ def db_init_user():
             user.token_key = request_token_key
             user.token_secret = request_token_secret
             if not user.is_active:
-                return render_template('permission_denied.html')
+                return render_template('permission_denied.html'), 403
             if user.language:
                 locales.set_locale(user.language)
             db.session.commit()
@@ -309,10 +309,12 @@ def preferences():
             current_locale=locales.get_locale()
         )
     else:
-        return render_template('permission_denied.html')
+        return render_template('permission_denied.html'), 403
 
 @app.route('/edit/new', methods=['GET', 'POST'])
 def new():
+    if not logged():
+        return render_template('permission_denied.html'), 403
     if request.method == 'POST':
         group = request.form.get('group')
         language = request.form.get('language')
@@ -335,7 +337,7 @@ def new():
                 user=get_user(),
                 messagegroups=data["query"]["messagegroups"],
                 languages=data["query"]["languageinfo"],
-                translation=Translation(),
+                translation=None
             )
     else:
         data = get_twn_data()
@@ -344,12 +346,14 @@ def new():
             user=get_user(),
             messagegroups=data["query"]["messagegroups"],
             languages=data["query"]["languageinfo"],
-            translation=Translation(),
+            translation=None
         )
 
 @app.route('/edit/<int:translation_id>', methods=['GET', 'POST'])
 def edit(translation_id):
     translation = Translation.query.filter_by(user=get_user(), id=translation_id).first()
+    if translation is None:
+        return render_template('permission_denied.html'), 403
     if request.method == 'POST':
         post_type = request.form.get('type', "edit")
         if post_type == "edit":
