@@ -366,7 +366,10 @@ def edit(translation_id):
                 db.session.commit()
                 flash(_('success-edit'), 'success')
             else:
-                flash(_('duplicate-edit'), 'error')
+                if translation.group == group and translation.language == language:
+                    flash(_('no-change'), 'error')
+                else:
+                    flash(_('duplicate-edit'), 'error')
                 data = get_twn_data()
                 return render_template(
                     'edit.html',

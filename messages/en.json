@@ -20,6 +20,7 @@
     "permission-denied-login": "You are not authorized to continue. Perhaps you should try to <a href=\"/login\">log in</a>?",
     "already-watched": "You already watch this component!",
     "duplicate-edit": "Could not edit: would create a duplicate watched component",
+    "no-change": "Could not edit: there have been no changes to this component",
     "preferences": "Preferences",
     "preferences-frequency-hours": "How frequently should the tool email you?",
     "preferences-pref-language": "Which should be your default watch language?",

@@ -22,6 +22,7 @@
 	"permission-denied": "Autorisation refusée",
 	"already-watched": "Vous suivez déjà ce composant !",
 	"duplicate-edit": "Modification impossible : cela créerait un composant suivi en doublon.",
+	"no-change": "Modification impossible: vous n'avez pas changé le composant.",
 	"preferences": "Préférences",
 	"preferences-frequency-hours": "À quelle fréquence l’outil devrait vous envoyer des courriels ?",
 	"preferences-pref-language": "Quelle devrait être votre langue par défaut ?",
