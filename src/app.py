@@ -438,6 +438,13 @@ def cli_send_changes(no_emails, force, email_inactive):
         if notification != "":
             email = get_user_email(user)
             if email:
+                with app.test_request_context():
+                    notification = render_template(
+                        'email.html',
+                        username=user.username,
+                        notifications=notification,
+                        project=app.config.get('PROJECT_URI')
+                    )
                 msg = MIMEText(notification, 'html')
                 msg['From'] = app.config.get('FROM_EMAIL')
                 msg['To'] = email

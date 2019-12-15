@@ -9,3 +9,5 @@ OAUTH_MWURI: https://meta.wikimedia.org/w
 DEBUG: True
 SMTP_HOST: hostname
 CONTACT_EMAIL: webmaster@example.com
+FROM_EMAIL: no-reply@example.com
+PROJECT_URI: http://localhost:5000/
