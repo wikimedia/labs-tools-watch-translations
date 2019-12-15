@@ -418,6 +418,8 @@ def cli_send_changes(no_emails, force, email_inactive):
             print("If you intended to test the contents of emails, use --no-emails as a flag.")
             return
         s = smtplib.SMTP(smtp_host)
+        if app.config.get('SMTP_AUTH'):
+            s.login(app.config.get('SMTP_USERNAME'), app.config.get('SMTP_PASSWORD'))
     for user in User.query.all():
         if (not user.is_active and not email_inactive) or (user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours) and not force):
             continue
