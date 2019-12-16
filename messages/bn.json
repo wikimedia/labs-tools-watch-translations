@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sohom Datta",
+			"আফতাবুজ্জামান"
+		]
+	},
+	"introduction-please-login": "দয়া করে, <a href=\"login\">প্রবেশ করুন</a>",
+	"report-bug": "বাগ রিপোর্ট করুন",
+	"login": "প্রবেশ",
+	"logout": "প্রস্থান",
+	"welcome": "স্বাগতম",
+	"you-watch": "আপনি দেখেন",
+	"select-language": "একটি ভাষা নির্বাচন করুন",
+	"confirm": "নিশ্চিত করুন",
+	"add": "যোগ করুন",
+	"cancel": "বাতিল",
+	"delete": "অপসারণ",
+	"permission-denied": "অনুমতি প্রত্যাখ্যাত হয়েছে",
+	"preferences": "পছন্দসমূহ",
+	"submit": "জমা দিন",
+	"every-day": "প্রতিদিন",
+	"every-week": "প্রতি সপ্তাহ"
+}

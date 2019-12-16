@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eduardo Addad de Oliveira"
+		]
+	},
+	"introduction-please-login": "Por favor, <a href=\"login\">entre</a>",
+	"introduction": "WatchTranslations é uma ferramenta que notifica quando uma mensagem em seus projetos favoritos no translatewiki.net não é traduzida para o idioma de sua escolha.",
+	"report-bug": "Reportar um erro",
+	"login": "Entrar",
+	"logout": "Sair",
+	"welcome": "Bem-vindo",
+	"you-watch": "Seu monitoramento",
+	"watch-new": "Novo Monitoramento",
+	"select-group": "Selecionar grupo",
+	"select-language": "Selecione um idioma",
+	"confirm": "Confirmar",
+	"add": "Adicionar",
+	"cancel": "Cancelar",
+	"success-edit": "Você editou um componente monitorado.",
+	"success-delete": "Você excluiu um componente monitorado.",
+	"delete": "Excluir",
+	"permission-denied": "Permissão negada",
+	"permission-denied-more": "Você não está autorizado a continuar. Verifique se você inseriu o URL correto.",
+	"permission-denied-login": "Você não está autorizado a continuar. Talvez você deva tentar <a href=\"/login\">entrar</a>?",
+	"already-watched": "Você já assiste esse componente!",
+	"duplicate-edit": "Não foi possível editar: criaria um componente monitorado duplicado",
+	"preferences": "Preferências",
+	"preferences-frequency-hours": "Com que frequência a ferramenta deve enviar um e-mail para você?",
+	"preferences-pref-language": "Qual deve ser o seu idioma de exibição padrão?",
+	"preferences-pref-locale": "Qual idioma a interface da ferramenta deve usar?",
+	"submit": "Enviar",
+	"every-day": "Todo dia",
+	"every-week": "Toda semana",
+	"none-currently-watched-header": "Você não monitora nada!",
+	"none-currently-watched": "Clique no botão abaixo para começar a monitorar novas traduções.",
+	"delete-title": "Excluir componente",
+	"confirm-delete-component": "Tem certeza de que deseja excluir este componente?",
+	"success-create": "Você criou um novo componente monitorado."
+}

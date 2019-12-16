@@ -5,14 +5,16 @@
 		]
 	},
 	"introduction-please-login": "Alstublieft, <a href=\"login\">meldt u aan</a>",
-	"report-bug": "Probleem melden",
+	"report-bug": "Een probleem melden",
 	"login": "Aanmelden",
 	"logout": "Afmelden",
 	"welcome": "Welkom",
 	"you-watch": "U volgt",
+	"watch-new": "Iets nieuws volgen",
 	"select-group": "Selecteer een groep",
 	"select-language": "Selecteer een taal",
 	"confirm": "Bevestigen",
+	"add": "Toevoegen",
 	"cancel": "Annuleren",
 	"delete": "Verwijderen",
 	"permission-denied": "Toegang geweigerd",
@@ -22,5 +24,6 @@
 	"submit": "Verzenden",
 	"every-day": "Elke dag",
 	"every-week": "Elke week",
-	"none-currently-watched-header": "U volgt momenteel niets!"
+	"none-currently-watched-header": "U volgt momenteel niets!",
+	"none-currently-watched": "Klik op de knop hier beneden om nieuwe vertalingen te volgen."
 }

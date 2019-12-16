@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Shbib Al-Subaie"
+			"Shbib Al-Subaie",
+			"ديفيد"
 		]
 	},
 	"introduction-please-login": "فضلًا، <a href=\"login\">سجل الدخول</a>",
-	"introduction": "WatchTranslations هي أداةٌ تسمح لك بالحصول على تنبيهاتٍ حينما تكون هنالك رسالةٌ عن مشروعك المفضل في TranslateWiki غير مترجمةٍ للغتك المختارة.",
+	"introduction": "مراقبة الترجمات هي أداة تعلمك عندما لا تتم ترجمة رسالة في مشاريعك المفضلة في ترانسليت ويكي دوت نت إلى اللغة التي تختارها.",
 	"report-bug": "أبلغ عن خطأ",
 	"login": "سجل الدخول",
 	"logout": "سجل الخروج",
@@ -15,19 +16,27 @@
 	"select-group": "اختيار المجموعة",
 	"select-language": "اختر اللغة",
 	"confirm": "أكّد",
+	"add": "إضافة",
 	"cancel": "ألغ",
-	"success-edit": "عدّلت بنجاح مكون المراقبة الخاص بك.",
-	"success-delete": "حذفت بنجاح مكون المراقبة الخاص بك.",
+	"success-edit": "لقد قمت بتحرير مكون مراقب.",
+	"success-delete": "لقد حذفت مكون مراقب.",
 	"delete": "احذف",
 	"permission-denied": "الإذن مرفوض",
+	"permission-denied-more": "غير مصرح لك بالمتابعة؛ تأكد من إدخال المسار الصحيح.",
+	"permission-denied-login": "غير مصرح لك بالمتابعة؛ ربما يجب أن تحاول <a href=\"/login\"> تسجيل الدخول</a>؟",
 	"already-watched": "أنت بالفعل تُراقب هذا المكوّن!",
 	"duplicate-edit": "تعذّر التعديل: سيُنشئ هذا مكون مراقبة مكرر",
+	"no-change": "لا يمكن التعديل: لم تحدث تغييرات في هذا المكون",
 	"preferences": "تفضيلات",
 	"preferences-frequency-hours": "كم مرة ينبغي للأداة إرسال بريد إلكتروني إليك؟",
-	"preferences-pref-language": "أيُّ اللغات ينبغي أن تكون لغتك الافتراضية؟",
+	"preferences-pref-language": "ما هي لغة مراقبتك الافتراضية؟",
+	"preferences-pref-locale": "ما اللغة التي يجب أن تستخدمها واجهة الأداة؟",
 	"submit": "إرسال",
 	"every-day": "كل يوم",
 	"every-week": "كل أسبوع",
 	"none-currently-watched-header": "أنت لا تراقب أي شيء!",
-	"none-currently-watched": "اضغط على الزر أدناه لبدء مراقبة الترجمات الجديدة."
+	"none-currently-watched": "اضغط على الزر أدناه لبدء مراقبة الترجمات الجديدة.",
+	"delete-title": "حذف المكون",
+	"confirm-delete-component": "هل أنت متأكد أنك تريد حذف هذا المكون؟",
+	"success-create": "قمت بإنشاء مكون مراقب جديد."
 }

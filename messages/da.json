@@ -4,10 +4,14 @@
 			"Saederup92"
 		]
 	},
+	"report-bug": "Rapportér en fejl",
+	"login": "Log på",
+	"logout": "Log af",
 	"welcome": "Velkommen",
 	"select-group": "Vælg en gruppe",
 	"select-language": "Vælg et sprog",
 	"confirm": "Bekræft",
+	"add": "Tilføj",
 	"cancel": "Annullér",
 	"delete": "Slet",
 	"submit": "Indsend",
