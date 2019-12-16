@@ -1,6 +1,7 @@
 SECRET_KEY: something
 MESSAGES_DIR: ../messages
-SQLALCHEMY_DATABASE_URI: mysql://root:password@localhost/watchTranslations
+DB_URI: mysql://localhost/watchTranslations
+DBCONFIG_FILE: replica.my.cnf
 STATIC_URL: /static/
 APPLICATION_ROOT: /
 CONSUMER_KEY: dbfe50bb312d4b501e8f9d82985b2073

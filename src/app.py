@@ -46,6 +46,11 @@ __dir__ = os.path.dirname(__file__)
 app.config.update(
     yaml.safe_load(open(os.path.join(__dir__, os.environ.get(
         'FLASK_CONFIG_FILE', 'config.yaml')))))
+
+# Add databse credentials to config
+if app.config.get('DBCONFIG_FILE') is not None:
+    app.config['SQLALCHEMY_DATABASE_URI'] = app.config.get('DB_URI') + '?read_default_file={cfile}'.format(cfile=app.config.get('DBCONFIG_FILE'))
+
 locales = Locales(app)
 _ = locales.get_message
 
