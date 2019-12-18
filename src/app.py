@@ -111,6 +111,23 @@ def get_revision_link():
         # on fail return empty repo link
         return base_link
 
+def form_verify(form, values, data={}):
+    to_check = {}
+    if form == 'component':
+        to_check = {
+            'language': data["query"]["languageinfo"],
+            'group': [g['id'] for g in data["query"]["messagegroups"]]
+        }
+    elif form == 'preferences':
+        to_check = {
+            'freq': [24, 168],
+            'lang': locales.get_locales(),
+            'p_lang': data["query"]["languageinfo"]
+        }
+    for k in to_check:
+        if values[k] is None or values[k] not in to_check[k]:
+            return False
+    return True
 
 @app.before_request
 def force_https():
@@ -300,10 +317,17 @@ def preferences():
         user = get_user()
         data = get_twn_data()
         if request.method == 'POST':
-            user.frequency_hours = int(request.form.get('frequency-hours'))
-            user.pref_language = request.form.get('pref-language')
-            user.language = request.form.get('pref-locale')
-            db.session.commit()
+            freq = int(request.form.get('frequency-hours'))
+            p_lang = request.form.get('pref-language')
+            lang = request.form.get('pref-locale')
+            if not form_verify('preferences', {'freq': freq, 'p_lang': p_lang, 'lang': lang}, data):
+                flash(_('form-error'), 'error')
+            else:
+                user.frequency_hours = freq
+                user.pref_language = p_lang
+                user.language = lang
+                db.session.commit()
+                flash(_('preferences-submit'), 'success')
             if user.language:
                 locales.set_locale(user.language)
         return render_template(
@@ -320,11 +344,22 @@ def preferences():
 def new():
     if not logged():
         return render_template('permission_denied.html'), 403
+    data = get_twn_data()
     if request.method == 'POST':
+        request_success = True
+
         group = request.form.get('group')
         language = request.form.get('language')
+        if not form_verify('component', {'group': group, 'language': language}, data):
+            flash(_('form-error'), 'error')
+            request_success = False
+
         same_translation = Translation.query.filter_by(user=get_user(), group=group, language=language).first()
-        if same_translation is None:
+        if same_translation is not None:
+            flash(_('already-watched'), 'error')
+            request_success = False
+
+        if request_success:
             translation = Translation(
                 user=get_user(),
                 language=language,
@@ -334,69 +369,58 @@ def new():
             db.session.commit()
             flash(_('success-create'), 'success')
             return redirect(url_for('index'))
-        else:
-            flash(_('already-watched'), 'error')
-            data = get_twn_data()
-            return render_template(
-                'edit.html',
-                user=get_user(),
-                messagegroups=data["query"]["messagegroups"],
-                languages=data["query"]["languageinfo"],
-                translation=None
-            )
-    else:
-        data = get_twn_data()
-        return render_template(
-            'edit.html',
-            user=get_user(),
-            messagegroups=data["query"]["messagegroups"],
-            languages=data["query"]["languageinfo"],
-            translation=None
-        )
+
+    return render_template(
+        'edit.html',
+        user=get_user(),
+        messagegroups=data["query"]["messagegroups"],
+        languages=data["query"]["languageinfo"],
+        translation=None
+    )
 
 @app.route('/edit/<int:translation_id>', methods=['GET', 'POST'])
 def edit(translation_id):
     translation = Translation.query.filter_by(user=get_user(), id=translation_id).first()
     if translation is None:
         return render_template('permission_denied.html'), 403
+    data = get_twn_data()
     if request.method == 'POST':
+        request_success = True
         post_type = request.form.get('type', "edit")
         if post_type == "edit":
             group = request.form.get('group')
             language = request.form.get('language')
+            if not form_verify('component', {'group': group, 'language': language}, data):
+                flash(_('form-error'), 'error')
+                request_success = False
+
             same_translation = Translation.query.filter_by(user=get_user(), group=group, language=language).first()
-            if same_translation is None:
-                translation.group = group
-                translation.language = language
-                db.session.commit()
-                flash(_('success-edit'), 'success')
-            else:
+            if same_translation is not None:
                 if translation.group == group and translation.language == language:
                     flash(_('no-change'), 'error')
                 else:
                     flash(_('duplicate-edit'), 'error')
-                data = get_twn_data()
-                return render_template(
-                    'edit.html',
-                    user=get_user(),
-                    messagegroups=data["query"]["messagegroups"],
-                    languages=data["query"]["languageinfo"],
-                    translation=translation
-                )
+                request_success = False
+            if request_success:
+                translation.group = group
+                translation.language = language
+                db.session.commit()
+                flash(_('success-edit'), 'success')
+                return redirect(url_for('index'))
+
         elif post_type == "delete":
             db.session.delete(translation)
             db.session.commit()
             flash(_('success-delete'), 'success')
-        return redirect(url_for('index'))
-    else:
-        data = get_twn_data()
-        return render_template(
-            'edit.html',
-            user=get_user(),
-            messagegroups=data["query"]["messagegroups"],
-            languages=data["query"]["languageinfo"],
-            translation=translation
-        )
+            return redirect(url_for('index'))
+
+    return render_template(
+        'edit.html',
+        user=get_user(),
+        messagegroups=data["query"]["messagegroups"],
+        languages=data["query"]["languageinfo"],
+        translation=translation
+    )
 
 def get_user_email(user):
     return mw_request({
