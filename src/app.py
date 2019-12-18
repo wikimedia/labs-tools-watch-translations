@@ -226,7 +226,7 @@ def index():
             'index.html',
             messagegroups=data["query"]["messagegroups"],
             languages=data["query"]["languageinfo"],
-            translations=Translation.query.filter_by(user=get_user())
+            translations=Translation.query.filter_by(user=get_user()).filter(Translation.group is not None).filter(Translation.language is not None)
         )
     else:
         return render_template('login.html')
