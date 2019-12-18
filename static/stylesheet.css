@@ -5,3 +5,35 @@
 .submit-btn-grp {
 	margin-top: 1em;
 }
+
+h1, h2, label {
+	margin: .5rem 0;
+}
+
+.alert {
+	margin-top: 1rem;
+}
+
+@media (max-width: 575px) {
+	.row {
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+	.full-width-cols:first-child {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.full-width-cols:last-child  {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media (min-width: 576px) {
+	.full-width-cols:first-child {
+		padding-left: 0 !important;
+	}
+	.full-width-cols:last-child  {
+		padding-right: 0 !important;
+	}
+}

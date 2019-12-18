@@ -21,7 +21,9 @@
 			<option {% if current_locale==lang %}selected{% endif %} value="{{lang}}">{{lang}} - {{languages[lang].name}}</option>
 			{% endif %}{% endfor %}
 		</select>
-		<input type="submit" value="{{ _('submit') }}" class="btn btn-primary form-control">
+		<div class="submit-btn-grp">
+			<input type="submit" value="{{ _('submit') }}" class="btn btn-primary form-control">
+		</div>
 	</form>
 </div>
 {% endblock %}
