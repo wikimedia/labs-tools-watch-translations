@@ -433,6 +433,9 @@ def cli_send_changes(no_emails, force, email_inactive):
                 "mcfilter": "!optional|!ignored|!translated"
             }, headers={'User-Agent': useragent})
             data = r.json()
+            if 'error' in data:
+                print("Error in retriving data for user {0}, translation {1}: {2}".format(user.username, str(translation.id), data['error']['info']))
+                continue
             not_in_order = data["query"]["messagecollection"]
             if len(not_in_order) > 0:
                 notification += "<h2>%s (%s)</h2>\n" % (translation.group, translation.language)
