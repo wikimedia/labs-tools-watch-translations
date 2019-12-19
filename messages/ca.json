@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido"
+		]
+	},
+	"welcome": "Us donem la benvinguda",
+	"select-group": "Seleccioneu un grup",
+	"confirm": "Confirma",
+	"cancel": "Cancel·la",
+	"delete": "Suprimeix",
+	"preferences": "Preferències",
+	"submit": "Envia",
+	"delete-title": "Suprimeix el component",
+	"confirm-delete-component": "Segur que voleu suprimir aquest component?"
+}

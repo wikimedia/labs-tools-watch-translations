@@ -15,13 +15,17 @@
 	"select-group": "Bir grup seç",
 	"select-language": "Bir dil seç",
 	"confirm": "Onayla",
+	"add": "Ekle",
 	"cancel": "İptal",
 	"success-edit": "İzlenen bir bileşeni düzenlediniz.",
 	"success-delete": "İzlenen bir bileşeni sildiniz.",
 	"delete": "Sil",
 	"permission-denied": "İzin verilmedi",
+	"permission-denied-more": "Devam etmek için yetkili değilsiniz. Doğru URL'yi girdiğinizden emin olun.",
+	"permission-denied-login": "Devam etmek için yetkili değilsiniz. Belki de <a href=\"/login\">giriş yapın</a>?",
 	"already-watched": "Bu bileşeni zaten izledin!",
 	"duplicate-edit": "Düzenlenemedi: yinelenen bir izlenen bileşen oluşturur",
+	"no-change": "Düzenlenemedi: bu bileşende değişiklik yapılmadı",
 	"preferences": "Tercihler",
 	"preferences-frequency-hours": "Araç size ne sıklıkla e-posta göndermelidir?",
 	"preferences-pref-language": "Varsayılan izleme diliniz hangisi olmalıdır?",
@@ -32,5 +36,6 @@
 	"none-currently-watched-header": "Hiçbir şey izlemiyorsunuz!",
 	"none-currently-watched": "Yeni çevirileri izlemeye başlamak için aşağıdaki düğmeyi tıklayın.",
 	"delete-title": "Bileşeni sil",
-	"confirm-delete-component": "Bu bileşeni silmek istediğinize emin misiniz?"
+	"confirm-delete-component": "Bu bileşeni silmek istediğinize emin misiniz?",
+	"success-create": "Yeni bir izlenen bileşen oluşturdunuz."
 }

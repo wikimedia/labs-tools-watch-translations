@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Omotecho"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">ログイン</a>してください",
+	"introduction": "WatchTranslations は translatewiki.net でお気に入りに指定したプロジェクトで、選択した言語に未翻訳のメッセージがあると通知が届く機能です。",
+	"report-bug": "バグを報告",
+	"login": "ログイン",
+	"logout": "ログアウト",
+	"welcome": "ようこそ",
+	"you-watch": "ウォッチ中のページ",
+	"watch-new": "ウォッチ対象に追加",
+	"select-group": "グループを選択",
+	"select-language": "言語を選択",
+	"confirm": "確認",
+	"add": "追加",
+	"cancel": "キャンセル",
+	"success-edit": "ウォッチ中の要素を編集しました。",
+	"success-delete": "ウォッチ中の要素を削除しました。",
+	"delete": "削除",
+	"permission-denied": "アクセスが拒否されました"
+}

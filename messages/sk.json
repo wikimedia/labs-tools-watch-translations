@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Luky001"
+		]
+	},
+	"introduction-please-login": "Prosím, <a href=\"login\">prihláste sa</a>",
+	"introduction": "Sledovanie prekladov je nástroj, ktorý vás upozorňuje v prípade, ak správa vo vašich obľúbených projektoch na translatewiki.net nie je preložená do jazyka vášho výberu.",
+	"report-bug": "Nahlásiť chybu",
+	"login": "Prihlásiť sa",
+	"logout": "Odhlásiť sa",
+	"welcome": "Vitajte",
+	"you-watch": "Sledujete",
+	"watch-new": "Sledovať nové",
+	"select-group": "Vyberte skupinu",
+	"select-language": "Vyberte jazyk",
+	"confirm": "Potvrdiť",
+	"add": "Pridať",
+	"cancel": "Zrušiť",
+	"success-edit": "Upravili ste sledovací komponent.",
+	"success-delete": "Odstránili ste sledovací komponent.",
+	"delete": "Odstrániť",
+	"permission-denied": "Prístup zamietnutý",
+	"permission-denied-more": "Nie ste oprávnení pokračovať. Uistite sa, že ste zadali správnu URL adresu.",
+	"permission-denied-login": "Nie ste oprávnení pokračovať. Možno by ste sa mali <a href=\"/login\">prihlásiť</a>.",
+	"already-watched": "Tento komponent už sledujete!",
+	"duplicate-edit": "Nepodarilo sa upraviť: vytvoril by sa duplikát sledovacieho komponentu",
+	"no-change": "Nepodarilo sa upraviť: neboli vykonané žiadne zmeny sledovacieho komponentu",
+	"preferences": "Nastavenia",
+	"preferences-frequency-hours": "Ako často vám majú byť zasielané e-maily?",
+	"preferences-pref-language": "Ktorý jazyk na sledovanie má byť váš predvolený?",
+	"preferences-pref-locale": "Ktorý jazyk má rozhranie nástroja používať?",
+	"submit": "Potvrdiť",
+	"every-day": "Každý deň",
+	"every-week": "Každý týždeň",
+	"none-currently-watched-header": "Zatiaľ nič nesledujete",
+	"none-currently-watched": "Kliknite na tlačidlo nižšie pre sledovanie ďalších prekladov.",
+	"delete-title": "Odstrániť komponent",
+	"confirm-delete-component": "Naozaj chcete odstrániť tento komponent?",
+	"success-create": "Vytvorili ste nový sledovací komponent."
+}

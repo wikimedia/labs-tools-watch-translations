@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fitoschido",
+			"Ihojose"
+		]
+	},
+	"login": "Acceder",
+	"logout": "Salir",
+	"welcome": "Te damos la bienvenida",
+	"confirm": "Confirmar",
+	"add": "Añadir",
+	"cancel": "Cancelar",
+	"no-change": "No se pudo editar: no ha habido cambios en este componente",
+	"preferences": "Preferencias",
+	"preferences-frequency-hours": "¿Con qué frecuencia debe contactarte la herramienta?",
+	"submit": "Enviar",
+	"delete-title": "Eliminar componente"
+}
