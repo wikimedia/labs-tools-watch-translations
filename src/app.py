@@ -21,6 +21,7 @@ import mwoauth
 import yaml
 from flask import redirect, request, render_template, url_for, flash, session
 from flask import Flask
+from werkzeug.routing import BuildError
 import click
 import requests
 from requests_oauthlib import OAuth1
@@ -239,10 +240,7 @@ def login():
     session[keyed_token_name] = \
         dict(zip(request_token._fields, request_token))
 
-    if 'next' in request.args:
-        session[keyed_next_name] = request.args.get('next')
-    else:
-        session[keyed_next_name] = 'index'
+    session[keyed_next_name] = request.args.get('next') or 'index'
 
     return redirect(redirect_to)
 
@@ -271,7 +269,11 @@ def oauth_authorized():
     session['mwoauth_access_token'] = \
         dict(zip(access_token._fields, access_token))
 
-    next_url = url_for(session[keyed_next_name])
+    next_url = "/"
+    try:
+        next_url = url_for(session[keyed_next_name])
+    except BuildError:
+        pass
     del session[keyed_next_name]
     del session[keyed_token_name]
 

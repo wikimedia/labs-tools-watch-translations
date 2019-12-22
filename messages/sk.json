@@ -22,7 +22,7 @@
 	"delete": "Odstrániť",
 	"permission-denied": "Prístup zamietnutý",
 	"permission-denied-more": "Nie ste oprávnení pokračovať. Uistite sa, že ste zadali správnu URL adresu.",
-	"permission-denied-login": "Nie ste oprávnení pokračovať. Možno by ste sa mali <a href=\"/login\">prihlásiť</a>.",
+	"permission-denied-login": "Nie ste oprávnení pokračovať. Možno by ste sa mali <a href=\"/login{addon}\">prihlásiť</a>.",
 	"already-watched": "Tento komponent už sledujete!",
 	"duplicate-edit": "Nepodarilo sa upraviť: vytvoril by sa duplikát sledovacieho komponentu",
 	"no-change": "Nepodarilo sa upraviť: neboli vykonané žiadne zmeny sledovacieho komponentu",

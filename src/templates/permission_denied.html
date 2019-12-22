@@ -3,6 +3,6 @@
 {% block content %}
 <div class="container">
 	<h1>{{ _("permission-denied") }}</h1>
-	<div>{{ _("permission-denied-more" if logged else "permission-denied-login")|safe }}</div>
+	<div>{{ _("permission-denied-more" if logged else "permission-denied-login", addon="?next=" + request.endpoint)|safe }}</div>
 </div>
 {% endblock %}

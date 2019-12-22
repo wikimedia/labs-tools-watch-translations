@@ -36,7 +36,7 @@
 				</li>
 				{% else %}
 				<li class="nav-item active">
-					<a href="{{ url_for('login') }}" class="nav-link">{{ _('login') }}</a>
+					<a href="{{ url_for('login') }}?next={{ request.endpoint }}" class="nav-link">{{ _('login') }}</a>
 				</li>
 				{% endif %}
 			</ul>

@@ -17,7 +17,7 @@
     "delete": "Delete",
     "permission-denied": "Permission denied",
     "permission-denied-more": "You are not authorized to continue. Make sure you entered the correct URL.",
-    "permission-denied-login": "You are not authorized to continue. Perhaps you should try to <a href=\"/login\">log in</a>?",
+    "permission-denied-login": "You are not authorized to continue. Perhaps you should try to <a href=\"/login{addon}\">log in</a>?",
     "already-watched": "You already watch this component!",
     "duplicate-edit": "Could not edit: would create a duplicate watched component",
     "no-change": "Could not edit: there have been no changes to this component",

@@ -25,7 +25,7 @@
 	"delete": "Supprimer",
 	"permission-denied": "Autorisation refusée",
 	"permission-denied-more": "Vous n’êtes pas autorisé{{GENDER:||e}} à continuer. Vérifiez que vous avez saisi l’URL correcte.",
-	"permission-denied-login": "Vous n’êtes pas autorisé à continuer. Peut-être devriez-vous essayer de <a href=\"/login\">vous connecter</a> ?",
+	"permission-denied-login": "Vous n’êtes pas autorisé à continuer. Peut-être devriez-vous essayer de <a href=\"/login{addon}\">vous connecter</a> ?",
 	"already-watched": "Vous suivez déjà ce composant !",
 	"duplicate-edit": "Modification impossible : cela créerait un composant suivi en doublon.",
 	"no-change": "Modification impossible : vous n’avez pas changé le composant.",

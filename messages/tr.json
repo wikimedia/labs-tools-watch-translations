@@ -22,7 +22,7 @@
 	"delete": "Sil",
 	"permission-denied": "İzin verilmedi",
 	"permission-denied-more": "Devam etmek için yetkili değilsiniz. Doğru URL'yi girdiğinizden emin olun.",
-	"permission-denied-login": "Devam etmek için yetkili değilsiniz. Belki de <a href=\"/login\">giriş yapın</a>?",
+	"permission-denied-login": "Devam etmek için yetkili değilsiniz. Belki de <a href=\"/login{addon}\">giriş yapın</a>?",
 	"already-watched": "Bu bileşeni zaten izledin!",
 	"duplicate-edit": "Düzenlenemedi: yinelenen bir izlenen bileşen oluşturur",
 	"no-change": "Düzenlenemedi: bu bileşende değişiklik yapılmadı",

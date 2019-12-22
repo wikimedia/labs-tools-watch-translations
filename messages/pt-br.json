@@ -22,7 +22,7 @@
 	"delete": "Excluir",
 	"permission-denied": "Permissão negada",
 	"permission-denied-more": "Você não está autorizado a continuar. Verifique se você inseriu o URL correto.",
-	"permission-denied-login": "Você não está autorizado a continuar. Talvez você deva tentar <a href=\"/login\">entrar</a>?",
+	"permission-denied-login": "Você não está autorizado a continuar. Talvez você deva tentar <a href=\"/login{addon}\">entrar</a>?",
 	"already-watched": "Você já assiste esse componente!",
 	"duplicate-edit": "Não foi possível editar: criaria um componente monitorado duplicado",
 	"no-change": "Não foi possível editar: não houve alterações neste componente",
