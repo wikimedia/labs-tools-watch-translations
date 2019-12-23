@@ -38,5 +38,7 @@
 	"none-currently-watched": "נא ללחוץ על הכפתור למטה כדי להתחיל לעקוב אחרי תרגומים חדשים.",
 	"delete-title": "מחיקת רכיב",
 	"confirm-delete-component": "האם ברצונך באמת למחוק את הרכיב הזה?",
-	"success-create": "יצרת רכיב מעקב חדש."
+	"success-create": "יצרת רכיב מעקב חדש.",
+	"form-error": "לא היה אפשר לשלוח: קלט שגוי בטופס. נא לנסות שוב",
+	"preferences-submit": "עדכנת את ההעדפות שלך"
 }

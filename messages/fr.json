@@ -40,5 +40,7 @@
 	"none-currently-watched": "Cliquez le bouton ci-dessous pour commencer à suivre les nouvelles traductions.",
 	"delete-title": "Supprimer un composant",
 	"confirm-delete-component": "Voulez-vous réellement supprimer ce composant ?",
-	"success-create": "Vous avez créé un nouveau composant suivi."
+	"success-create": "Vous avez créé un nouveau composant suivi.",
+	"form-error": "Impossible de soumettre : Entrée de formulaire non valide. Veuillez réessayer",
+	"preferences-submit": "Vous avez mis à jour vos préférences"
 }

@@ -37,5 +37,7 @@
 	"none-currently-watched": "Yeni çevirileri izlemeye başlamak için aşağıdaki düğmeyi tıklayın.",
 	"delete-title": "Bileşeni sil",
 	"confirm-delete-component": "Bu bileşeni silmek istediğinize emin misiniz?",
-	"success-create": "Yeni bir izlenen bileşen oluşturdunuz."
+	"success-create": "Yeni bir izlenen bileşen oluşturdunuz.",
+	"form-error": "Gönderilemedi: geçersiz form girişi. Lütfen tekrar deneyin",
+	"preferences-submit": "Tercihlerinizi güncellediniz"
 }

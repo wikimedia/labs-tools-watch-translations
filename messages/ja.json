@@ -20,5 +20,22 @@
 	"success-edit": "ウォッチ中の要素を編集しました。",
 	"success-delete": "ウォッチ中の要素を削除しました。",
 	"delete": "削除",
-	"permission-denied": "アクセスが拒否されました"
+	"permission-denied": "アクセスが拒否されました",
+	"permission-denied-more": "次へ進む権限がありません。入力したURLが正しいかご確認ください。",
+	"permission-denied-login": "次へ進む権限がありません。<a href=\"/login\">ログイン</a>はお済みでしょうか？",
+	"already-watched": "この要素はすでにウォッチ中です。",
+	"duplicate-edit": "編集できません。ウォッチ対象の要素を重複して作成します",
+	"no-change": "編集できません。この要素は変更されていません",
+	"preferences": "個人設定",
+	"preferences-frequency-hours": "ツールからメールが届く頻度をお選びください。",
+	"preferences-pref-language": "ウォッチするから既定の言語をお選びください。",
+	"preferences-pref-locale": "ツールのUI用言語をお選びください。",
+	"submit": "送信",
+	"every-day": "每日",
+	"every-week": "週単位",
+	"none-currently-watched-header": "ウォッチしている対象はありません。",
+	"none-currently-watched": "新規の翻訳対象をウォッチするには、以下のボタンをクリックします。",
+	"delete-title": "要素を削除",
+	"confirm-delete-component": "この要素を本当に削除しますか?",
+	"success-create": "ウォッチ中の要素を新規に作成しました。"
 }

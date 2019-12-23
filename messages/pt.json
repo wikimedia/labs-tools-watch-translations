@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mansil"
+		]
+	},
+	"introduction-please-login": "Por favor, <a href=\"login\">inicie a sessão</a>",
+	"introduction": "WatchTranslations é uma ferramenta que o notifica quando uma mensagem nos seus projetos favoritos no translatewiki.net não é traduzida para o idioma de sua escolha.",
+	"report-bug": "Reportar um erro",
+	"login": "Iniciar sessão",
+	"logout": "Terminar sessão",
+	"welcome": "Bem-vindo",
+	"you-watch": "Que vigia",
+	"watch-new": "Vigiar nova",
+	"select-group": "Selecionar um grupo",
+	"select-language": "Selecionar um idioma",
+	"confirm": "Confirmar",
+	"add": "Adicionar",
+	"cancel": "Cancelar",
+	"success-edit": "Editou um componente vigiado",
+	"success-delete": "Eliminou um componente vigiado",
+	"delete": "Eliminar",
+	"permission-denied": "Permissão negada",
+	"permission-denied-more": "Não está autorizado a continuar. Verifique se inseriu o URL correto.",
+	"permission-denied-login": "Não está autorizado a continuar. Talvez deveria tentar <a href=\"/login\">iniciar a sessão</a?",
+	"already-watched": "Já está a vigiar este componente!",
+	"duplicate-edit": "Não foi possível editar: iria criar um componente duplicado vigiado",
+	"no-change": "Não foi possível editar: não houve alterações neste componente",
+	"preferences": "Preferências",
+	"preferences-frequency-hours": "Com que frequência deveria a ferramenta enviar-lhe um e-mail?",
+	"preferences-pref-language": "Qual deveria ser o seu idioma de exibição predefinido?",
+	"preferences-pref-locale": "Qual deveria ser o seu idioma a utilizar pela interface da ferramenta?",
+	"submit": "Submeter",
+	"every-day": "Diariamente",
+	"every-week": "Semanalmente",
+	"none-currently-watched-header": "Não vigia nada!",
+	"none-currently-watched": "Clique no botão abaixo para começar a vigiar novas traduções.",
+	"delete-title": "Eliminar componente",
+	"confirm-delete-component": "Tem a certeza que deseja eliminar este componente?",
+	"success-create": "Criou um novo componente vigiado",
+	"form-error": "Não foi possível submeter: entrada de formulário inválida. Por favor, tente novamente",
+	"preferences-submit": "Atualizou as suas preferências"
+}

@@ -37,5 +37,7 @@
 	"none-currently-watched": "點擊以下按鈕來開始監視新的翻譯。",
 	"delete-title": "刪除部份",
 	"confirm-delete-component": "您確定要刪除此部份嗎？",
-	"success-create": "您已建立新的監視部份。"
+	"success-create": "您已建立新的監視部份。",
+	"form-error": "無法提交：無效的形式輸入，請重試",
+	"preferences-submit": "您已更新您的偏好設定"
 }

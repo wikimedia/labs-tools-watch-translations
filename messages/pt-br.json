@@ -37,5 +37,7 @@
 	"none-currently-watched": "Clique no botão abaixo para começar a monitorar novas traduções.",
 	"delete-title": "Excluir componente",
 	"confirm-delete-component": "Tem certeza de que deseja excluir este componente?",
-	"success-create": "Você criou um novo componente monitorado."
+	"success-create": "Você criou um novo componente monitorado.",
+	"form-error": "Não foi possível enviar: entrada de formulário inválida. Por favor, tente novamente",
+	"preferences-submit": "Você atualizou suas preferências"
 }

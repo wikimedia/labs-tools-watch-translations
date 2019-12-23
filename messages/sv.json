@@ -1,0 +1,32 @@
+{
+	"@metadata": {
+		"authors": [
+			"ProletariatetsBefrielseOrkester",
+			"WikiPhoenix"
+		]
+	},
+	"introduction-please-login": "Var god <a href=\"login\">logga in</a>",
+	"report-bug": "Rapportera en bugg",
+	"login": "Logga in",
+	"logout": "Logga ut",
+	"welcome": "Välkommen",
+	"you-watch": "Du bevakar",
+	"watch-new": "Bevaka ny",
+	"select-group": "Välj en grupp",
+	"select-language": "Välj ett språk",
+	"confirm": "Bekräfta",
+	"add": "Lägg till",
+	"cancel": "Avbryt",
+	"delete": "Radera",
+	"permission-denied-more": "Du har inte behörighet att fortsätta. Se till att du har angivit rätt webbadress.",
+	"permission-denied-login": "Du har inte behörighet att fortsätta. Kanske du bör försöka att <a href=\"/login\">logga in</a>?",
+	"already-watched": "Du bevakar redan denna komponent!",
+	"preferences": "Inställningar",
+	"preferences-frequency-hours": "Du frekvent bör verktyget skicka e-post till dig?",
+	"preferences-pref-language": "Vad ska vara ditt standardspråk för bevakningar?",
+	"preferences-pref-locale": "Vilket språk bör verktygets gränssnitt använda?",
+	"submit": "Skicka in",
+	"every-day": "Varje dag",
+	"every-week": "Varje vecka",
+	"none-currently-watched-header": "Du bevakar ingenting!"
+}
