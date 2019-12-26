@@ -1,0 +1,42 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zoranzoki21"
+		]
+	},
+	"introduction-please-login": "Molimo, <a href=\"login\">Prijavite se</a>",
+	"introduction": "WatchTranslations je alatka koja Vas obaveštava kada poruka u vašim omiljenim projektima na translatewiki.net nije prevedena na jezik po Vašem izboru.",
+	"report-bug": "Prijavite grešku",
+	"login": "Prijavi me",
+	"logout": "Odjavi me",
+	"welcome": "Dobro došli",
+	"you-watch": "Vi gledate",
+	"watch-new": "Gledaj novo",
+	"select-group": "Odaberi grupu",
+	"select-language": "Odaberi jezik",
+	"confirm": "Potvrdi",
+	"add": "Dodaj",
+	"cancel": "Otkaži",
+	"success-edit": "Vi ste izmenili nadgledanu komponentu.",
+	"success-delete": "Vi ste obrisali nadgledanu komponentu.",
+	"delete": "Obriši",
+	"permission-denied": "Pristup je odbijen",
+	"permission-denied-more": "Nemate dozvolu da nastavite. Proverite da li ste uneli korektan URL.",
+	"permission-denied-login": "Nemate dozvolu da nastavite. Možda bi trebalo da pokušate da se <a href=\"/login{addon}\">prijavite</a>?",
+	"already-watched": "Već nadgledate ovu komponentu!",
+	"duplicate-edit": "Nije moguće izmeniti: stvorilo bi duplikat nadgledane komponente.",
+	"no-change": "Nije moguće izmeniti: nema izmena ove komponente.",
+	"preferences": "Podešavanja",
+	"preferences-frequency-hours": "Koliko često bi alatka trebala da Vam šalje elektronsku poštu?",
+	"preferences-pref-locale": "Koji jezik bi trebao da koristi interfejs alatke?",
+	"submit": "Pošalji",
+	"every-day": "Svaki dan",
+	"every-week": "Svake nedelje",
+	"none-currently-watched-header": "Ništa ne nadgledate!",
+	"none-currently-watched": "Kliknite na dugme ispod kako bi ste započeli sa nadgledanjem novih prevoda.",
+	"delete-title": "Obriši komponentu",
+	"confirm-delete-component": "Da li ste sigurni da želite da izbrišete ovu komponentu?",
+	"success-create": "Napravili ste novu komponentu za nadgledanje.",
+	"form-error": "Nije moguće poslati: nevažeći unos obrasca. Molimo Vas, pokušajte ponovo",
+	"preferences-submit": "Izmenili ste vaša podešavanja"
+}

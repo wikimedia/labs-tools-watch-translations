@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Elroy"
 		]
 	},
 	"introduction-please-login": "Alstublieft, <a href=\"login\">meldt u aan</a>",
@@ -11,7 +12,7 @@
 	"welcome": "Welkom",
 	"you-watch": "U volgt",
 	"watch-new": "Iets nieuws volgen",
-	"select-group": "Selecteer een groep",
+	"select-group": "Kies een groep",
 	"select-language": "Selecteer een taal",
 	"confirm": "Bevestigen",
 	"add": "Toevoegen",
@@ -24,6 +25,8 @@
 	"submit": "Verzenden",
 	"every-day": "Elke dag",
 	"every-week": "Elke week",
-	"none-currently-watched-header": "U volgt momenteel niets!",
-	"none-currently-watched": "Klik op de knop hier beneden om nieuwe vertalingen te volgen."
+	"none-currently-watched-header": "U kijkt momenteel niets!",
+	"none-currently-watched": "Klik op de knop hier beneden om nieuwe vertalingen te volgen.",
+	"form-error": "Kan niet verzenden: de formulierinvoer is ongeldig. Probeer het opnieuw",
+	"preferences-submit": "U heeft uw voorkeuren bijgewerkt"
 }
