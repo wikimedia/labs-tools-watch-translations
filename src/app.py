@@ -196,18 +196,28 @@ def inject_base_variables():
 @app.context_processor
 def friendly_namer():
     def get_friendly_name(array, name):
-        return next(item['label'] for item in array if item["id"] == name)
+        for group in array:
+            if group["id"] == name:
+                return group["label"]
+            if "groups" in group:
+                if get_friendly_name(group["groups"], name) is not None:
+                    return get_friendly_name(group["groups"], name)
+        return None
 
     return dict(get_friendly_name=get_friendly_name)
 
 
-def get_twn_data():
-    r = requests.get('https://translatewiki.net/w/api.php', params={
+def get_twn_data(tree=False):
+    params = {
         'action': 'query',
         'format': 'json',
         'meta': 'messagegroups|languageinfo',
         "liprop": "code|name",
-    }, headers={'User-Agent': useragent})
+    }
+
+    if tree:
+        params["mgformat"] = "tree"
+    r = requests.get('https://translatewiki.net/w/api.php', params=params, headers={'User-Agent': useragent})
     response = r.json()
     response["query"]["languageinfo"] = dict(
         sorted(
@@ -346,8 +356,8 @@ def preferences():
 def new():
     if not logged():
         return render_template('permission_denied.html'), 403
-    data = get_twn_data()
     if request.method == 'POST':
+        data = get_twn_data()
         request_success = True
 
         group = request.form.get('group')
@@ -371,7 +381,7 @@ def new():
             db.session.commit()
             flash(_('success-create'), 'success')
             return redirect(url_for('index'))
-
+    data = get_twn_data(True)
     return render_template(
         'edit.html',
         user=get_user(),
@@ -385,8 +395,8 @@ def edit(translation_id):
     translation = Translation.query.filter_by(user=get_user(), id=translation_id).first()
     if translation is None:
         return render_template('permission_denied.html'), 403
-    data = get_twn_data()
     if request.method == 'POST':
+        data = get_twn_data()
         request_success = True
         post_type = request.form.get('type', "edit")
         if post_type == "edit":
@@ -415,7 +425,7 @@ def edit(translation_id):
             db.session.commit()
             flash(_('success-delete'), 'success')
             return redirect(url_for('index'))
-
+    data = get_twn_data(True)
     return render_template(
         'edit.html',
         user=get_user(),

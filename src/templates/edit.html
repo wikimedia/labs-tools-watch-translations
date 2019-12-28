@@ -1,5 +1,18 @@
 {% extends 'base.html' %}
 
+{% macro loopGroups(group,position) %}
+{% if 'groups' in group %}
+<option style="font-weight: bold;" {% if translation is not none and translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{ ('&mdash;' * position)|safe}} {{group.label}}</option>
+{% else %}
+<option {% if translation is not none and translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{ ('&mdash;' * position)|safe}} {{group.label}}</option>
+{% endif %}
+{% if 'groups' in group %}
+{% for subgroup in group.groups %}
+{{ loopGroups(subgroup,position+1) }}
+{% endfor %}
+{% endif %}
+{% endmacro %}
+
 {% block content %}
 <div class="container">
     <form method="post">
@@ -8,7 +21,7 @@
             <label for="watch-group">{{ _("select-group") }}</label>
             <select data-live-search="true" data-width="100%" class="selectpicker" name="group" id="watch-group">
                 {% for group in messagegroups %}
-                <option {% if translation is not none and translation.group==group.id %}selected{% endif %} value="{{group.id}}">{{group.label}}</option>
+                {{ loopGroups(group,0) }}
                 {% endfor %}
             </select>
         </div>
