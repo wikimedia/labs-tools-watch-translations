@@ -21,6 +21,7 @@
 	"preferences": "환경 설정",
 	"preferences-frequency-hours": "이 도구가 당신에게 이메일을 보내는 주기는 어떻게 합니까?",
 	"preferences-pref-language": "기본 보기 언어를 무엇으로 하시겠습니까?",
+	"preferences-pref-locale": "도구 인터페이스에 어느 언어를 사용하시겠습니까?",
 	"submit": "제출",
 	"every-day": "매일",
 	"every-week": "매주",

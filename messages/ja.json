@@ -22,7 +22,7 @@
 	"delete": "削除",
 	"permission-denied": "アクセスが拒否されました",
 	"permission-denied-more": "次へ進む権限がありません。入力したURLが正しいかご確認ください。",
-	"permission-denied-login": "次へ進む権限がありません。<a href=\"/login\">ログイン</a>はお済みでしょうか？",
+	"permission-denied-login": "次へ進む権限がありません。<a href=\"login{addon}\">ログイン</a>はお済みでしょうか？",
 	"already-watched": "この要素はすでにウォッチ中です。",
 	"duplicate-edit": "編集できません。ウォッチ対象の要素を重複して作成します",
 	"no-change": "編集できません。この要素は変更されていません",

@@ -5,6 +5,7 @@
 			"Ihojose"
 		]
 	},
+	"report-bug": "Informar de un defecto",
 	"login": "Acceder",
 	"logout": "Salir",
 	"welcome": "Te damos la bienvenida",
@@ -15,5 +16,6 @@
 	"preferences": "Preferencias",
 	"preferences-frequency-hours": "¿Con qué frecuencia debe contactarte la herramienta?",
 	"submit": "Enviar",
+	"every-day": "Todos los días",
 	"delete-title": "Eliminar componente"
 }

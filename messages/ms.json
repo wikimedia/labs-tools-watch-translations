@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"CyberTroopers",
+			"Tofeiku"
+		]
+	},
+	"login": "Log masuk",
+	"logout": "Log keluar",
+	"welcome": "Selamat datang",
+	"select-group": "Pilih satu kumpulan",
+	"add": "Tambah",
+	"permission-denied-more": "Anda tidak dibenarkan untuk meneruskan. Pastikan anda memasukkan URL yang betul.",
+	"permission-denied-login": "Anda tidak dibenarkan untuk meneruskan. Mungkin anda perlu cuba <a href=\"/login{addon}\">log masuk</a>?",
+	"no-change": "Tidak dapat menyunting: tiada perubahan pada komponen ini",
+	"preferences": "Keutamaan",
+	"submit": "Serahkan",
+	"every-day": "Setiap hari",
+	"every-week": "Setiap minggu",
+	"form-error": "Tidak dapat menghantar: bentuk input tidak sah. Sila cuba lagi",
+	"preferences-submit": "Anda telah mengemaskini keutamaan anda"
+}

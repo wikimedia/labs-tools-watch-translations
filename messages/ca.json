@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fitoschido"
+			"Fitoschido",
+			"Bombolla"
 		]
 	},
 	"welcome": "Us donem la benvinguda",
@@ -9,6 +10,7 @@
 	"confirm": "Confirma",
 	"cancel": "Cancel·la",
 	"delete": "Suprimeix",
+	"permission-denied-login": "No esteu autoritzats a continuar. Si us plau, dirigiu-vos a <a href=\"/login{addon}\">iniciar sessió</a>.",
 	"preferences": "Preferències",
 	"submit": "Envia",
 	"delete-title": "Suprimeix el component",
