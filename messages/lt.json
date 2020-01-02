@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Tomasdd"
+		]
+	},
+	"report-bug": "Pranešti apie klaidą",
+	"welcome": "Sveiki",
+	"select-group": "Pasirinkti grupę",
+	"select-language": "Pasirinkti kalbą",
+	"confirm": "Patvirtinti",
+	"permission-denied": "Teisė nesuteikta",
+	"preferences": "Nustatymai",
+	"every-day": "Kiekvieną dieną",
+	"every-week": "Kiekvieną savaitę"
+}

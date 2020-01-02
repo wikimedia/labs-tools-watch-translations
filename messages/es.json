@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Fitoschido",
-			"Ihojose"
+			"Ihojose",
+			"Alcarazzam"
 		]
 	},
-	"report-bug": "Informar de un defecto",
+	"report-bug": "Informar de un fallo",
 	"login": "Acceder",
 	"logout": "Salir",
 	"welcome": "Te damos la bienvenida",
@@ -14,7 +15,7 @@
 	"cancel": "Cancelar",
 	"no-change": "No se pudo editar: no ha habido cambios en este componente",
 	"preferences": "Preferencias",
-	"preferences-frequency-hours": "¿Con qué frecuencia debe contactarte la herramienta?",
+	"preferences-frequency-hours": "¿Con qué frecuencia debe contactarle la herramienta?",
 	"submit": "Enviar",
 	"every-day": "Todos los días",
 	"delete-title": "Eliminar componente"

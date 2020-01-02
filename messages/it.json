@@ -13,7 +13,7 @@
 	"cancel": "Annulla",
 	"delete": "Cancella",
 	"permission-denied": "Permesso negato",
-	"permission-denied-login": "Non sei autorizzato a continuare. Forse dovresti provare ad <a href=\"/login{addon}\">accedere</a>?",
+	"permission-denied-login": "Non sei autorizzato a continuare. Forse dovresti provare ad <a href=\"login{addon}\">accedere</a>?",
 	"preferences": "Preferenze",
 	"submit": "Invia",
 	"every-day": "Ogni giorno",

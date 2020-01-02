@@ -17,6 +17,7 @@
 	"cancel": "취소",
 	"delete": "삭제",
 	"permission-denied": "권한이 없습니다",
+	"permission-denied-login": "계속하기에는 권한이 없습니다. <a href=\"login{addon}\">로그인</a>해 보시겠습니까?",
 	"no-change": "내용에 변화가 없어 수정할 수 없습니다.",
 	"preferences": "환경 설정",
 	"preferences-frequency-hours": "이 도구가 당신에게 이메일을 보내는 주기는 어떻게 합니까?",
