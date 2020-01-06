@@ -8,6 +8,7 @@
 	"welcome": "Us donem la benvinguda",
 	"select-group": "Seleccioneu un grup",
 	"confirm": "Confirma",
+	"add": "Afegeix",
 	"cancel": "Cancel·la",
 	"delete": "Suprimeix",
 	"permission-denied-login": "No esteu autoritzats a continuar. Si us plau, dirigiu-vos a <a href=\"/login{addon}\">iniciar sessió</a>.",

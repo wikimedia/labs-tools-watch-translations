@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"ProletariatetsBefrielseOrkester",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Tölvuforritari"
 		]
 	},
 	"introduction-please-login": "Var god <a href=\"login\">logga in</a>",
+	"introduction": "WatchTranslations är ett verktyg som aviserar dig när ett meddelande i dina favoritprojekt på translatewiki.net översätts till språket du har valt.",
 	"report-bug": "Rapportera en bugg",
 	"login": "Logga in",
 	"logout": "Logga ut",
@@ -17,9 +19,12 @@
 	"confirm": "Bekräfta",
 	"add": "Lägg till",
 	"cancel": "Avbryt",
+	"success-edit": "Du redigerade en bevakad komponent.",
+	"success-delete": "Du raderade en bevakad komponent.",
 	"delete": "Radera",
+	"permission-denied": "Åtkomst nekades",
 	"permission-denied-more": "Du har inte behörighet att fortsätta. Se till att du har angivit rätt webbadress.",
-	"permission-denied-login": "Du har inte behörighet att fortsätta. Kanske du bör försöka att <a href=\"/login\">logga in</a>?",
+	"permission-denied-login": "Du har inte behörighet att fortsätta. Kanske du bör försöka att <a href=\"login{addon}\">logga in</a>?",
 	"already-watched": "Du bevakar redan denna komponent!",
 	"preferences": "Inställningar",
 	"preferences-frequency-hours": "Du frekvent bör verktyget skicka e-post till dig?",
@@ -28,5 +33,10 @@
 	"submit": "Skicka in",
 	"every-day": "Varje dag",
 	"every-week": "Varje vecka",
-	"none-currently-watched-header": "Du bevakar ingenting!"
+	"none-currently-watched-header": "Du bevakar ingenting!",
+	"none-currently-watched": "Klicka på knappen nedan för att börja bevaka nya översättningar.",
+	"delete-title": "Radera komponent",
+	"confirm-delete-component": "Är du säker på att du vill radera denna komponent?",
+	"success-create": "Du skapade en bevakad komponent.",
+	"preferences-submit": "Du har uppdaterat dina inställningar"
 }
