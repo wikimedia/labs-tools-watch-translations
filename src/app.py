@@ -31,6 +31,9 @@ from flask_migrate import Migrate
 import smtplib
 from email.mime.text import MIMEText
 from datetime import datetime, timedelta
+import logging
+from logging.handlers import SMTPHandler
+
 
 def getVersionNumber():
     shortRevId = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
@@ -47,6 +50,28 @@ __dir__ = os.path.dirname(__file__)
 app.config.update(
     yaml.safe_load(open(os.path.join(__dir__, os.environ.get(
         'FLASK_CONFIG_FILE', 'config.yaml')))))
+
+from_email = app.config.get('FROM_EMAIL')
+smtp_host = app.config.get('SMTP_HOST')
+contact_email = app.config.get('CONTACT_EMAIL')
+
+mail_handler = SMTPHandler(
+    mailhost=smtp_host,
+    fromaddr=from_email,
+    toaddrs=[contact_email],
+    subject='Application Error'
+)
+mail_handler.setLevel(logging.ERROR)
+mail_handler.setFormatter(logging.Formatter(
+    '[%(asctime)s] %(levelname)s in %(module)s: %(message)s'
+))
+
+
+if not app.debug:
+    if from_email and smtp_host and contact_email:
+        app.logger.addHandler(mail_handler)
+    else:
+        app.logger.warning('No FROM_EMAIL/CONTACT_EMAIL/SMTP_HOST set in config.yaml!')
 
 # Add databse credentials to config
 if app.config.get('DBCONFIG_FILE') is not None:
