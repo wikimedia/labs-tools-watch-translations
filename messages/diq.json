@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Orbot707"
+		]
+	},
+	"introduction-please-login": "Kerem kerê <a href=\"login\">ronıştış akerê </a>",
+	"introduction": "WatchTranslations, translatewiki.net de populer proce de, weçinaye zıwani rê tadayış de şıma rê iqaz dayen yew haceto.",
+	"report-bug": "Xeta rapor kerê",
+	"login": "Cı kewe",
+	"logout": "Bıveciye",
+	"welcome": "Xeyr amey",
+	"you-watch": "Temaşe şıma",
+	"watch-new": "Temaşeyo newe",
+	"select-group": "Yew grube weçinê",
+	"select-language": "Yew zıwan weçine",
+	"confirm": "Tesdiq kerê",
+	"add": "Cı kerê",
+	"cancel": "Bıtexelne",
+	"success-edit": "Seyr bıyaye yew komponent vurna",
+	"success-delete": "Seyr bıyaye yew komponent esteriya",
+	"delete": "Bestere",
+	"permission-denied": "Destur red kerd",
+	"permission-denied-more": "Dewam kerdışi rê icazet çıniyo. Raşt URL nuştışi rê bawer bê",
+	"permission-denied-login": "Dewam kerdışi rê icazet çıniyo. <a href=\"login{addon}\">cı kewe </a>?",
+	"already-watched": "Tı hora no komponent kerdo seyr!",
+	"duplicate-edit": "Nêvuriya:tekrarın yew komponent vıraziyayo",
+	"no-change": "Nêvuriya :no komponent de vurnayış nêbeno",
+	"preferences": "Eyari",
+	"preferences-frequency-hours": "Hacet şıma çend sıxletiya wa eposta bırışo?",
+	"preferences-pref-language": "Hesabyaye zıwanê seyri kamci bo?",
+	"preferences-pref-locale": "Verrıyê haceti kamci zıwani bıkarno?",
+	"submit": "Bırışe",
+	"every-day": "Herg roce",
+	"every-week": "Herg hewte",
+	"none-currently-watched-header": "Şımayê theba seyr nêkenê",
+	"none-currently-watched": "Açarnayışanê neweyan seyr kerdışi rê butona cêri bıploğnê",
+	"delete-title": "Komponenti bıesternê",
+	"confirm-delete-component": "Şıma qayılê nê komponenti bıesternê?",
+	"success-create": "Şıma yew komponento newe vıraşto",
+	"form-error": "Nêrışiyayo: formo xırab. Kerem kerê reyna bıcerrebnê",
+	"preferences-submit": "Şıma tercihê ho kerdi rocane"
+}
