@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Shbib Al-Subaie",
-			"ديفيد"
+			"ديفيد",
+			"Meno25"
 		]
 	},
 	"introduction-please-login": "فضلًا، <a href=\"login\">سجل الدخول</a>",
@@ -23,7 +24,7 @@
 	"delete": "احذف",
 	"permission-denied": "الإذن مرفوض",
 	"permission-denied-more": "غير مصرح لك بالمتابعة؛ تأكد من إدخال المسار الصحيح.",
-	"permission-denied-login": "غير مصرح لك بالمتابعة؛ ربما يجب أن تحاول <a href=\"/login{addon}\"> تسجيل الدخول</a>؟",
+	"permission-denied-login": "غير مصرح لك بالمتابعة. ربما يجب أن تحاول <a href=\"login{addon}\">تسجيل الدخول</a>؟",
 	"already-watched": "أنت بالفعل تُراقب هذا المكوّن!",
 	"duplicate-edit": "تعذّر التعديل: سيُنشئ هذا مكون مراقبة مكرر",
 	"no-change": "لا يمكن التعديل: لم تحدث تغييرات في هذا المكون",
