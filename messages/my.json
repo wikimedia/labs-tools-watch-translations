@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dr Lotus Black"
+		]
+	},
+	"introduction-please-login": "ကျေးဇူးပြု၍ <a href=\"login\">လော့ဂ်အင်ဝင်ပါ</a>",
+	"login": "အကောင့်ထဲဝင်ရန်",
+	"logout": "အကောင့်ထွက်ရန်",
+	"welcome": "ကြိုဆိုပါသည်",
+	"select-language": "ဘာသာစကားတစ်ခု ရွေးရန်",
+	"confirm": "အတည်ပြုရန်",
+	"add": "ပေါင်းထည့်ရန်",
+	"cancel": "မလုပ်တော့ပါ",
+	"delete": "ဖျက်ရန်",
+	"permission-denied": "ခွင့်ပြုချက် ငြင်းပယ်လိုက်သည်",
+	"preferences": "​ရွေး​ချယ်​စ​ရာ​များ",
+	"submit": "ထည့်သွင်းရန်",
+	"every-day": "နေ့တိုင်း",
+	"every-week": "ရက်သတ္တပတ်တိုင်း"
+}

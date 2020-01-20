@@ -3,20 +3,31 @@
 		"authors": [
 			"Fitoschido",
 			"Ihojose",
-			"Alcarazzam"
+			"Alcarazzam",
+			"Agusbou2015",
+			"Joanmp17"
 		]
 	},
 	"report-bug": "Informar de un fallo",
 	"login": "Acceder",
 	"logout": "Salir",
 	"welcome": "Te damos la bienvenida",
+	"select-group": "Seleccionar un grupo",
+	"select-language": "Seleccionar un idioma",
 	"confirm": "Confirmar",
 	"add": "Añadir",
 	"cancel": "Cancelar",
+	"delete": "Eliminar",
+	"permission-denied": "Permiso denegado",
 	"no-change": "No se pudo editar: no ha habido cambios en este componente",
 	"preferences": "Preferencias",
 	"preferences-frequency-hours": "¿Con qué frecuencia debe contactarle la herramienta?",
 	"submit": "Enviar",
 	"every-day": "Todos los días",
-	"delete-title": "Eliminar componente"
+	"every-week": "Cada semana",
+	"none-currently-watched-header": "¡No miras cualquier cosa!",
+	"none-currently-watched": "Haz clic en el botón de abajo para empezar mirando traducciones nuevas.",
+	"delete-title": "Eliminar componente",
+	"success-create": "Creaste un componente mirado nuevo.",
+	"preferences-submit": "Actualizaste tus preferencias"
 }

@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"WikiBayer"
+		]
+	},
+	"introduction-please-login": "Bitte <a href=\"login\">melde dich an</a>",
+	"report-bug": "Einen Fehler melden",
+	"login": "Anmelden",
+	"logout": "Abmelden",
+	"welcome": "Willkommen",
+	"select-group": "Gruppe auswählen",
+	"select-language": "Sprache auswählen",
+	"confirm": "Bestätigen",
+	"add": "Hinzufügen",
+	"cancel": "Abbrechen",
+	"delete": "Löschen",
+	"permission-denied": "Zugriff verweigert",
+	"preferences": "Einstellungen"
+}
