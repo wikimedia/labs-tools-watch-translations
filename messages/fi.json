@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"introduction-please-login": "Ole hyvä, <a href=\"login\">kirjaudu</a>",
+	"report-bug": "Ilmoita bugista",
+	"login": "Kirjaudu sisään",
+	"logout": "Kirjaudu ulos",
+	"welcome": "Tervetuloa",
+	"select-group": "Valitse ryhmä",
+	"select-language": "Valitse kieli",
+	"confirm": "Vahvista",
+	"add": "Lisää",
+	"cancel": "Peruuta",
+	"delete": "Poista",
+	"permission-denied": "Käyttö estetty",
+	"preferences": "Asetukset",
+	"every-day": "Joka päivä",
+	"every-week": "Joka viikko",
+	"preferences-submit": "Päivitit asetuksesi"
+}

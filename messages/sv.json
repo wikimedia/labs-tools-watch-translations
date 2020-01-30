@@ -26,6 +26,7 @@
 	"permission-denied-more": "Du har inte behörighet att fortsätta. Se till att du har angivit rätt webbadress.",
 	"permission-denied-login": "Du har inte behörighet att fortsätta. Kanske du bör försöka att <a href=\"login{addon}\">logga in</a>?",
 	"already-watched": "Du bevakar redan denna komponent!",
+	"no-change": "Kunde inte redigera: Ingenting har ändrats i denna komponent",
 	"preferences": "Inställningar",
 	"preferences-frequency-hours": "Du frekvent bör verktyget skicka e-post till dig?",
 	"preferences-pref-language": "Vad ska vara ditt standardspråk för bevakningar?",
@@ -38,5 +39,6 @@
 	"delete-title": "Radera komponent",
 	"confirm-delete-component": "Är du säker på att du vill radera denna komponent?",
 	"success-create": "Du skapade en bevakad komponent.",
+	"form-error": "Kunde inte skicka: Ogiltig formulärinmatning. Försök igen senare",
 	"preferences-submit": "Du har uppdaterat dina inställningar"
 }

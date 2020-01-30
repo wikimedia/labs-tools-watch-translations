@@ -5,7 +5,7 @@
 		]
 	},
 	"introduction-please-login": "Prosím, <a href=\"login\">prihláste sa</a>",
-	"introduction": "Sledovanie prekladov je nástroj, ktorý vás upozorňuje v prípade, ak správa vo vašich obľúbených projektoch na translatewiki.net nie je preložená do jazyka vášho výberu.",
+	"introduction": "WatchTranslations je nástroj, ktorý vás upozorňuje v prípade, ak správa vo vašich obľúbených projektoch na translatewiki.net nie je preložená do jazyka vášho výberu.",
 	"report-bug": "Nahlásiť chybu",
 	"login": "Prihlásiť sa",
 	"logout": "Odhlásiť sa",
