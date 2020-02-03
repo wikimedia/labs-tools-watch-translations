@@ -26,6 +26,7 @@
 	"permission-denied-more": "Du har inte behörighet att fortsätta. Se till att du har angivit rätt webbadress.",
 	"permission-denied-login": "Du har inte behörighet att fortsätta. Kanske du bör försöka att <a href=\"login{addon}\">logga in</a>?",
 	"already-watched": "Du bevakar redan denna komponent!",
+	"duplicate-edit": "Kunde inte redigera: Skulle ha skapat en dubblett av den bevakade komponenten",
 	"no-change": "Kunde inte redigera: Ingenting har ändrats i denna komponent",
 	"preferences": "Inställningar",
 	"preferences-frequency-hours": "Du frekvent bör verktyget skicka e-post till dig?",
