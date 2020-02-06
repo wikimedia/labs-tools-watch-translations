@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Papuass"
+		]
+	},
+	"report-bug": "Ziņot par kļūdu",
+	"select-group": "Izvēlies grupu",
+	"select-language": "Izvēlies valodu",
+	"confirm": "Apstiprināt",
+	"add": "Pievienot",
+	"cancel": "Atcelt",
+	"delete": "Dzēst",
+	"permission-denied": "Piekļuve liegta",
+	"submit": "Iesniegt",
+	"every-day": "Katru dienu",
+	"every-week": "Katru nedēļu"
+}

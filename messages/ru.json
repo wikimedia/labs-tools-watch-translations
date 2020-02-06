@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Okras"
+		]
+	},
+	"introduction-please-login": "Пожалуйста, <a href=\"login\">войдите</a>",
+	"introduction": "WatchTranslations — инструмент, который уведомляет вас, когда есть сообщения в ваших любимых проектах на translatewiki.net не переведены на выбранный вами язык.",
+	"report-bug": "Сообщить об ошибке",
+	"login": "Войти",
+	"logout": "Выйти",
+	"welcome": "Добро пожаловать!",
+	"select-group": "Выберите группу",
+	"select-language": "Выберите язык",
+	"confirm": "Подтвердить",
+	"add": "Добавить",
+	"cancel": "Отмена",
+	"delete": "Удалить",
+	"permission-denied": "Доступ запрещён",
+	"preferences": "Настройки",
+	"submit": "Отправить",
+	"every-day": "Каждый день",
+	"every-week": "Каждую неделю",
+	"delete-title": "Удалить компонент"
+}

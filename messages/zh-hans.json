@@ -2,7 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"VulpesVulpes825",
-			"沈澄心"
+			"沈澄心",
+			"佛壁灯",
+			"铁桶"
 		]
 	},
 	"introduction-please-login": "请先<a href=\"login\">登录</a>",
@@ -25,10 +27,20 @@
 	"permission-denied-more": "您无权继续。请确保您输入了正确的网址。",
 	"permission-denied-login": "您无权继续。请您尝试<a href=\"login{addon}\">登陆</a>。",
 	"already-watched": "您已监视此项目！",
+	"duplicate-edit": "无法编辑：此操作将创建重复的监视组件",
+	"no-change": "无法编辑：此组件无更改",
 	"preferences": "设置",
+	"preferences-frequency-hours": "我们应以什么频率向您发送电子邮件？",
+	"preferences-pref-language": "您的默认监视语言是什么？",
+	"preferences-pref-locale": "我们应以什么语言向您呈现？",
 	"submit": "提交",
 	"every-day": "每天",
 	"every-week": "每周",
+	"none-currently-watched-header": "您尚未监视任何译文！",
+	"none-currently-watched": "点击下方按钮以开始监视新译文。",
+	"delete-title": "删除组件",
+	"confirm-delete-component": "您确定要删除此组件吗？",
+	"success-create": "您已增加一个新的监视组件。",
 	"form-error": "无法提交：无效输入，请重试",
 	"preferences-submit": "您已更新您的设置"
 }
