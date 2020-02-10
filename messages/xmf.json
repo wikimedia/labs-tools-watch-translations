@@ -1,0 +1,23 @@
+{
+	"@metadata": {
+		"authors": [
+			"Narazeni"
+		]
+	},
+	"introduction-please-login": "ქორთხინთ, <a href=\"login\">გემშართით</a>",
+	"report-bug": "ქუგმოგებაფეთ ჩილათაშ გეშა",
+	"logout": "გიშულა",
+	"welcome": "მოზოჯით",
+	"select-group": "გეგშაგორით ბუნა",
+	"select-language": "გეგშაგორით ნინა",
+	"confirm": "დასურობა",
+	"add": "გეძინა",
+	"cancel": "გოუქვაფა",
+	"delete": "ლასუა",
+	"permission-denied": "ნჭაფა გოხურგელი რე",
+	"preferences": "კონფიგურაციეფი",
+	"submit": "ჯღონუა",
+	"every-day": "ირ დღას",
+	"every-week": "ირ მარას",
+	"delete-title": "კომპონენტიშ ლასუა"
+}
