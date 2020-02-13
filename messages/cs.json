@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Martin Urbanec",
-			"YjM"
+			"YjM",
+			"Matěj Suchánek"
 		]
 	},
 	"introduction-please-login": "Prosím, <a href=\"login\">přihlaste se</a>",
@@ -23,14 +24,14 @@
 	"delete": "Smazat",
 	"permission-denied": "Přístup odepřen",
 	"permission-denied-more": "Nemáte oprávnění pokračovat. Ujistěte se, že jste zadali správnou adresu URL.",
-	"permission-denied-login": "Nemáte oprávnění pokračovat. Možná by pomohlo <a href=\"/login{addon}\">přihlásit se</a>?",
+	"permission-denied-login": "Nemáte oprávnění pokračovat. Možná by pomohlo <a href=\"login{addon}\">přihlásit se</a>?",
 	"already-watched": "Tuto složku již sledujete!",
 	"duplicate-edit": "Nelze upravit: vytvořila by se duplikovaná sledovaná složka",
 	"no-change": "Nelze upravit: nebyly provedeny žádné změny této složky",
 	"preferences": "Nastavení",
 	"preferences-frequency-hours": "Jak často by vám měl nástroj posílat e-maily?",
 	"preferences-pref-language": "Který jazyk chcete sledovat jako výchozí?",
-	"preferences-pref-locale": "Jaký jazyk má být použit pro rozhraní nástroje?",
+	"preferences-pref-locale": "Který jazyk má být použit pro rozhraní nástroje?",
 	"submit": "Potvrdit",
 	"every-day": "Každý den",
 	"every-week": "Každý týden",
