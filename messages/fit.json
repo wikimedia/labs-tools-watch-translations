@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Pyscowicz"
+		]
+	},
+	"introduction-please-login": "Ole hyvä, <a href=\"login\">lokkaa sisäle</a>",
+	"login": "Lokkaa sisäle",
+	"logout": "Lokkaa ulos",
+	"welcome": "Tervetuloa",
+	"select-group": "Valitte joukko",
+	"select-language": "Valitte kieli",
+	"confirm": "Vahvista",
+	"add": "Lissää",
+	"cancel": "Lopeta",
+	"delete": "Ota poies",
+	"preferences": "Inställninkit"
+}
