@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Xuacu"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Anicia</a> sesión",
+	"introduction": "WatchTranslations ye una ferramienta que t'avisa cuando un mensaxe de los tos proyeutos favoritos de translatewiki.net nun ta trducíu a la to llingua preferida.",
+	"report-bug": "Informar d'un fallu",
+	"login": "Aniciar sesión",
+	"logout": "Salir",
+	"welcome": "Bienveníu/a",
+	"select-group": "Seleiciona un grupu",
+	"select-language": "Seleiciona una llingua",
+	"confirm": "Confirmar",
+	"add": "Amestar",
+	"cancel": "Encaboxar",
+	"delete": "Desaniciar",
+	"permission-denied": "Permisu refugáu",
+	"preferences": "Preferencies",
+	"preferences-frequency-hours": "¿Con qué frecuencia tien de mandate un corréu la ferramienta?",
+	"preferences-pref-locale": "¿Qué llingua tien d'usar la interfaz?",
+	"submit": "Unviar",
+	"every-day": "Caldía",
+	"every-week": "Cada selmana"
+}
