@@ -28,8 +28,8 @@
 	"no-change": "Nepodarilo sa upraviť: neboli vykonané žiadne zmeny sledovacieho komponentu",
 	"preferences": "Nastavenia",
 	"preferences-frequency-hours": "Ako často vám majú byť zasielané e-maily?",
-	"preferences-pref-language": "Ktorý jazyk na sledovanie má byť váš predvolený?",
-	"preferences-pref-locale": "Ktorý jazyk má rozhranie nástroja používať?",
+	"preferences-pref-language": "Ktorý jazyk chcete sledovať ako predvolený?",
+	"preferences-pref-locale": "V ktorom jazyku sa má zobrazovať rozhranie nástroja?",
 	"submit": "Potvrdiť",
 	"every-day": "Každý deň",
 	"every-week": "Každý týždeň",
@@ -37,5 +37,7 @@
 	"none-currently-watched": "Kliknite na tlačidlo nižšie pre sledovanie ďalších prekladov.",
 	"delete-title": "Odstrániť komponent",
 	"confirm-delete-component": "Naozaj chcete odstrániť tento komponent?",
-	"success-create": "Vytvorili ste nový sledovací komponent."
+	"success-create": "Vytvorili ste nový sledovací komponent.",
+	"form-error": "Nedá sa odoslať: neplatné dáta vo formulári. Skúste to, prosím, znovu.",
+	"preferences-submit": "Vaše nastavenia boli aktualizované"
 }
