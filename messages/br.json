@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fulup"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Kevreit</a>",
+	"introduction": "Ur benveg a gemenn deoc'h pa vez kemennadennoù didro er yezh(où) hoc'h eus dibabet, evit ho raktresoù karetañ eus translatewiki.net, eo WatchTranslation",
+	"report-bug": "Disklêriañ un draen",
+	"login": "Kevreañ",
+	"logout": "Digevreañ",
+	"welcome": "Degemer mat",
+	"you-watch": "Emaoc'h oc'h heuliañ",
+	"watch-new": "Heuliañ unan nevez",
+	"select-group": "Diuzañ ur strollad",
+	"select-language": "Dibab ur yezh",
+	"confirm": "Kadarnaat",
+	"add": "Ouzhpennañ",
+	"cancel": "Nullañ",
+	"success-edit": "Kemmet hoc'h eus un elfenn evezhiet.",
+	"success-delete": "Dilamet hoc'h eus un elfenn evezhiet.",
+	"delete": "Dilemel",
+	"permission-denied": "Aotre nac'het",
+	"permission-denied-more": "N'oc'h ket aotreet da genderc'hel. Bezit sur hoc'h eus merket an URL reizh.",
+	"permission-denied-login": "N'oc'h ket aotreet da genderc'hel. Kenkoulz e vefe deoc'h klask <a href=\"login{addon}\">kevreañ</a> marteze ?",
+	"already-watched": "Heuliañ a rit an elenn-mañ c'hoazh !",
+	"duplicate-edit": "Kemm dibosupl : krouiñ a rafe un elfenn heuliañ e doubl",
+	"no-change": "Kemm dibosupl : n'hoc'h eus cheñchet netra en elfenn-mañ",
+	"preferences": "Penndibaboù",
+	"preferences-frequency-hours": "Pegen alies e tlefe an ostilh kas posteloù deoc'h ?",
+	"preferences-pref-language": "Pe yezh a fell deoc'h heuliañ dre ziouer ?",
+	"preferences-pref-locale": "Pe yezh a zlefe bezañ hini etrefas hoc'h ostilh ?",
+	"submit": "Kas",
+	"every-day": "Bemdez",
+	"every-week": "Bep sizhun",
+	"none-currently-watched-header": "N'emaoc'h ket ho heuliañ netra !",
+	"none-currently-watched": "Klikañ war ar bouton a-is evit kregiñ da heuliañ troidigezhioù zo.",
+	"delete-title": "Dilemel an elfenn",
+	"confirm-delete-component": "Ha sur oc'h hoc'h e fell deoc'h dilemel an elfenn-mañ ?",
+	"success-create": "Krouet hoc'h eus un elfenn nevez heuliet.",
+	"form-error": "N'eus ket bet gallet kas : direizh eo enmont ar furmskrid. Klaskit en-dro",
+	"preferences-submit": "Hizivaet eo bet ho penndibaboù ganeoc'h"
+}

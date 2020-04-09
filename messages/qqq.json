@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"introduction-please-login": "The login prompt displayed on the index page",
 	"introduction": "Description displayed on index page",
 	"report-bug": "Bug report link in navbar",
