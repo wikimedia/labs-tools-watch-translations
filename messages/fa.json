@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"FarsiNevis"
+		]
+	},
+	"introduction-please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
+	"report-bug": "گزارش یک اشکال",
+	"login": "ورود به سامانه",
+	"logout": "خروج از سامانه",
+	"welcome": "خوش آمدید",
+	"confirm": "تأیید",
+	"add": "افزودن",
+	"cancel": "لغو",
+	"delete": "حذف",
+	"permission-denied": "اجازه داده نشد",
+	"preferences": "ترجیحات",
+	"every-day": "هر روز",
+	"every-week": "هر هفته",
+	"none-currently-watched-header": "شما چیزی را پی‌گیری نمی‌کنید!",
+	"preferences-submit": "شما ترجیحات خود را روزآمد کردید"
+}
