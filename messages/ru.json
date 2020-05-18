@@ -10,6 +10,7 @@
 	"login": "Войти",
 	"logout": "Выйти",
 	"welcome": "Добро пожаловать!",
+	"you-watch": "Вы наблюдаете",
 	"select-group": "Выберите группу",
 	"select-language": "Выберите язык",
 	"confirm": "Подтвердить",
@@ -17,9 +18,17 @@
 	"cancel": "Отмена",
 	"delete": "Удалить",
 	"permission-denied": "Доступ запрещён",
+	"already-watched": "Вы уже наблюдаете за этим компонентом!",
 	"preferences": "Настройки",
+	"preferences-frequency-hours": "Как часто отправлять вам электронные письма?",
+	"preferences-pref-language": "Какой должен быть ваш язык наблюдения по умолчанию?",
+	"preferences-pref-locale": "Какой язык должен использоваться в интерфейсе этого инструмента?",
 	"submit": "Отправить",
 	"every-day": "Каждый день",
 	"every-week": "Каждую неделю",
-	"delete-title": "Удалить компонент"
+	"none-currently-watched-header": "Вы ни за чем не наблюдаете!",
+	"none-currently-watched": "Нажмите кнопку ниже, чтобы начать наблюдать за новыми переводами.",
+	"delete-title": "Удалить компонент",
+	"confirm-delete-component": "Вы уверены, что хотите удалить данный компонент?",
+	"preferences-submit": "Вы обновили свои настройки"
 }
