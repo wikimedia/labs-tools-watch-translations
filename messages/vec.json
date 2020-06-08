@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Fierodelveneto"
+		]
+	},
+	"introduction-please-login": "Par piaxere, <a href=\"login\">lòghite</a>",
+	"login": "Lòghite",
+	"logout": "Deslòghite",
+	"welcome": "Benvegnesto",
+	"confirm": "Conferma",
+	"add": "Xonta",
+	"cancel": "Descançełare",
+	"delete": "Descançeła",
+	"permission-denied": "Parmeso negà",
+	"preferences": "Prefarense",
+	"submit": "Manda",
+	"every-day": "Ogni dì",
+	"every-week": "Ogni stimana"
+}
