@@ -1,20 +1,43 @@
 {
 	"@metadata": {
 		"authors": [
+			"DraconicDark",
 			"WikiBayer"
 		]
 	},
 	"introduction-please-login": "Bitte <a href=\"login\">melde dich an</a>",
+	"introduction": "WatchTranslations ist ein Werkzeug, das dir benachrichtigt, wenn eine Nachricht in deinen Lieblingsprojekten in translatewiki.net nicht in die Sprache deiner Wahl übersetzt wurde.",
 	"report-bug": "Einen Fehler melden",
 	"login": "Anmelden",
 	"logout": "Abmelden",
 	"welcome": "Willkommen",
+	"you-watch": "Du beobachtest",
+	"watch-new": "Neu beobachten",
 	"select-group": "Gruppe auswählen",
 	"select-language": "Sprache auswählen",
 	"confirm": "Bestätigen",
 	"add": "Hinzufügen",
 	"cancel": "Abbrechen",
+	"success-edit": "Du hast eine beobachtete Komponente bearbeitet.",
+	"success-delete": "Du hast eine beobachtete Komponente gelöscht.",
 	"delete": "Löschen",
 	"permission-denied": "Zugriff verweigert",
-	"preferences": "Einstellungen"
+	"permission-denied-more": "Du bist nicht berechtigt, fortzufahren. Stelle sicher, dass du die korrekte URL eingegeben hast.",
+	"permission-denied-login": "Du bist nicht berechtigt, fortzufahren. Vielleicht sollst du versuchen, <a href=\"login{addon}\">dich anzumelden</a>?",
+	"already-watched": "Du beobachtest diese Komponente bereits!",
+	"duplicate-edit": "Konnte nicht bearbeiten: würde ein Duplikat der beobachteten Komponente erzeugen",
+	"no-change": "Konnte nicht bearbeiten: Es gab keine Änderungen an dieser Komponente",
+	"preferences": "Einstellungen",
+	"preferences-frequency-hours": "Wie oft sollte das Werkzeug dir eine E-Mail schicken?",
+	"preferences-pref-language": "Welche sollte deine Standard-Beobachtungssprache sein?",
+	"preferences-pref-locale": "Welche Sprache sollte die Werkzeugsoberfläche verwenden?",
+	"every-day": "Täglich",
+	"every-week": "Wöchentlich",
+	"none-currently-watched-header": "Du beobachtest gar nichts!",
+	"none-currently-watched": "Klicke auf die Schaltfläche unten, um neue Übersetzungen zu beobachten.",
+	"delete-title": "Komponente löschen",
+	"confirm-delete-component": "Bist du sicher, dass du diese Komponente löschen möchtest?",
+	"success-create": "Du hast eine neue beobachtete Komponente angelegt.",
+	"form-error": "Konnte nicht einreichen: ungültige Formulareingabe. Bitte versuche es erneut",
+	"preferences-submit": "Du hast deine Präferenzen aktualisiert"
 }
