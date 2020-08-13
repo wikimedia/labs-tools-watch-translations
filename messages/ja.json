@@ -37,5 +37,7 @@
 	"none-currently-watched": "新規の翻訳対象をウォッチするには、以下のボタンをクリックします。",
 	"delete-title": "要素を削除",
 	"confirm-delete-component": "この要素を本当に削除しますか?",
-	"success-create": "ウォッチ中の要素を新規に作成しました。"
+	"success-create": "ウォッチ中の要素を新規に作成しました。",
+	"form-error": "提出に失敗しました。入力された形式が無効です。やり直してください",
+	"preferences-submit": "個人設定が変更されました"
 }

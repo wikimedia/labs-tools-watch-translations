@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Patsagorn Y."
+		]
+	},
+	"introduction-please-login": "กรุณา<a href=\"login\">เข้าสู่ระบบ</a>",
+	"introduction": "WatchTranslations คือเครื่องมือที่ใช้เตือนคุณเมื่อข้อความในโครงการที่คุณชอบบน translatwiki.net และยังไม่ถูกแปลในภาษาที่คุณเลือก",
+	"report-bug": "รายงานปัญหา",
+	"login": "เข้าสู่ระบบ",
+	"logout": "ออกจากระบบ",
+	"welcome": "ยินดีต้อนรับ",
+	"you-watch": "คุณกำลังดู",
+	"watch-new": "เลือกสิ่งใหม่เพื่อเฝ้าดู",
+	"select-group": "เลือกกลุ่มข้อความ",
+	"select-language": "เลือกภาษา",
+	"confirm": "ยืนยัน",
+	"add": "เพิ่ม",
+	"cancel": "ยกเลิก",
+	"success-edit": "แก้ไขสิ่งที่เลือกเฝ้าดูแล้ว",
+	"success-delete": "ลบสิ่งที่เฝ้าดูแล้ว",
+	"delete": "ลบ",
+	"permission-denied": "การเข้าถึงถูกปฏิเสธ",
+	"permission-denied-more": "คุณไม่ได้รับอนุญาตให้ไปต่อ กรุณาตรวจสอบว่ายูอาร์แอลที่คุณป้อนนั้นถูกต้องหรือไม่",
+	"permission-denied-login": "คุณยังไม่ได้ยืนยันตัวตนเพื่อไปต่อ ลองอีกครั้งโดย<a href=\"login{addon}\">เข้าสู่ระบบ</a>หรือไม่?",
+	"already-watched": "คุณดูสิ่งนี้อยู่แล้ว",
+	"duplicate-edit": "ไม่สามารถแก้ไขได้ สร้างสิ่งที่ดูที่ซ้ำขึ้นมาแทนเพื่อให้แก้ไขได้",
+	"no-change": "ไม่วามารถแก้ไขได้ ไม่มีการเปลี่ยนแปลงใด ๆ ในสิ่งที่เลือก",
+	"preferences": "การตั้งค่า",
+	"preferences-frequency-hours": "ให้เครื่องมือนี้อีเมลถึงคุณบ่อยแค่ไหน",
+	"preferences-pref-language": "เลือกภาษาโดยปริยายสำหรับคุณ",
+	"preferences-pref-locale": "ภาษาของอินเตอร์เฟซเครื่องมือนี้",
+	"submit": "บันทึก",
+	"every-day": "รายวัน",
+	"every-week": "รายสัปดาห์",
+	"none-currently-watched-header": "ไม่ต้องเตือนฉัน",
+	"none-currently-watched": "กดที่ปุ่มด้านล่างเพื่อเริ่มเฝ้าดูการแปลใหม่",
+	"delete-title": "ลบสิ่งนี้",
+	"confirm-delete-component": "คุณแน่ใจหรือไม่ว่าต้องการลบสิ่งนี้",
+	"success-create": "คุณได้สร้างการเฝ้าดูใหม่แล้ว",
+	"form-error": "ไม่สามารบันทึกได้ การป้อนข้อมูลผิดพลาด กรุณาลองใหม่อีกครั้ง",
+	"preferences-submit": "อัปเดตการตั้งค่าของคุณแล้ว"
+}

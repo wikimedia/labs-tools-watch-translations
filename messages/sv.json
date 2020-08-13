@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"ProletariatetsBefrielseOrkester",
+			"Sabelöga",
 			"Tölvuforritari",
 			"WikiPhoenix"
 		]
@@ -29,8 +30,8 @@
 	"duplicate-edit": "Kunde inte redigera: Skulle ha skapat en dubblett av den bevakade komponenten",
 	"no-change": "Kunde inte redigera: Ingenting har ändrats i denna komponent",
 	"preferences": "Inställningar",
-	"preferences-frequency-hours": "Du frekvent bör verktyget skicka e-post till dig?",
-	"preferences-pref-language": "Vad ska vara ditt standardspråk för bevakningar?",
+	"preferences-frequency-hours": "Hur ofta bör verktyget skicka e-post till dig?",
+	"preferences-pref-language": "Vilket ska vara ditt standardspråk för bevakningar?",
 	"preferences-pref-locale": "Vilket språk bör verktygets gränssnitt använda?",
 	"submit": "Skicka in",
 	"every-day": "Varje dag",
