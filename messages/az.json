@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Şeyx Şamil"
+		]
+	},
+	"report-bug": "Xəta bildir",
+	"login": "Daxil ol",
+	"logout": "Hesabdan çıx",
+	"welcome": "Xoş gəlmisiniz",
+	"confirm": "Təsdiq et",
+	"add": "Əlavə et",
+	"cancel": "Ləğv et",
+	"delete": "Sil",
+	"preferences": "Nizamlamalar",
+	"every-day": "Hər gün",
+	"every-week": "Hər həftə"
+}
