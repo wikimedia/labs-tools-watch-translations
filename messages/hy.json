@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"Kareyac"
+		]
+	},
+	"login": "Մուտք գործել",
+	"welcome": "Բարի գալուստ",
+	"select-language": "Ընտրեք լեզուն",
+	"confirm": "Հաստատել",
+	"add": "Ավելացնել",
+	"cancel": "Չեղարկել",
+	"delete": "Հեռացնել",
+	"preferences": "Նախընտրություններ",
+	"every-day": "Ամեն օր",
+	"every-week": "Ամեն շաբաթ"
+}
