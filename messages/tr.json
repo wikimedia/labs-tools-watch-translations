@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"MuratTheTurkish"
 		]
 	},
 	"introduction-please-login": "Lütfen <a href=\"login\">oturum açın</a>",
@@ -9,7 +10,7 @@
 	"report-bug": "Hata bildir",
 	"login": "Oturum aç",
 	"logout": "Oturumu kapat",
-	"welcome": "Hoş Geldiniz",
+	"welcome": "Hoş geldiniz",
 	"you-watch": "İzlediğiniz",
 	"watch-new": "Yeni izle",
 	"select-group": "Bir grup seç",
