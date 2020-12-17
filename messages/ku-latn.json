@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Bikarhêner"
+		]
+	},
+	"introduction-please-login": "Ji kerema xwe, <a href=\"login\">têkeve</a>",
+	"report-bug": "Çewtiyekê ragihîne",
+	"login": "Têkeve",
+	"logout": "Derkeve",
+	"welcome": "Bi xêr hatî",
+	"you-watch": "Yê te temaşe kiriye",
+	"watch-new": "Yê nû temaşe bike",
+	"select-group": "Komekî bibijêre",
+	"select-language": "Zimanekî bibijêre",
+	"confirm": "Tesdîq bike",
+	"add": "Tevlî bike",
+	"cancel": "Betal bike",
+	"delete": "Jê bibe",
+	"permission-denied": "Destûr hate redkirin",
+	"preferences": "Tercîhên min",
+	"submit": "Bişîne",
+	"every-day": "Her roj",
+	"every-week": "Her heftî",
+	"none-currently-watched-header": "Te ti tiştî temaşe nekir!",
+	"preferences-submit": "Te tercîhên xwe nû kir"
+}
