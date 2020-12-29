@@ -1,0 +1,34 @@
+{
+	"@metadata": {
+		"authors": [
+			"J budissin"
+		]
+	},
+	"introduction-please-login": "Prošu <a href=\"login\">přizjew so</a>",
+	"login": "Přizjewić",
+	"logout": "Wotzjewić",
+	"welcome": "Witaj",
+	"you-watch": "Wobkedźbuješ",
+	"watch-new": "Nowe wobkedźbować",
+	"select-group": "Skupinu wubrać",
+	"select-language": "Rěč wubrać",
+	"confirm": "Wobkrućić",
+	"add": "Přidać",
+	"cancel": "Přetorhnyć",
+	"success-edit": "Sy wobkedźbowanu komponentu změnił(a).",
+	"success-delete": "Sy wobkedźbowanu komponentu wotstronił(a).",
+	"delete": "Wušmórnyć",
+	"permission-denied": "Přistup zapowědźeny",
+	"already-watched": "Tutu komponentu hižo wobkedźbuješ!",
+	"preferences": "Nastajenja",
+	"preferences-pref-language": "Kotra ma być twoja standardna rěč za wobkedźbowanki?",
+	"preferences-pref-locale": "W kotrej rěči dyrbjał so powjerch grata pokazać?",
+	"submit": "Składować",
+	"every-day": "Wšědnje",
+	"every-week": "Tydźensce",
+	"none-currently-watched-header": "Ničo njewobkedźbuješ!",
+	"none-currently-watched": "Klikń na tłóčatko deleka, zo by nowe přełožki wobkedźbował(a).",
+	"delete-title": "Komponentu šmórnyć",
+	"confirm-delete-component": "Chceš tutu komponentu woprawdźe wušmórnyć?",
+	"preferences-submit": "Sy swoje nastajenja zaktualizował(a)."
+}
