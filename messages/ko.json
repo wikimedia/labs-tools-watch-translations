@@ -2,22 +2,31 @@
 	"@metadata": {
 		"authors": [
 			"Gongsoonyee",
-			"Ykhwong"
+			"Ykhwong",
+			"그냥기여자"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">로그인</a>해 주십시오",
+	"introduction": "WatchTranslations는 translatewiki.net에서 선호하는 프로젝트의 메시지가 선택한 언어로 번역되지 않았을 때 알려주는 도구입니다.",
 	"report-bug": "버그 보고",
 	"login": "로그인",
 	"logout": "로그아웃",
 	"welcome": "환영합니다",
+	"you-watch": "주시 목록",
+	"watch-new": "새 주시 목록",
 	"select-group": "그룹 선택",
 	"select-language": "언어 선택",
 	"confirm": "확인",
 	"add": "추가",
 	"cancel": "취소",
+	"success-edit": "주시하는 항목을 수정했습니다.",
+	"success-delete": "주시하는 항목을 삭제했습니다.",
 	"delete": "삭제",
 	"permission-denied": "권한이 없습니다",
+	"permission-denied-more": "인증되지 않아 진행할 수 없습니다. 올바른 경로로 접속하십시오.",
 	"permission-denied-login": "계속하기에는 권한이 없습니다. <a href=\"login{addon}\">로그인</a>해 보시겠습니까?",
+	"already-watched": "이미 주시하는 항목입니다!",
+	"duplicate-edit": "편집 불가: 주시 항목에 대한 사본을 만드시겠습니까",
 	"no-change": "내용에 변화가 없어 수정할 수 없습니다.",
 	"preferences": "환경 설정",
 	"preferences-frequency-hours": "이 도구가 당신에게 이메일을 보내는 주기는 어떻게 합니까?",
@@ -28,6 +37,9 @@
 	"every-week": "매주",
 	"none-currently-watched-header": "주시 중인 항목이 없습니다!",
 	"none-currently-watched": "새 번역의 주시를 시작하려면 아래의 버튼을 클릭하십시오.",
+	"delete-title": "항목 삭제",
+	"confirm-delete-component": "이 항목을 삭제하겠습니까?",
+	"success-create": "주시하는 항목을 생성했습니다.",
 	"form-error": "제출하지 못했습니다: 유효하지 않은 폼 입력입니다. 다시 시도해 주십시오",
 	"preferences-submit": "환경 설정을 업데이트했습니다"
 }
