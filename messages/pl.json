@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"WaldiSt"
+		]
+	},
+	"login": "Zaloguj się",
+	"logout": "Wyloguj",
+	"welcome": "Witaj",
+	"you-watch": "Obserwujesz",
+	"watch-new": "Obejrzyj nowe",
+	"select-group": "Wybierz grupę",
+	"select-language": "Wybierz język",
+	"confirm": "Potwierdź",
+	"add": "Dodaj",
+	"cancel": "Anuluj",
+	"success-edit": "Edytowałeś obserwowany komponent.",
+	"delete": "Usuń",
+	"permission-denied": "Brak dostępu",
+	"preferences": "Preferencje",
+	"preferences-frequency-hours": "Jak często narzędzie powinno wysyłać Ci e-maile?",
+	"every-day": "Codziennie",
+	"every-week": "Co tydzień",
+	"none-currently-watched-header": "Nic nie obserwujesz!",
+	"none-currently-watched": "Kliknij poniższy przycisk, aby rozpocząć oglądanie nowych tłumaczeń.",
+	"form-error": "Nie można przesłać: nieprawidłowe dane wejściowe. Proszę spróbuj ponownie",
+	"preferences-submit": "Zaktualizowałeś swoje preferencje"
+}
