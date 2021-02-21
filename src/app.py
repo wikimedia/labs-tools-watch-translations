@@ -506,7 +506,7 @@ def cli_send_changes(no_emails, force, email_inactive):
                     translation.language
                 )
                 print(translate_url)
-                notification += '<h2>%s (%s; <a href="%s">untranslated</a>)</h2>\n' % (
+                notification += '<h2>%s (%s; <a href="%s">untranslated messages</a>)</h2>\n' % (
                     translation.group,
                     translation.language,
                     translate_url
