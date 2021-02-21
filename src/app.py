@@ -501,7 +501,16 @@ def cli_send_changes(no_emails, force, email_inactive):
                 continue
             not_in_order = data["query"]["messagecollection"]
             if len(not_in_order) > 0:
-                notification += "<h2>%s (%s)</h2>\n" % (translation.group, translation.language)
+                translate_url = 'https://translatewiki.net/w/i.php?title=Special:Translate&group=%s&language=%s&filter=%%21translated&action=translate' % (
+                    translation.group,
+                    translation.language
+                )
+                print(translate_url)
+                notification += '<h2>%s (%s; <a href="%s">untranslated</a>)</h2>\n' % (
+                    translation.group,
+                    translation.language,
+                    translate_url
+                )
                 notification += "<ul>\n"
                 for message in not_in_order:
                     notification += "<li><a href='https://translatewiki.net/w/i.php?title=Special:Translate&showMessage=%s&group=%s&language=%s&action=translate'>%s</a></li>\n" % (message['key'], translation.group, translation.language, message['key'])
