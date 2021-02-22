@@ -1,0 +1,17 @@
+{
+	"@metadata": {
+		"authors": [
+			"AVSmalnad77"
+		]
+	},
+	"login": "ಲಾಗ್ ಇನ್",
+	"logout": "ಲಾಗ್ ಔಟ್",
+	"welcome": "ಸುಸ್ವಾಗತ",
+	"confirm": "ಧೃಡಪಡಿಸು",
+	"add": "ಸೇರಿಸು",
+	"delete": "ಅಳಿಸು",
+	"preferences": "ಪ್ರಾಶಸ್ತ್ಯಗಳು",
+	"submit": "ಸಲ್ಲಿಸಿ",
+	"every-day": "ಪ್ರತಿದಿನ",
+	"every-week": "ಪ್ರತಿ ವಾರ"
+}
