@@ -5,11 +5,14 @@
 			"ಮಲ್ನಾಡಾಚ್ ಕೊಂಕ್ಣೊ"
 		]
 	},
+	"introduction-please-login": "ದಯವಿಟ್ಟು, <a href=\"login\">ಲಾಗ್ ಇನ್</a> ಆಗಿ",
 	"login": "ಲಾಗ್ ಇನ್",
 	"logout": "ಲಾಗ್ ಔಟ್",
 	"welcome": "ಸುಸ್ವಾಗತ",
+	"select-language": "ಭಾಷೆ ಆಯ್ಕೆಮಾಡಿ",
 	"confirm": "ಧೃಡಪಡಿಸು",
 	"add": "ಸೇರಿಸು",
+	"cancel": "ರದ್ದು ಮಾಡು",
 	"delete": "ಅಳಿಸು",
 	"preferences": "ಪ್ರಾಶಸ್ತ್ಯಗಳು",
 	"submit": "ಸಲ್ಲಿಸಿ",
