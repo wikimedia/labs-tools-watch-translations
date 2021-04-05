@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"introduction-please-login": "Prosimo, <a href=\"login\">prijavite se</a>",
+	"introduction": "WatchTranslations je orodje, ki vas obvesti, kadar sporočilo v vaših priljubljenih projektih na spletnem mestu translatewiki.net ni prevedeno v jezik vaše izbire.",
+	"report-bug": "Sporočite hrošča",
+	"login": "Prijava",
+	"logout": "Odjava",
+	"welcome": "Pozdravljeni",
+	"you-watch": "Spremljate",
+	"watch-new": "Spremljaj novo",
+	"select-group": "Izberite skupino",
+	"select-language": "Izberite jezik",
+	"confirm": "Potrdi",
+	"add": "Dodaj",
+	"cancel": "Prekliči",
+	"success-edit": "Uredili ste spremljano komponento.",
+	"success-delete": "Izbrisali ste spremljano komponento.",
+	"delete": "Izbriši",
+	"permission-denied": "Dovoljenje zavrnjeno",
+	"permission-denied-more": "Nimate dovoljenja za nadaljevanje. Prepričajte se, da ste vnesli pravi URL.",
+	"permission-denied-login": "Nimate dovoljenja za nadaljevanje. Morda bi se morali poskusiti <a href=\"login{addon}\">prijaviti</a>?",
+	"already-watched": "To komponento ste že opazovali!",
+	"duplicate-edit": "Ni mogoče urediti: Ustvarili bi podvojeno spremljano komponento",
+	"no-change": "Ni mogoče urediti: Ta komponenta ni bila spremenjena",
+	"preferences": "Nastavitve",
+	"preferences-frequency-hours": "Kako pogosto naj vam orodje pošlje e-pošto?",
+	"preferences-pref-language": "Kateri naj bo vaš privzeti jezik spremljanja?",
+	"preferences-pref-locale": "kateri jezik naj upoablja vmesnik orodja?",
+	"submit": "Pošlji",
+	"every-day": "Vsak dan",
+	"every-week": "Vsak teden",
+	"none-currently-watched-header": "Ne opazujete ničesar!",
+	"none-currently-watched": "Za začetek spremljanja novih prevodov kliknite spodnji gumb.",
+	"delete-title": "Izbrišite komponento",
+	"confirm-delete-component": "Ali resnično želite izbrisati to komponento?",
+	"success-create": "Ustvarili ste novo spremljano komponento.",
+	"form-error": "Ni mogoče poslati: neveljaven vnos v obrazec. Prosimo, poskusite znova.",
+	"preferences-submit": "Posodobili ste svoje nastavitve"
+}
