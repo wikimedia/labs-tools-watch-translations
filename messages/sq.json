@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Besnik b"
+		]
+	},
+	"introduction-please-login": "Ju lutemi, <a href=\"login\">hyni</a>",
+	"introduction": "WatchTranslations është një mjet që ju njofton kur një mesazh në projektet tuaj të parapëlqyer te translatewiki.net s’është përkthyer në gjuhën që keni zgjedhur.",
+	"report-bug": "Njoftoni një të metë",
+	"login": "Hyni",
+	"logout": "Dilni",
+	"welcome": "Mirë se vini",
+	"you-watch": "Vëzhgoni",
+	"watch-new": "Vëzhgoni të re",
+	"select-group": "Përzgjidhni një grup",
+	"select-language": "Përzgjidhni një gjuhë",
+	"confirm": "Ripohojeni",
+	"add": "Shtoje",
+	"cancel": "Anuloje",
+	"success-edit": "Përpunuar një përbërës të vëzhguar.",
+	"success-delete": "Fshitë një përbërës të vëzhguar.",
+	"delete": "Fshije",
+	"permission-denied": "Leje e mohuar",
+	"permission-denied-more": "S’jeni i autorizuar të vazhdoni. Sigurohuni se keni dhënë URL-në e saktë.",
+	"permission-denied-login": "S’jeni i autorizuar të vazhdoni. Ndoshta duhet të provonit të <a href=\"login{addon}\">bënit hyrjen</a>?",
+	"already-watched": "E vëzhgoni tashmë këtë përbërë!",
+	"duplicate-edit": "S’u përpunuar dot: do të krijohej një përbërës i vëzhguar i përsëdytur",
+	"no-change": "S’u përpunuar dot: s’ka pasur ndryshime te kjo përbërëse",
+	"preferences": "Parapëlqime",
+	"preferences-frequency-hours": "Sa shpesh duhet t’ju dërgojë email mjeti?",
+	"preferences-pref-language": "Cilat duhet të jetë gjuha juaj parazgjedhje e vëzhguar?",
+	"preferences-pref-locale": "Cilën gjuhë duhet të përdorë ndërfaqja e mjetit?",
+	"submit": "Parashtroje",
+	"every-day": "Çdo ditë",
+	"every-week": "Çdo javë",
+	"none-currently-watched-header": "S’vëzhgoni gjë!",
+	"none-currently-watched": "Klikoni butonin më poshtë që të filloni të vëzhgoni përkthime të reja.",
+	"delete-title": "Fshije përbërësin",
+	"confirm-delete-component": "Jeni i sigurt se doni të fshihet ky përbërës?",
+	"success-create": "Krijuat një përbërës të ri të vëzhguar.",
+	"form-error": "S’u parashtrua dot: dhënie e pavlefshme në formular. Ju lutemi, riprovoni",
+	"preferences-submit": "Përditësuat parapëlqimet tuaja"
+}
