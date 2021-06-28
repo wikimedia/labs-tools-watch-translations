@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joetaras"
+		]
+	},
+	"introduction-please-login": "Pe piacere, <a href=\"login\">tràse</a>",
+	"introduction": "WatchTranslations jè 'nu strumende ca te notifeche quanne 'nu messàgge jndr'à le pruggette preferite jndr'à translatewiki.net non g'è tradotte jndr'à lènghe ca è scacchiate",
+	"report-bug": "Segnale 'n'errore",
+	"login": "Tràse",
+	"logout": "Isse",
+	"welcome": "Bovègne",
+	"you-watch": "Ste 'ndruche",
+	"watch-new": "'Ndruche 'nu nuève",
+	"select-group": "Scacchie 'nu gruppe",
+	"select-language": "Scacchie 'a lènghe",
+	"confirm": "Conferme",
+	"add": "Aggiunge",
+	"cancel": "Annulle",
+	"success-edit": "E' cangiate 'nu combonende condrollate.",
+	"success-delete": "E' scangellate 'nu combonende condrollate.",
+	"delete": "Scangìlle",
+	"permission-denied": "Permesse negate",
+	"permission-denied-more": "Non ge sì autorizzate a condinuà. Assecurate ca è mise l'URL corrette.",
+	"permission-denied-login": "Non ge sì autorizzate a condinuà. Pò essere ca avissà pruvà a <a href=\"login{addon}\">trasè</a>?",
+	"already-watched": "Ste condrolle ggià stu combonende!",
+	"duplicate-edit": "'Mbossibbele cangià: ccreje 'nu combonende condrollate a doppie",
+	"no-change": "'Mbossibbele cangià: non ge se onne fatte cangiaminde a stu combonende",
+	"preferences": "Me piace accussì",
+	"preferences-frequency-hours": "Quanda mail t'adda mannà 'u strumende?",
+	"preferences-pref-language": "Qual'è 'a lènga toje de condrolle predefinite?",
+	"preferences-pref-locale": "Qual'è 'a lènga de l'inderfacce de ause d'u strumende?",
+	"submit": "Conferme",
+	"every-day": "Ogne sciurne",
+	"every-week": "Ogne sumàne",
+	"none-currently-watched-header": "Non ge ste condrolle cchiù ninde!",
+	"none-currently-watched": "Cazze 'u buttone aqquà sotte pe accumenzà a condrollà le traduziune nuève.",
+	"delete-title": "Scangille 'u combonende",
+	"confirm-delete-component": "Sì secure ca vuè ccu scangille stu combonende?",
+	"success-create": "E' ccrejate 'nu combonende condrollate.",
+	"form-error": "'Mbossibbele confermà: module de 'ngresse invalide. Pruève arrete",
+	"preferences-submit": "E' aggiornate le preferenze tune"
+}
