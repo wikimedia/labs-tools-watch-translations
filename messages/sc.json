@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"L2212"
+		]
+	},
+	"introduction-please-login": "Pro praghere <a href=\"login\">intra</a>",
+	"introduction": "WatchTranslations est un'aina chi ti notìficat cando unu messàgiu de sos progetos preferidos tuos in translatewiki.net no est bortadu in sa limba chi as isseberadu.",
+	"report-bug": "Sinnala una faddina",
+	"login": "Intra",
+	"logout": "Essi",
+	"welcome": "Bene bènnidu",
+	"you-watch": "Ses sighende",
+	"watch-new": "Sighi·nde unu nou",
+	"select-group": "Ischerta unu grupu",
+	"select-language": "Ischerta una limba",
+	"confirm": "Cunfirma",
+	"add": "Annanghe",
+	"cancel": "Annulla",
+	"success-edit": "As modificadu unu cumponente sighidu.",
+	"success-delete": "As iscantzelladu unu cumponente sighidu.",
+	"delete": "Iscantzella",
+	"permission-denied": "Permissu dennegadu",
+	"permission-denied-more": "Non ses autorizadu a sighire. Verìfica de àere insertadu s'ULR curretu.",
+	"permission-denied-login": "Non ses autorizadu a sighire. Forsis dias dèpere de intentare <a href=\"login{addon}\">intrare</a>?",
+	"already-watched": "Ses giai sighende custu cumponente!",
+	"duplicate-edit": "Modìfica fallida: si diat creare unu cumponente de sighidura duplicadu",
+	"no-change": "Modìfica fallida: non b'at àpidu modìficas a custu cumponente",
+	"preferences": "Preferèntzias",
+	"preferences-frequency-hours": "Cun cale frecuèntzia s'aina ti depet imbiare lìteras eletrònicas?",
+	"preferences-pref-language": "Cale diat dèpere èssere sa limba de sighidura predefinida tua?",
+	"preferences-pref-locale": "Ite limba diat dèpere impreare s'interfache de s'aina?",
+	"submit": "Imbia",
+	"every-day": "Cada die",
+	"every-week": "Cada chida",
+	"none-currently-watched-header": "Non sighis nudda!",
+	"none-currently-watched": "Incarca in su butone inoghe in suta pro incumintzare a sighire tradutziones noas.",
+	"delete-title": "Iscantzella su cumponente",
+	"confirm-delete-component": "Ses seguru de bòlere iscantzellare custu cumponente?",
+	"success-create": "As creadu unu cumponente sighidu nou.",
+	"form-error": "Non si podet imbiare: intrada de su formulàriu non vàlida. Torra a proare",
+	"preferences-submit": "As agiornadu sas preferèntzias tuas"
+}
