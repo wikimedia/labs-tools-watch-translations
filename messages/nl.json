@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Elroy",
-			"Mainframe98"
+			"Mainframe98",
+			"McDutchie"
 		]
 	},
-	"introduction-please-login": "Alstublieft, <a href=\"login\">meldt u aan</a>",
+	"introduction-please-login": "Gelieve <a href=\"login\">in te loggen</a>",
+	"introduction": "WatchTranslations waarschuwt u wanneer een bericht in een van uw favoriete projecten op translatewiki.net niet is vertaald in de taal van uw keuze.",
 	"report-bug": "Een probleem melden",
 	"login": "Aanmelden",
 	"logout": "Afmelden",
@@ -17,16 +19,27 @@
 	"confirm": "Bevestigen",
 	"add": "Toevoegen",
 	"cancel": "Annuleren",
+	"success-edit": "U hebt een gevolgd onderdeel bewerkt.",
+	"success-delete": "U heeft een gevolgd onderdeel verwijderd.",
 	"delete": "Verwijderen",
 	"permission-denied": "Toegang geweigerd",
-	"already-watched": "U volgt dit component al!",
+	"permission-denied-more": "U bent niet bevoegd om verder te gaan. Zorg ervoor dat u de juiste URL hebt ingevoerd.",
+	"permission-denied-login": "U bent niet bevoegd om verder te gaan. Misschien moet u eerst <a href=\"login{addon}\">inloggen</a>.",
+	"already-watched": "U volgt dit onderdeel al!",
+	"duplicate-edit": "Kan niet bewerken: er zou een dubbel gevolgd onderdeel worden aangemaakt",
+	"no-change": "Kan niet bewerken: er zijn geen wijzigingen in dit onderdeel",
 	"preferences": "Voorkeuren",
-	"preferences-pref-language": "Welke taal moet uw standaardtaal zijn?",
+	"preferences-frequency-hours": "Hoe vaak moet de tool u e-mailen?",
+	"preferences-pref-language": "Welke taal wilt u standaard volgen?",
+	"preferences-pref-locale": "In welke taal wilt u de toolinterface hebben?",
 	"submit": "Verzenden",
 	"every-day": "Elke dag",
 	"every-week": "Elke week",
-	"none-currently-watched-header": "U kijkt momenteel niets!",
+	"none-currently-watched-header": "U volgt momenteel niets!",
 	"none-currently-watched": "Klik op de knop hier beneden om nieuwe vertalingen te volgen.",
+	"delete-title": "Onderdeel verwijderen",
+	"confirm-delete-component": "Weet u zeker dat u dit onderdeel wilt verwijderen?",
+	"success-create": "U hebt een nieuw gevolgd onderdeel aangemaakt.",
 	"form-error": "Kan niet verzenden: de formulierinvoer is ongeldig. Probeer het opnieuw",
 	"preferences-submit": "U heeft uw voorkeuren bijgewerkt"
 }
