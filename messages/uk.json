@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"DDPAT",
 			"Piramidion"
 		]
 	},
 	"introduction-please-login": "Будь ласка, <a href=\"login\">увійдіть</a>",
-	"introduction": "WatchTranslations — це інструмент, який сповіщає вас, коли якісь повідомлення з ваших улюблених проектів на translatewiki.net ще не мають перекладів вибраною вами мовою.",
+	"introduction": "WatchTranslations — це інструмент, який сповіщає вас, коли якісь повідомлення з ваших улюблених проєктів на translatewiki.net ще не мають перекладів вибраною вами мовою.",
 	"report-bug": "Повідомити про помилку",
 	"login": "Увійти",
 	"logout": "Вийти",
