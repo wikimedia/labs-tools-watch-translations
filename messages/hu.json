@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"GBAB"
+		]
+	},
+	"introduction-please-login": "Kérjük, <a href=\"login\">jelentkezzék be</a>",
+	"introduction": "A WatchTranslations egy olyan eszköz, amely értesíti Önt, ha a translatewiki.net-en a kedvenc projektjeiben egyes üzenetek nincsenek lefordítva az Ön által választott nyelvre.",
+	"report-bug": "Hiba bejelentése",
+	"login": "Bejelentkezés",
+	"logout": "Kijelentkezés",
+	"welcome": "Isten hozta",
+	"you-watch": "Figyelt projektek",
+	"watch-new": "Új projekt figyelése",
+	"select-group": "Csoport kijelölése",
+	"select-language": "Nyelv kijelölése",
+	"confirm": "Megerősítés",
+	"add": "Hozzáadás",
+	"cancel": "Mégse",
+	"success-edit": "Szerkesztett egy figyelt összetevőt.",
+	"success-delete": "Törölt egy figyelt összetevőt.",
+	"delete": "Törlés",
+	"permission-denied": "Engedély megtagadva",
+	"permission-denied-more": "Nincs engedélye a folytatáshoz. Győződjék meg arról, hogy a helyes URL-t gépelte be.",
+	"permission-denied-login": "Nincs engedélye a folytatáshoz. Talán célszerű lenne megpróbálnia <a href=\"login{addon}\">bejelentkezni</a>…",
+	"already-watched": "Ezt az összetevőt már figyeli.",
+	"duplicate-edit": "Nem lehetett szerkeszteni: a figyelt összetevő megduplázódását eredményezné",
+	"no-change": "Nem sikerült szerkeszteni: ez az összetevő nem változott",
+	"preferences": "Beállítások",
+	"preferences-frequency-hours": "Milyen gyakran küldjön e-mailt az eszköz?",
+	"preferences-pref-language": "Melyik legyen az alapértelmezett figyelt nyelv?",
+	"preferences-pref-locale": "Milyen nyelvű legyen a felület?",
+	"submit": "Beküldés",
+	"every-day": "Naponta",
+	"every-week": "Hetente",
+	"none-currently-watched-header": "Még nem figyel semmit.",
+	"none-currently-watched": "Új fordítások figyelésének megkezdéséhez kattintson az alábbi gombra.",
+	"delete-title": "Összetevő törlése",
+	"confirm-delete-component": "Biztosan törli ezt az összetevőt?",
+	"success-create": "Létrehozott egy új figyelt összetevőt.",
+	"form-error": "Nem sikerült beküldeni: érvénytelen űrlapbevitel. Kérjük, próbálja meg ismét",
+	"preferences-submit": "Frissítette a beállításait"
+}
