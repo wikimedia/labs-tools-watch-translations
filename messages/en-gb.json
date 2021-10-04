@@ -7,7 +7,6 @@
 		]
 	},
 	"introduction-please-login": "Please, <a href=\"login\">log in</a>!",
-	"report-bug": "Report a bug",
 	"login": "LOG IN",
 	"logout": "LOG OUT",
 	"welcome": "Welcome!",
@@ -20,7 +19,5 @@
 	"permission-denied-more": "You are not authorised to continue. Make sure you entered the correct URL.",
 	"permission-denied-login": "You are not authorised to continue. Perhaps you should try to <a href=\"login{addon}\">log in</a>?",
 	"submit": "SUBMIT",
-	"every-day": "Every day",
-	"every-week": "Every week",
 	"preferences-submit": "You have updated your preferences."
 }
