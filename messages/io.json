@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Joao Xavier"
+		]
+	},
+	"introduction-please-login": "Voluntez <a href=\"login\">enirar</a>",
+	"introduction": "WatchTranslations esas utensilo qua informos vu kande ula mesajo en vua preferita projeti che translatewiki.net ne esas tradukata a la idiomo quon vu preferas.",
+	"report-bug": "Informez defekto",
+	"login": "Enirar",
+	"logout": "Ekirar",
+	"welcome": "Bonveno",
+	"you-watch": "Pagini quin vu vigilas",
+	"watch-new": "Lektez nova",
+	"select-group": "Selektez grupo",
+	"select-language": "Selektez linguo",
+	"confirm": "Konfirmez",
+	"add": "Adjuntar",
+	"cancel": "Nihiligar",
+	"success-edit": "Vu redaktis elemento vigilata.",
+	"success-delete": "Vu efacis vigilata elemento.",
+	"delete": "Efacez",
+	"permission-denied": "Permiso vetata",
+	"permission-denied-more": "Vu ne permisesis avanirar. Verifikez se vu mencionis la korekta URL.",
+	"permission-denied-login": "Vu ne permisesis avanirar. Probable vu probus <a href=\"login{addon}\">enirar</a>?",
+	"already-watched": "Vu ja vigilas ca kompozanto!",
+	"duplicate-edit": "Ne povis redaktar: se yes, on kreus duopligata elemento vigilata",
+	"no-change": "Ne povis redaktar: nula modifikuro eventis en ca kompozanto",
+	"preferences": "Preferaji",
+	"preferences-frequency-hours": "Quante ofte mustus l'utensilo avizar vu per e-posto?",
+	"preferences-pref-language": "Quala idiomo mustus esar vua ''default'' por vigilado?",
+	"preferences-pref-locale": "Quala idiomo mustus l'interfacio dil utensilo uzar?",
+	"submit": "Sendez",
+	"every-day": "Omnadie",
+	"every-week": "Omnasemane",
+	"none-currently-watched-header": "Vu vigilas nulo!",
+	"none-currently-watched": "Kliktez la butono adinfre por komencar vigilar nova tradukuri.",
+	"delete-title": "Efacez kompozanto",
+	"confirm-delete-component": "Ka vu fakte deziras efacar ca kompozanto?",
+	"success-create": "Vu kreis nova vigilata elemento.",
+	"form-error": "Ne povis sendar: nevalida dato che formulario. Probez itere",
+	"preferences-submit": "Vu aktualigis vua preferaji"
+}
