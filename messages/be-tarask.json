@@ -1,0 +1,26 @@
+{
+	"@metadata": {
+		"authors": [
+			"Renessaince"
+		]
+	},
+	"introduction-please-login": "Калі ласка, <a href=\"login\">увайдзіце</a>",
+	"introduction": "WatchTranslations — інструмэнт, які паведамляе вам, што паведамленьні ў вашых любімых праектах на translatewiki.net не перакладзеныя выбранай вамі мовай.",
+	"report-bug": "Паведаміць пра памылку",
+	"login": "Увайсьці",
+	"logout": "Выйсьці",
+	"welcome": "Вітаем",
+	"you-watch": "Вы назіраеце",
+	"watch-new": "Новае назіраньне",
+	"select-group": "Абярыце групу",
+	"select-language": "Абярыце мову",
+	"confirm": "Пацьвердзіць",
+	"add": "Дадаць",
+	"cancel": "Скасаваць",
+	"delete": "Выдаліць",
+	"permission-denied": "Доступ забаронены",
+	"submit": "Адаслаць",
+	"every-day": "Штодня",
+	"every-week": "Штотыдня",
+	"none-currently-watched-header": "Вы нічога не назіраеце!"
+}
