@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"introduction-please-login": "Pi favuri, <a href=\"login\">trasi</a>",
+	"login": "Trasi",
+	"logout": "Nesci",
+	"welcome": "Bimminutu",
+	"confirm": "Cunferma",
+	"add": "Agghiunci",
+	"cancel": "Annulla",
+	"delete": "Cancella",
+	"preferences": "Prifirenzi",
+	"every-day": "Ogni jornu",
+	"every-week": "Ogni simana"
+}

@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"DraconicDark"
 		]
 	},
@@ -14,8 +15,8 @@
 	"watch-new": "Text on button to add a new watched group",
 	"select-group": "Label above group selector on edit page",
 	"select-language": "Label above language selector on edit page",
-	"confirm": "Text on submit buttons on some pages",
-	"add": "Text to submit button to add a component on new component page",
+	"confirm": "Text on submit buttons on some pages\n\n{{Identical|Confirm}}",
+	"add": "Text to submit button to add a component on new component page\n\n{{Identical|Add}}",
 	"cancel": "Text on cancel button on edit page",
 	"success-edit": "Message displayed upon successfully editing a watched group",
 	"success-delete": "Message displayed upon deleting a watched group",
@@ -25,7 +26,7 @@
 	"permission-denied-login": "Supplementary text shown on pages when not logged in",
 	"already-watched": "Alert displayed when trying to watch an already watched component",
 	"duplicate-edit": "Alert displayed when trying to edit a component into one that already exists",
-	"preferences": "Heading on user preferences page and for navbar link",
+	"preferences": "Heading on user preferences page and for navbar link\n\n{{Identical|Preferences}}",
 	"preferences-frequency-hours": "Label for email frequency preference",
 	"preferences-pref-language": "Label for watched language preference",
 	"preferences-pref-locale": "Label for locale (interface language) preference",
