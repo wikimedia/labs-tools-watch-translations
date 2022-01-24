@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Majavah",
+			"Moj",
 			"Pyscowicz"
 		]
 	},
@@ -12,19 +13,19 @@
 	"logout": "Kirjaudu ulos",
 	"welcome": "Tervetuloa",
 	"you-watch": "Sinä tarkkailet",
-	"watch-new": "Tarkkaile uusi",
+	"watch-new": "Ota uusi tarkkailuun",
 	"select-group": "Valitse ryhmä",
 	"select-language": "Valitse kieli",
 	"confirm": "Vahvista",
 	"add": "Lisää",
 	"cancel": "Peruuta",
-	"success-edit": "Sinä muokkasit tarkkailtua komponenttia.",
-	"success-delete": "Sinä poistit tarkkallun komponentin.",
+	"success-edit": "Muokkasit tarkkailtua komponenttia.",
+	"success-delete": "Poistit tarkkaillun komponentin.",
 	"delete": "Poista",
 	"permission-denied": "Käyttö estetty",
 	"permission-denied-more": "Sinun ei ole sallittu jatkaa. Tarkista, että syötit oikean URL-osoitteen.",
 	"permission-denied-login": "Sinun ei ole sallittu jatkaa. Oletko kokeillut <a href=\"login{addon}\">kirjautua sisään</a>?",
-	"already-watched": "Sinä tarkkailet jo tätä komponenttia.",
+	"already-watched": "Tarkkailet jo tätä komponenttia.",
 	"duplicate-edit": "Ei voitu muokata: tämä lisäisi kaksoiskappaleen tarkkaillulle komponentille.",
 	"no-change": "Ei voitu muokata: ei ole mitään muutoksia tähän komponenttiin",
 	"preferences": "Asetukset",
@@ -38,7 +39,7 @@
 	"none-currently-watched": "Paina painiketta alapuolella aloittaaksesi tarkkailemaan uusia käännöksiä.",
 	"delete-title": "Poista komponentti",
 	"confirm-delete-component": "Oletko varma, että haluat poistaa tämän komponentin?",
-	"success-create": "Sinä loit uuden tarkkaillun komponentin?",
+	"success-create": "Loit uuden tarkkaillun komponentin.",
 	"form-error": "Ei voitu lähettää: virheellinen arvo lomakkeessa. Ole hyvä ja kokeile uudelleen.",
 	"preferences-submit": "Päivitit asetuksesi"
 }
