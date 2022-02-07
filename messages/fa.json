@@ -1,22 +1,31 @@
 {
 	"@metadata": {
 		"authors": [
-			"FarsiNevis"
+			"FarsiNevis",
+			"LordProfo"
 		]
 	},
 	"introduction-please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
+	"introduction": "پی‌گیری‌ترجمه‌ها ابزاری است که وقتی پیامی در پروژه‌های مورد علاقهٔ شما در translatewiki.net به زبان مورد نظر شما ترجمه نشده‌است، به شما اطلاع می‌دهد.",
 	"report-bug": "گزارش یک اشکال",
 	"login": "ورود به سامانه",
 	"logout": "خروج از سامانه",
 	"welcome": "خوش آمدید",
+	"watch-new": "پی‌گیری جدید",
+	"select-group": "یک گروه را انتخاب کنید",
+	"select-language": "یک زبان را انتخاب کنید",
 	"confirm": "تأیید",
 	"add": "افزودن",
 	"cancel": "لغو",
+	"success-edit": "شما یک جزء پی‌گیری شده را ویرایش کردید.",
 	"delete": "حذف",
 	"permission-denied": "اجازه داده نشد",
 	"preferences": "ترجیحات",
+	"submit": "ارسال",
 	"every-day": "هر روز",
 	"every-week": "هر هفته",
 	"none-currently-watched-header": "شما چیزی را پی‌گیری نمی‌کنید!",
+	"none-currently-watched": "برای شروع پی‌گیری ترجمه‌های جدید روی دکمهٔ زیر کلیک کنید.",
+	"delete-title": "حذف جزء",
 	"preferences-submit": "شما ترجیحات خود را روزآمد کردید"
 }
