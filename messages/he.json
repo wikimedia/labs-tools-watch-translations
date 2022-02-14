@@ -8,7 +8,7 @@
 		]
 	},
 	"introduction-please-login": "נא <a href=\"login\">להיכנס</a>",
-	"introduction": "מעקב תרגומים (Watch Translations) הוא כלי שמודיע לך כשהודעה במיזמים המועדפים עליך ב־translatewiki אינה מתורגם לשפה שבחרת.",
+	"introduction": "מעקב תרגומים (Watch Translations) הוא כלי שמודיע לך כשהודעה במיזמים המועדפים עליך ב־translatewiki אינה מתורגמת לשפה שבחרת.",
 	"report-bug": "דיווח באג",
 	"login": "כניסה",
 	"logout": "יציאה",
@@ -25,7 +25,7 @@
 	"delete": "מחיקה",
 	"permission-denied": "הגישה נדחתה",
 	"permission-denied-more": "אין לך הרשאה להמשיך. נא לוודא שהזנת את ה־URL הנכון.",
-	"permission-denied-login": "אין לך הרשאה להמשיך. אולי עליך <a href=\"login{addon}\">להיכנס</a>?",
+	"permission-denied-login": "אין לך הרשאה להמשיך. אולי כדאי לך לנסות <a href=\"login{addon}\">להיכנס</a>?",
 	"already-watched": "הרכיב הזה כבר נמצא ברשימת המעקב שלך!",
 	"duplicate-edit": "לא היה אפשר לערוך: זה היה יוצר רכיב כפול במעקב",
 	"no-change": "לא היה אפשר לערוך: לא נעשו שינויים ברכיב הזה",
