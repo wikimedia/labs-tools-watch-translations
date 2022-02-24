@@ -4,21 +4,28 @@
 			"Robby"
 		]
 	},
+	"introduction-please-login": "WGL., <a href=\"login\">aloggen</a>",
 	"report-bug": "E Feeler mellen",
 	"login": "Aloggen",
 	"logout": "Ausloggen",
 	"welcome": "Wëllkomm",
 	"you-watch": "Dir iwwerwaacht",
+	"watch-new": "Eng nei iwwerwaachen",
+	"select-group": "E Grupp eraussichen",
 	"select-language": "Eng Sprooch eraussichen",
 	"confirm": "Confirméieren",
 	"add": "Derbäisetzen",
 	"cancel": "Ofbriechen",
+	"success-edit": "Dir hutt eng iwwerwaacht Komponent geännert.",
 	"delete": "Läschen",
 	"permission-denied": "Autorisatioun refuséiert",
 	"already-watched": "Dir iwwerwaacht dëst Element schonn!",
 	"preferences": "Astellungen",
+	"preferences-frequency-hours": "Wéi dacks soll den Tool Iech eng E-Mail schécken?",
 	"submit": "Schécken",
 	"every-day": "All Dag",
 	"every-week": "All Woch",
+	"none-currently-watched-header": "Dir iwwerwaacht näischt!",
+	"delete-title": "Komponent läschen",
 	"preferences-submit": "Dir hutt är Astellungen aktualiséiert"
 }
