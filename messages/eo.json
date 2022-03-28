@@ -1,0 +1,21 @@
+{
+	"@metadata": {
+		"authors": [
+			"Robin van der Vliet"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Ensaluti</a>",
+	"report-bug": "Raporti cimon",
+	"login": "Ensaluti",
+	"logout": "Elsaluti",
+	"welcome": "Bonvenon",
+	"you-watch": "Vi sekvas",
+	"select-group": "Elekti grupon",
+	"select-language": "Elekti lingvon",
+	"add": "Aldoni",
+	"cancel": "Nuligi",
+	"delete": "Forigi",
+	"preferences": "Agordoj",
+	"every-day": "Ĉiutage",
+	"every-week": "Ĉiusemajne"
+}
