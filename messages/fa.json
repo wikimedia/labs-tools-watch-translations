@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Beginneruser",
 			"FarsiNevis",
 			"LordProfo"
 		]
@@ -11,13 +12,13 @@
 	"login": "ورود به سامانه",
 	"logout": "خروج از سامانه",
 	"welcome": "خوش آمدید",
-	"watch-new": "پی‌گیری جدید",
+	"watch-new": "پیگیری جدید",
 	"select-group": "یک گروه را انتخاب کنید",
 	"select-language": "یک زبان را انتخاب کنید",
 	"confirm": "تأیید",
 	"add": "افزودن",
 	"cancel": "لغو",
-	"success-edit": "شما یک جزء پی‌گیری شده را ویرایش کردید.",
+	"success-edit": "شما یک جزء پیگیری شده را ویرایش کردید.",
 	"delete": "حذف",
 	"permission-denied": "اجازه داده نشد",
 	"preferences": "ترجیحات",
@@ -25,7 +26,7 @@
 	"every-day": "هر روز",
 	"every-week": "هر هفته",
 	"none-currently-watched-header": "شما چیزی را پی‌گیری نمی‌کنید!",
-	"none-currently-watched": "برای شروع پی‌گیری ترجمه‌های جدید روی دکمهٔ زیر کلیک کنید.",
+	"none-currently-watched": "برای شروع پیگیری ترجمه‌های جدید روی دکمهٔ زیر کلیک کنید.",
 	"delete-title": "حذف جزء",
 	"preferences-submit": "شما ترجیحات خود را روزآمد کردید"
 }
