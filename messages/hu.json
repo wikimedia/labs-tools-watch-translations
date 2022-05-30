@@ -1,15 +1,16 @@
 {
 	"@metadata": {
 		"authors": [
-			"GBAB"
+			"GBAB",
+			"Tacsipacsi"
 		]
 	},
-	"introduction-please-login": "Kérjük, <a href=\"login\">jelentkezzék be</a>",
-	"introduction": "A WatchTranslations egy olyan eszköz, amely értesíti Önt, ha a translatewiki.net-en a kedvenc projektjeiben egyes üzenetek nincsenek lefordítva az Ön által választott nyelvre.",
+	"introduction-please-login": "Kérjük, <a href=\"login\">jelentkezz be</a>",
+	"introduction": "A WatchTranslations egy olyan eszköz, amely értesít, ha a translatewiki.net-en a kedvenc projektjeidben egy üzenet nincs lefordítva az általad választott nyelvre.",
 	"report-bug": "Hiba bejelentése",
 	"login": "Bejelentkezés",
 	"logout": "Kijelentkezés",
-	"welcome": "Isten hozta",
+	"welcome": "Üdvözlünk",
 	"you-watch": "Figyelt projektek",
 	"watch-new": "Új projekt figyelése",
 	"select-group": "Csoport kijelölése",
@@ -17,15 +18,15 @@
 	"confirm": "Megerősítés",
 	"add": "Hozzáadás",
 	"cancel": "Mégse",
-	"success-edit": "Szerkesztett egy figyelt összetevőt.",
-	"success-delete": "Törölt egy figyelt összetevőt.",
+	"success-edit": "Szerkesztettél egy figyelt komponenst.",
+	"success-delete": "Töröltél egy figyelt komponenst.",
 	"delete": "Törlés",
 	"permission-denied": "Engedély megtagadva",
-	"permission-denied-more": "Nincs engedélye a folytatáshoz. Győződjék meg arról, hogy a helyes URL-t gépelte be.",
-	"permission-denied-login": "Nincs engedélye a folytatáshoz. Talán célszerű lenne megpróbálnia <a href=\"login{addon}\">bejelentkezni</a>…",
-	"already-watched": "Ezt az összetevőt már figyeli.",
-	"duplicate-edit": "Nem lehetett szerkeszteni: a figyelt összetevő megduplázódását eredményezné",
-	"no-change": "Nem sikerült szerkeszteni: ez az összetevő nem változott",
+	"permission-denied-more": "Nincs engedélyed a folytatáshoz. Győződj meg arról, hogy a helyes URL-t gépelted be.",
+	"permission-denied-login": "Nincs engedélyed a folytatáshoz. Talán meg kellene próbálnod <a href=\"login{addon}\">bejelentkezni</a>?",
+	"already-watched": "Ezt a komponenst már figyeled.",
+	"duplicate-edit": "Nem lehetett szerkeszteni: duplikált figyelt komponenst eredményezne",
+	"no-change": "Nem sikerült szerkeszteni: ez a komponens nem változott",
 	"preferences": "Beállítások",
 	"preferences-frequency-hours": "Milyen gyakran küldjön e-mailt az eszköz?",
 	"preferences-pref-language": "Melyik legyen az alapértelmezett figyelt nyelv?",
@@ -33,11 +34,11 @@
 	"submit": "Beküldés",
 	"every-day": "Naponta",
 	"every-week": "Hetente",
-	"none-currently-watched-header": "Még nem figyel semmit.",
-	"none-currently-watched": "Új fordítások figyelésének megkezdéséhez kattintson az alábbi gombra.",
-	"delete-title": "Összetevő törlése",
-	"confirm-delete-component": "Biztosan törli ezt az összetevőt?",
-	"success-create": "Létrehozott egy új figyelt összetevőt.",
-	"form-error": "Nem sikerült beküldeni: érvénytelen űrlapbevitel. Kérjük, próbálja meg ismét",
-	"preferences-submit": "Frissítette a beállításait"
+	"none-currently-watched-header": "Még semmit nem figyelsz!",
+	"none-currently-watched": "Új fordítások figyelésének megkezdéséhez kattints az alábbi gombra.",
+	"delete-title": "Komponens törlése",
+	"confirm-delete-component": "Biztosan törlöd ezt a komponenst?",
+	"success-create": "Létrehoztál egy új figyelt komponenst.",
+	"form-error": "Nem sikerült beküldeni: érvénytelen űrlapbevitel. Kérjük, próbáld újra",
+	"preferences-submit": "Frissítetted a beállításaidat"
 }
