@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"TayfunEt."
+		]
+	},
+	"introduction": "“WatchTranslations” translatewiki.net-de halaýan taslamalaryňyzdaky habaryň saýlan diline terjime edilmedik wagtynda habar berýän guraldyr.",
+	"report-bug": "Bir näsazlyk barada habar beriň",
+	"login": "Hasaba gir",
+	"logout": "Hasapdan çyk",
+	"welcome": "Hoş geldiňiz",
+	"select-group": "Topar saýlaň",
+	"select-language": "Dil saýlaň",
+	"confirm": "Tassykla",
+	"add": "Goş",
+	"cancel": "Goýbolsun et",
+	"success-edit": "Gözegçilik edilýän komponenti redaktirlediňiz.",
+	"success-delete": "Gözegçilik edilýän komponenti pozduň.",
+	"delete": "Öçür",
+	"permission-denied": "Rugsat berilmedi",
+	"permission-denied-more": "Dowam etmäge ygtyýaryňyz ýok. Dogry URL girizendigiňize göz ýetiriň.",
+	"already-watched": "Siz eýýäm bu komponente tomaşa edýärsiňiz!",
+	"preferences-frequency-hours": "Gural size näçe gezek e-poçta ibermeli?",
+	"submit": "Tabşyr",
+	"every-day": "Her gün",
+	"every-week": "Her hepde",
+	"none-currently-watched": "Täze terjimelere tomaşa etmek üçin aşakdaky düwmä basyň.",
+	"delete-title": "Komponenti poz",
+	"confirm-delete-component": "Bu komponenti pozmak isleýändigiňize ynanýarsyňyzmy?",
+	"success-create": "Täze synlanan komponent döretdiňiz.",
+	"form-error": "Iberip bilmedim: forma giriş nädogry. Gaýtadan synanyşyň",
+	"preferences-submit": "Islegleriňizi täzelediňiz"
+}
