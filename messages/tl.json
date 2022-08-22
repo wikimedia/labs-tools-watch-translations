@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"GinawaSaHapon"
+		]
+	},
+	"introduction-please-login": "Pakiusap po, <a href=\"login\">mag-login</a>",
+	"introduction": "Kagamitan ang WatchTranslations na nag-aabiso sa'yo kung may mensahe sa mga paboritong proyekto sa translatewiki.net ang hindi pa nasasalin sa wikang pinili mo.",
+	"report-bug": "Mag-ulat ng bug",
+	"login": "Mag-login",
+	"logout": "Mag-logout",
+	"welcome": "Kamusta",
+	"you-watch": "Binabantayan mo",
+	"watch-new": "Magbantay ng bago",
+	"select-group": "Pumili ng grupo",
+	"select-language": "Pumili ng wika",
+	"confirm": "Kumpirmahin",
+	"add": "Magdagdag",
+	"cancel": "Ikansela",
+	"success-edit": "In-edit mo ang isang binabantayang component.",
+	"success-delete": "Binura mo ang isang binabantayang component.",
+	"delete": "Burahin",
+	"permission-denied": "Walang permiso",
+	"permission-denied-more": "Hindi ka otorisadong magpatuloy. Siguraduhing tama ang URL na nilagay mo.",
+	"permission-denied-login": "Hindi ka otorisadong magpatuloy. Siguro, kailangan mo munang <a href=\"login{addon}\">mag-login</a>?",
+	"already-watched": "Binabantayan mo na ito!",
+	"duplicate-edit": "Di ma-edit: gagawa ng dobleng binabantayang component",
+	"no-change": "Di ma-edit: walang mga pagbabago sa component na ito",
+	"preferences": "Pagsasaayos",
+	"preferences-frequency-hours": "Gaano kadalas dapat mag-email ang kagamitan na ito sa'yo?",
+	"preferences-pref-language": "Anong wika dapat ang default na binabantayan mo?",
+	"preferences-pref-locale": "Anong wika ang dapat gamitin ng interface?",
+	"submit": "Ipasa",
+	"every-day": "Araw-araw",
+	"every-week": "Linggo-linggo",
+	"none-currently-watched-header": "Wala ka pang binabantayan!",
+	"none-currently-watched": "Pindutin ang button sa baba para makapagbantay na ng mga bagong salin.",
+	"delete-title": "Burahin ang component",
+	"confirm-delete-component": "Sigurado ka bang buburahin mo na ang component na ito?",
+	"success-create": "Gumawa ka ng bagong binabantayang component.",
+	"form-error": "Di maipasa: invalid na form input. Subukan muli.",
+	"preferences-submit": "In-update mo ang pagsasaayos mo"
+}

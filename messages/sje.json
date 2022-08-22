@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Olve Utne"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Luggi sisa</a>",
+	"report-bug": "Diededa vige birra",
+	"login": "Luggi sisa",
+	"logout": "Luggi ulgus",
+	"welcome": "Burist båhtem",
+	"select-group": "Vällji gruhpav",
+	"select-language": "Vällji gielav",
+	"add": "Lasedä",
+	"cancel": "Buŧŧki",
+	"delete": "Gádoda",
+	"submit": "Säddi",
+	"every-day": "Gájk biejvev",
+	"every-week": "Gájk váhkov"
+}
