@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"GinawaSaHapon"
+			"GinawaSaHapon",
+			"Jojit fb"
 		]
 	},
 	"introduction-please-login": "Pakiusap po, <a href=\"login\">mag-login</a>",
@@ -17,14 +18,14 @@
 	"confirm": "Kumpirmahin",
 	"add": "Magdagdag",
 	"cancel": "Ikansela",
-	"success-edit": "In-edit mo ang isang binabantayang component.",
+	"success-edit": "Binago mo ang isang binabantayang bahagi.",
 	"success-delete": "Binura mo ang isang binabantayang component.",
 	"delete": "Burahin",
 	"permission-denied": "Walang permiso",
 	"permission-denied-more": "Hindi ka otorisadong magpatuloy. Siguraduhing tama ang URL na nilagay mo.",
 	"permission-denied-login": "Hindi ka otorisadong magpatuloy. Siguro, kailangan mo munang <a href=\"login{addon}\">mag-login</a>?",
 	"already-watched": "Binabantayan mo na ito!",
-	"duplicate-edit": "Di ma-edit: gagawa ng dobleng binabantayang component",
+	"duplicate-edit": "Di mabago: magagawang doble ang binabantayang bahagi",
 	"no-change": "Di ma-edit: walang mga pagbabago sa component na ito",
 	"preferences": "Pagsasaayos",
 	"preferences-frequency-hours": "Gaano kadalas dapat mag-email ang kagamitan na ito sa'yo?",
