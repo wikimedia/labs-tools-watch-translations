@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Balyozxane",
 			"Bikarhêner"
 		]
 	},
@@ -24,7 +25,7 @@
 	"permission-denied-more": "Tu nedestûrdar î ji bo dewamkirinê. Jê piştrast be ku te URLa rast têketiye.",
 	"permission-denied-login": "Tu ne destûrdarî ji bo dewamkirinê. Dibe ku divê tu <a href=\"login{addon}\">têketinê</a> biceribînî?",
 	"already-watched": "Te jixwe vê hêmanê seyr kiriye!",
-	"duplicate-edit": "Nikare biguherîne: wê hêmaneke ducar temaşekirî çêke",
+	"duplicate-edit": "Nikare were guhartin: wê hêmaneke ducar temaşekirî çêke",
 	"no-change": "Nikare biguherîne: ti guherandineke nehatiye kirin li vê hêmanê",
 	"preferences": "Tercîhên min",
 	"preferences-frequency-hours": "Dixwazî ku amûr bi çi navberê epeyam bişîne te?",
