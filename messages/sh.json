@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Vlad5250"
+		]
+	},
+	"introduction-please-login": "Molimo, <a href=\"login\">prijavite se</a>",
+	"introduction": "WatchTranslations je alat koji Vas obavještava kada poruka u vašim omiljenim projektima na translatewiki.net nije prevedena na jezik po Vašem izboru.",
+	"report-bug": "Prijavi grešku",
+	"login": "Prijavi se",
+	"logout": "Odjavi se",
+	"welcome": "Dobro došli",
+	"you-watch": "Vi gledate",
+	"watch-new": "Gledaj novo",
+	"select-group": "Izaberi grupu",
+	"select-language": "Izaberi jezik",
+	"confirm": "Potvrdi",
+	"add": "Dodaj",
+	"cancel": "Otkaži",
+	"delete": "Izbriši",
+	"permission-denied": "Pristup je odbijen"
+}
