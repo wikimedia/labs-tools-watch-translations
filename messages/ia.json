@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"introduction-please-login": "Per favor <a href=\"login\">aperi session</a>",
+	"introduction": "WatchTranslations es un instrumento que tu notifica quando un message in tu projectos favorite sur translatewiki.net non es ancora traducite in le lingua de tu preferentia.",
+	"report-bug": "Reportar un defecto",
+	"login": "Aperir session",
+	"logout": "Clauder session",
+	"welcome": "Benvenite",
+	"you-watch": "Tu observa",
+	"watch-new": "Observar un nove",
+	"select-group": "Selige un gruppo",
+	"select-language": "Selige un lingua",
+	"confirm": "Confirmar",
+	"add": "Adder",
+	"cancel": "Cancellar",
+	"success-edit": "Tu ha modificate un componente observate.",
+	"success-delete": "Tu ha delite un componente observate.",
+	"delete": "Deler",
+	"permission-denied": "Permission refusate",
+	"permission-denied-more": "Tu non es autorisate a continuar. Assecura te de haber entrate le adresse URL correcte.",
+	"permission-denied-login": "Tu non es autorisate a continuar. Pote esser que tu debe <a href=\"login{addon}\">aperir session</a>?",
+	"already-watched": "Tu ja observa iste componente!",
+	"duplicate-edit": "Non poteva modificar: crearea un duplicato de un componente observate",
+	"no-change": "Non poteva modificar: il non ha cambiamentos de iste componente",
+	"preferences": "Preferentias",
+	"preferences-frequency-hours": "A qual frequentia debe le utensile inviar te e-mail?",
+	"preferences-pref-language": "Qual debe esser tu lingua de observation predefinite?",
+	"preferences-pref-locale": "Qual lingua debe le interfacie del instrumento usar?",
+	"submit": "Submitter",
+	"every-day": "Cata die",
+	"every-week": "Cata septimana",
+	"none-currently-watched-header": "Tu non observa alcun cosa!",
+	"none-currently-watched": "Clicca sur le button hic infra pro comenciar a observar nove traductiones.",
+	"delete-title": "Deler componente",
+	"confirm-delete-component": "Es tu secur de voler deler iste componente?",
+	"success-create": "Tu ha create un nove componente observate.",
+	"form-error": "Impossibile inviar: datos invalide inserite in formulario. Per favor tenta lo de novo",
+	"preferences-submit": "Tu ha actualisate tu preferentias"
+}
