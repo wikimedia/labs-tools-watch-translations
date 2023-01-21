@@ -1,0 +1,6 @@
+#!/bin/bash
+if [ -z "$1" ]; then
+        exec mysql -h tools-db s54184__watch_translations
+else
+        exec mysql -h tools-db s54184__$1
+fi
