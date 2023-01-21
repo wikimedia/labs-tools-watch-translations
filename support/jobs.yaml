@@ -1,0 +1,9 @@
+# Toolforge Jobs declarations
+# Docs: https://wikitech.wikimedia.org/wiki/Help:Toolforge/Jobs_framework
+---
+# job to send the notifications
+- name: send-changes
+  command: bash /data/project/watch-translations/bin/send-changes
+  image: tf-python39
+  schedule: "12 11 * * *"
+  emails: onfailure

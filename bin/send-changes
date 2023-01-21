@@ -1,5 +1,5 @@
 #!/bin/bash
 
-source ~/venv-bastion/bin/activate
+source ~/venv/bin/activate
 cd ~/src
 flask send-changes
