@@ -15,4 +15,4 @@ echo "Now running database migrations.."
 cd src
 flask db upgrade
 echo "...all done! Starting webservice!"
-webservice --backend=kubernetes python3.5 start
+webservice --backend=kubernetes python3.9 start
