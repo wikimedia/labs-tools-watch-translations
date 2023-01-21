@@ -42,9 +42,6 @@ def getVersionNumber():
 
 app = Flask(__name__, static_folder='../static')
 
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-
 # Load configuration from YAML file
 __dir__ = os.path.dirname(__file__)
 app.config.update(
@@ -76,6 +73,9 @@ if not app.debug:
 # Add databse credentials to config
 if app.config.get('DBCONFIG_FILE') is not None:
     app.config['SQLALCHEMY_DATABASE_URI'] = app.config.get('DB_URI') + '?read_default_file={cfile}'.format(cfile=app.config.get('DBCONFIG_FILE'))
+
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 
 locales = Locales(app)
 _ = locales.get_message
