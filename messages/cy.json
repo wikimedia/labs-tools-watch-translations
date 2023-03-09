@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": [
+			"JonesT143"
+		]
+	},
+	"introduction-please-login": "<a href=\"login\">Mewngofnodwch</a>, os gwelwch yn dda",
+	"login": "Mewngofnodi",
+	"logout": "Allgofnodi",
+	"welcome": "Croeso",
+	"select-group": "Dewis grŵp",
+	"select-language": "Dewis iaith",
+	"confirm": "Cadarnhau",
+	"add": "Ychwanegu",
+	"cancel": "Diddymu",
+	"every-day": "Pob dydd",
+	"every-week": "Pob wythnos"
+}
