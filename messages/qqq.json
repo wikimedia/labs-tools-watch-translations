@@ -2,10 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
-			"DraconicDark"
+			"DraconicDark",
+			"Nike"
 		]
 	},
-	"introduction-please-login": "The login prompt displayed on the index page",
+	"introduction-please-login": "The login prompt displayed on the index page. Don't translate <code>href=\"login\"</code>.",
 	"introduction": "Description displayed on index page",
 	"report-bug": "Bug report link in navbar",
 	"login": "Login link in navbar",
