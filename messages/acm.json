@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"MRidhaAJ"
+		]
+	},
+	"introduction-please-login": "الرجاء <a href=\"login\"> تسجيل الدخول</a>",
+	"introduction": "مراقبة الترجمات هي أداة تكلك من ما تتم ترجمة رسالة في مشاريعك المفضلة في ترانسليت ويكي دوت نت إلى اللغة التختارها.",
+	"report-bug": "بلغ على خطأ",
+	"login": "سجل دخول",
+	"logout": "سجل الخروج",
+	"welcome": "هلا بيك",
+	"you-watch": "إنته تراقب",
+	"watch-new": "مراقبه جديدة",
+	"select-group": "إختار مجموعة",
+	"select-language": "إختار لغة",
+	"confirm": "أكّد",
+	"add": "حط",
+	"cancel": "ألغي",
+	"success-edit": "عدلت شي مراقب.",
+	"success-delete": "حذفت شي مراقب.",
+	"delete": "إحذف",
+	"permission-denied": "الإذن مرفوض",
+	"permission-denied-more": "ما مصرح إلك بالإستمرار؛ تأكد من كتابة المسار الصح.",
+	"permission-denied-login": "ما مصرح إلك بالإستمرار. يمكن لازم تحاول <a href=\"login{addon}\">تسجل دخول</a>؟",
+	"already-watched": "إنته أصلاً تراقب هاذ المكون!",
+	"duplicate-edit": "ما تكدر تعدل:هاذ راح يسوي مكون مراقبه مكرر"
+}
