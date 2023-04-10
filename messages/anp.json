@@ -1,0 +1,40 @@
+{
+	"@metadata": {
+		"authors": [
+			"Proabscorp!"
+		]
+	},
+	"introduction-please-login": "कृपया <a href=\"login\">लॉग-इन करौ</a>",
+	"report-bug": "बग क रिपोर्ट करौ",
+	"login": "लॉग-इन करौ",
+	"logout": "लॉग-आउट (सत्रांत) करौ",
+	"welcome": "सुस्वागतम",
+	"you-watch": "तोंय देखौ",
+	"watch-new": "नैका देखौ",
+	"select-group": "एगो समूह चुनौ",
+	"select-language": "एगो भाषा चुनौ",
+	"confirm": "पुष्टि करौ",
+	"add": "जोड़ौ",
+	"cancel": "रद्द करौ",
+	"success-edit": "तोंय एगो देखलौ घटक संपादित करलौ।",
+	"success-delete": "तोंय एगो देखलौ घटक क हटैलौ।",
+	"delete": "हटाबौ",
+	"permission-denied": "अनुमति नाय छौं",
+	"permission-denied-login": "तोंय जारी रखै लेली अधिकृत नाय छौ। भरसक तोरा <a href=\"login{addon}\">लॉग इन</a> करै क प्रयास करना चाहियौ?",
+	"already-watched": "तोंय पहिलै सँ हैय घटक क देखलौ छौ!",
+	"duplicate-edit": "संपादित नाय होलौं: एना क एगो डुप्लिकेट घटक बनी जैथों",
+	"preferences": "वरीयता",
+	"preferences-frequency-hours": "केतनै बार टूल तोरा ईमेल करना चाहियौ?",
+	"preferences-pref-language": "तोरौ देखै क डिफ़ॉल्ट भाषा की होना चाहियौ?",
+	"preferences-pref-locale": "टूल इंटरफ़ेस क कैसनौ भाषा क उपयोग करना चाहियौ?",
+	"submit": "जमा करौ",
+	"every-day": "प्रति दिन",
+	"every-week": "प्रति सप्ताह",
+	"none-currently-watched-header": "तोंय कुछु नाय देखलौ छौ!",
+	"none-currently-watched": "नैका अनुवाद देखना शुरू करै लेली नीच्चाँ देलौ गेलौ बटन प क्लिक करौ।",
+	"delete-title": "घटक हटाबौ",
+	"confirm-delete-component": "की तोंय सुनिश्चित छौ कि तोंय हैय घटक क हटाय ल चाहै छौ?",
+	"success-create": "तोंय एगो नैका देखलौ घटक निर्मित करलौ।",
+	"form-error": "सबमिट नाय होलौं: अमान्य फॉर्म इनपुट। कृपया पुन: प्रयास करौ",
+	"preferences-submit": "तोंय अपनौ वरीयता क अपडेट करलौ"
+}
