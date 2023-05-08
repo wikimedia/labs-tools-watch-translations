@@ -1,0 +1,22 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saraiki"
+		]
+	},
+	"introduction-please-login": "سوہݨا، <a href=\"login\">لاگ ان تھیوو</a>",
+	"report-bug": "بڳ رپورٹ کرو",
+	"login": "لاگ ان تھیوو",
+	"logout": "لاگ آؤٹ",
+	"welcome": "ست بسم اللہ",
+	"select-group": "گروپ چݨو",
+	"confirm": "پک کرو",
+	"add": "شامل کرو",
+	"cancel": "منسوخ",
+	"delete": "مٹاؤ",
+	"permission-denied": "اجازت دا انکار تھی ڳیا",
+	"preferences": "ترجیحاں",
+	"submit": "جمع کرواؤ",
+	"every-day": "ہر روز",
+	"every-week": "ہر ہفتے"
+}
