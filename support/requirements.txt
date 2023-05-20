@@ -9,4 +9,4 @@ Flask-SQLAlchemy
 SQLAlchemy-Utils
 Flask-Migrate
 mysqlclient
-mwoauth==0.3.2
+flask-MWOAuth

@@ -17,12 +17,11 @@
 import os
 import subprocess
 
-import mwoauth
 import yaml
 from flask import redirect, request, render_template, url_for, flash, session
 from flask import Flask
-from werkzeug.routing import BuildError
 import click
+from flask_mwoauth import MWOAuth
 import requests
 from requests_oauthlib import OAuth1
 from flask_jsonlocale import Locales
@@ -80,10 +79,12 @@ migrate = Migrate(app, db)
 locales = Locales(app)
 _ = locales.get_message
 
-consumer_token = mwoauth.ConsumerToken(
-    app.config.get('CONSUMER_KEY'),
-    app.config.get('CONSUMER_SECRET'))
-handshaker = mwoauth.Handshaker(app.config.get('OAUTH_MWURI') + '/index.php', consumer_token)
+mwoauth = MWOAuth(
+    consumer_key=app.config.get('CONSUMER_KEY'),
+    consumer_secret=app.config.get('CONSUMER_SECRET'),
+    base_url=app.config.get('OAUTH_MWURI'),
+)
+app.register_blueprint(mwoauth.bp)
 
 contactEmail = app.config.get('CONTACT_EMAIL')
 if not contactEmail:
@@ -268,57 +269,6 @@ def index():
         return render_template('login.html')
 
 
-@app.route('/login')
-def login():
-    redirect_to, request_token = handshaker.initiate()
-    keyed_token_name = _str(request_token.key) + '_request_token'
-    keyed_next_name = _str(request_token.key) + '_next'
-    session[keyed_token_name] = \
-        dict(zip(request_token._fields, request_token))
-
-    session[keyed_next_name] = request.args.get('next') or 'index'
-
-    return redirect(redirect_to)
-
-
-@app.route('/logout')
-def logout():
-    session['mwoauth_access_token'] = None
-    session['mwoauth_username'] = None
-    if 'next' in request.args:
-        return redirect(request.args['next'])
-    return redirect(url_for('index'))
-
-
-@app.route('/oauth-callback')
-def oauth_authorized():
-    request_token_key = request.args.get('oauth_token', 'None')
-    keyed_token_name = _str(request_token_key) + '_request_token'
-    keyed_next_name = _str(request_token_key) + '_next'
-
-    if keyed_token_name not in session:
-        raise Exception("OAuth callback failed. Can't find keyed token in session. Are cookies disabled?")
-
-    access_token = handshaker.complete(
-        mwoauth.RequestToken(**session[keyed_token_name]),
-        request.query_string)
-    session['mwoauth_access_token'] = \
-        dict(zip(access_token._fields, access_token))
-
-    next_url = "/"
-    try:
-        next_url = url_for(session[keyed_next_name])
-    except BuildError:
-        pass
-    del session[keyed_next_name]
-    del session[keyed_token_name]
-
-    username = get_current_user(False)
-    flash(u'You were signed in, %s!' % username)
-
-    return redirect(next_url)
-
-
 def _str(val):
     """
     Ensures that the val is the default str() type for python2 or 3
@@ -336,17 +286,7 @@ def _str(val):
 
 
 def get_current_user(cached=True):
-    if cached:
-        return session.get('mwoauth_username')
-
-    # Get user info
-    identity = handshaker.identify(
-        mwoauth.AccessToken(**session['mwoauth_access_token']))
-
-    # Store user info in session
-    session['mwoauth_username'] = identity['username']
-
-    return session['mwoauth_username']
+    return mwoauth.get_current_user()
 
 @app.route('/delete-all', methods=['POST'])
 def delete_all():

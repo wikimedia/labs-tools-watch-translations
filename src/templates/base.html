@@ -28,7 +28,7 @@
 							<i class="fas fa-cog"></i>
 							{{ _('preferences') }}
 						</a>
-						<a href="{{ url_for('logout') }}" class="dropdown-item">
+						<a href="{{ url_for('mwoauth.logout') }}" class="dropdown-item">
 							<i class="fas fa-sign-out-alt"></i>
 							{{ _('logout') }}
 						</a>
@@ -36,7 +36,7 @@
 				</li>
 				{% else %}
 				<li class="nav-item active">
-					<a href="{{ url_for('login') }}?next={{ request.endpoint }}" class="nav-link">{{ _('login') }}</a>
+					<a href="{{ url_for('mwoauth.login') }}?next={{ request.endpoint }}" class="nav-link">{{ _('login') }}</a>
 				</li>
 				{% endif %}
 			</ul>
