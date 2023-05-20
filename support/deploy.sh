@@ -13,6 +13,7 @@ fi
 echo "Using branch $branch for deployment."
 git pull --ff-only
 
+toolforge-jobs run venv-upgrade-$$ --command 'cd ~/watch-translations && venv/bin/pip install -Ur support/requirements.txt' --image=tf-python39 --wait
 toolforge-jobs run db-upgrade-$$ --command 'cd ~/src && ~/venv/bin/flask db upgrade' --image tf-python39 --wait
 
 webservice --backend=kubernetes python3.9 start
