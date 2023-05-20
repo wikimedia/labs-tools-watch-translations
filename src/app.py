@@ -435,7 +435,8 @@ def cli_send_changes(no_emails, force, email_inactive):
     for user in User.query.all():
         if (not user.is_active and not email_inactive) or (user.last_emailed is not None and (datetime.now() - user.last_emailed) < timedelta(hours=user.frequency_hours) and not force):
             continue
-        notification = ""
+
+        collections = []
         for translation in user.translations:
             r = requests.get('https://translatewiki.net/w/api.php', params={
                 "action": "query",
@@ -452,27 +453,24 @@ def cli_send_changes(no_emails, force, email_inactive):
                 continue
             not_in_order = data["query"]["messagecollection"]
             if len(not_in_order) > 0:
-                translate_url = 'https://translatewiki.net/w/i.php?title=Special:Translate&group=%s&language=%s&filter=%%21translated&action=translate' % (
-                    translation.group,
-                    translation.language
-                )
-                notification += '<h2>%s (%s; <a href="%s">untranslated messages</a>)</h2>\n' % (
-                    translation.group,
-                    translation.language,
-                    translate_url
-                )
-                notification += "<ul>\n"
+                messages = []
                 for message in not_in_order:
-                    notification += "<li><a href='https://translatewiki.net/w/i.php?title=Special:Translate&showMessage=%s&group=%s&language=%s&action=translate'>%s</a></li>\n" % (message['key'], translation.group, translation.language, message['key'])
-                notification += "</ul>\n"
-        if notification != "":
+                    messages.append(message['key'])
+
+                collections.append({
+                    'group': translation.group,
+                    'language': translation.language,
+                    'messages': messages,
+                })
+
+        if len(collections) > 0:
             email = get_user_email(user)
             if email:
                 with app.test_request_context():
                     notification = render_template(
                         'email.html',
                         username=user.username,
-                        notifications=notification,
+                        collections=collections,
                         project=app.config.get('PROJECT_URI')
                     )
                 msg = MIMEText(notification, 'html')

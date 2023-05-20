@@ -13,7 +13,19 @@
 <body>
     <b>Hi {{username}},</b><br>
     There are new phrases awaiting review at TranslateWiki:<br>
-    {{notifications|safe}}<br>
+
+    {% for collection in collections %}
+    <h2>{{collection.group}} ({{collection.language}}; <a href="https://translatewiki.net/w/i.php?title=Special:Translate&group={{collection.group}}&language={{collection.language}}&filter=%21translated&action=translate">untranslated messages</a>)</h2>
+
+    <ul>
+        {% for message in collection.messages %}
+        <li><a href="https://translatewiki.net/w/i.php?title=Special:Translate&showMessage={{message}}&group={{collection.group}}&language={{collection.language}}&action=translate">
+            {{message}}
+        </a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
     <hr>
     <footer>
         You are receiving this email because you signed up for notifications at the <a href="{{project}}">Watch-Translations</a> project.<br>
