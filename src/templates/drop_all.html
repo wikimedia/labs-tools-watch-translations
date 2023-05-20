@@ -1,0 +1,23 @@
+<div class="row">
+    <button type="button" class="btn btn-primary btn-danger form-control" data-toggle="modal" data-target="#dropAll">{{ _("delete-all") }}</button>
+</div>
+<div class="modal fade" id="dropAll" tabindex="-1" role="dialog" aria-labelledby="dropAllLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="dropAllLabel">{{ _("delete-all-title") }}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">{{ _("confirm-delete-all) }}</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">{{ _("cancel") }}</button>
+                <form method="post">
+                    <input type="hidden" name="type" value="delete">
+                    <input type="submit" value="{{ _("delete-all") }}" class="btn btn-secondary btn-danger">
+                </form>
+            </div>
+        </div>
+      </div>
+</div>

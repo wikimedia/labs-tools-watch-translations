@@ -348,6 +348,16 @@ def get_current_user(cached=True):
 
     return session['mwoauth_username']
 
+@app.route('/delete-all', methods=['POST'])
+def delete_all():
+    if logged():
+        user = get_user()
+        Translation.query.filter_by(user=user).delete()
+        db.session.commit()
+        flash(_('delete-all-success'), 'success')
+        return redirect(url_for('index'))
+    else:
+        return render_template('permission_denied.html'), 403
 
 @app.route('/preferences', methods=['GET', 'POST'])
 def preferences():
