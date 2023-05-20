@@ -91,6 +91,7 @@ if not contactEmail:
     print("Wikimedia policy dictates that you should provide a way for system administrators to contact you.")
     print("You risk being IP-blocked if you do not comply.")
     contactEmail = "no contact provided"
+
 useragent = "Watch-Translations-Bot/" + getVersionNumber() + " (" + contactEmail + ")"
 
 class User(db.Model):

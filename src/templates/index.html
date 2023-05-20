@@ -11,7 +11,9 @@
         </ul>
     {% else %}
         <h2>{{ _("none-currently-watched-header") }}</h2>
-        {{ _("none-currently-watched") }}
+        <p>
+            {{ _("none-currently-watched") }}
+        </p>
     {% endif %}
     <a href="edit/new" class="btn btn-primary active" role="button">{{ _("watch-new") }}</a>
 </div>
