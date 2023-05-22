@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"DraconicDark",
+			"McDutchie",
 			"Nike"
 		]
 	},
@@ -22,7 +23,7 @@
 	"success-edit": "Message displayed upon successfully editing a watched group",
 	"success-delete": "Message displayed upon deleting a watched group",
 	"delete": "Button text for delete button on group edit page",
-	"delete-all": "Button text for delete all button.",
+	"delete-all": "Text for the button that deletes all components.",
 	"delete-all-title": "Headline for the Delete all modal",
 	"delete-all-body": "Body of the Delete all modal",
 	"delete-all-success": "Success message after Delete all operation succeeded.",

@@ -5,7 +5,8 @@
 			"Alcarazzam",
 			"Fitoschido",
 			"Ihojose",
-			"Joanmp17"
+			"Joanmp17",
+			"María"
 		]
 	},
 	"report-bug": "Informar de un fallo",
@@ -18,6 +19,8 @@
 	"add": "Añadir",
 	"cancel": "Cancelar",
 	"delete": "Eliminar",
+	"delete-all": "Borrar todo",
+	"delete-all-success": "Usted borró todos los componentes. ¡Gracias por usar Watch Translations!",
 	"permission-denied": "Permiso denegado",
 	"no-change": "No se pudo editar: no ha habido cambios en este componente",
 	"preferences": "Preferencias",

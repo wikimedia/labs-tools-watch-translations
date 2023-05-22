@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"MrSchipunov",
 			"MuratTheTurkish"
 		]
 	},
@@ -21,6 +22,9 @@
 	"success-edit": "İzlenen bir bileşeni düzenlediniz.",
 	"success-delete": "İzlenen bir bileşeni sildiniz.",
 	"delete": "Sil",
+	"delete-all": "Tümünü sil",
+	"delete-all-title": "Tüm bileşenleri sil",
+	"delete-all-body": "İzlediğiniz tüm bileşenleri gerçekten silmek istiyor musunuz? Bu eylem geri alınamaz.",
 	"permission-denied": "İzin verilmedi",
 	"permission-denied-more": "Devam etmek için yetkili değilsiniz. Doğru URL'yi girdiğinizden emin olun.",
 	"permission-denied-login": "Devam etmek için yetkili değilsiniz. Belki de <a href=\"/login{addon}\">giriş yapın</a>?",
