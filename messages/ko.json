@@ -22,6 +22,7 @@
 	"success-edit": "주시하는 항목을 수정했습니다.",
 	"success-delete": "주시하는 항목을 삭제했습니다.",
 	"delete": "삭제",
+	"delete-all": "모두 삭제",
 	"permission-denied": "권한이 없습니다",
 	"permission-denied-more": "인증되지 않아 진행할 수 없습니다. 올바른 URL을 입력하셨는지 확인하십시오.",
 	"permission-denied-login": "계속하기에는 권한이 없습니다. <a href=\"login{addon}\">로그인</a>해 보시겠습니까?",
