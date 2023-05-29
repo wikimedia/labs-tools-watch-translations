@@ -3,6 +3,7 @@
 		"authors": [
 			"BadDog",
 			"Kizule",
+			"Milicevic01",
 			"Zoranzoki21"
 		]
 	},
@@ -22,6 +23,7 @@
 	"success-edit": "Уредили сте надгледану компоненту.",
 	"success-delete": "Избрисали сте надгледану компоненту.",
 	"delete": "Избриши",
+	"delete-all": "Избриши све",
 	"permission-denied": "Приступ је одбијен",
 	"permission-denied-more": "Нисте овлашћени да наставите. Проверите да ли сте унели исправан URL.",
 	"permission-denied-login": "Нисте овлашћени да наставите. Можда би требало да покушате да се <a href=\"login{addon}\">пријавите</a>?",

@@ -22,6 +22,7 @@
 	"success-edit": "Muokkasit tarkkailtua komponenttia.",
 	"success-delete": "Poistit tarkkaillun komponentin.",
 	"delete": "Poista",
+	"delete-all": "Poista kaikki",
 	"permission-denied": "Käyttö estetty",
 	"permission-denied-more": "Sinun ei ole sallittu jatkaa. Tarkista, että syötit oikean URL-osoitteen.",
 	"permission-denied-login": "Sinun ei ole sallittu jatkaa. Oletko kokeillut <a href=\"login{addon}\">kirjautua sisään</a>?",
