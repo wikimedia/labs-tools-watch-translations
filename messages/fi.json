@@ -23,6 +23,8 @@
 	"success-delete": "Poistit tarkkaillun komponentin.",
 	"delete": "Poista",
 	"delete-all": "Poista kaikki",
+	"delete-all-title": "Poista kaikki komponentit",
+	"delete-all-success": "Poistit kaikki komponentit. Kiitos, että käytit Watch Translations -palvelua!",
 	"permission-denied": "Käyttö estetty",
 	"permission-denied-more": "Sinun ei ole sallittu jatkaa. Tarkista, että syötit oikean URL-osoitteen.",
 	"permission-denied-login": "Sinun ei ole sallittu jatkaa. Oletko kokeillut <a href=\"login{addon}\">kirjautua sisään</a>?",
