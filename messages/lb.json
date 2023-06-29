@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
-	"introduction-please-login": "WGL., <a href=\"login\">aloggen</a>",
+	"introduction-please-login": "Wgl. <a href=\"login\">aloggen</a>",
 	"report-bug": "E Feeler mellen",
 	"login": "Aloggen",
 	"logout": "Ausloggen",
@@ -17,9 +18,14 @@
 	"add": "Derbäisetzen",
 	"cancel": "Ofbriechen",
 	"success-edit": "Dir hutt eng iwwerwaacht Komponent geännert.",
+	"success-delete": "Dir hutt eng iwwerwaacht Komponent geläscht.",
 	"delete": "Läschen",
+	"delete-all": "All läschen",
+	"delete-all-title": "All Komponente läschen",
+	"delete-all-body": "Wëllt Dir wierklech all Komponente läschen, déi Dir iwwerwaacht? Dës Aktioun ass net reversibel.",
+	"delete-all-success": "Dir hutt all Komponente geläscht. Merci, datt Dir WatchTranslations benotzt!",
 	"permission-denied": "Autorisatioun refuséiert",
-	"already-watched": "Dir iwwerwaacht dëst Element schonn!",
+	"already-watched": "Dir iwwerwaacht dës Komponent schonn!",
 	"preferences": "Astellungen",
 	"preferences-frequency-hours": "Wéi dacks soll den Tool Iech eng E-Mail schécken?",
 	"submit": "Schécken",
@@ -27,5 +33,7 @@
 	"every-week": "All Woch",
 	"none-currently-watched-header": "Dir iwwerwaacht näischt!",
 	"delete-title": "Komponent läschen",
+	"confirm-delete-component": "Sidd Dir sécher, datt Dir dës Komponent läsche wëllt?",
+	"success-create": "Dir hutt eng nei iwwerwaachte Komponent ugeluecht.",
 	"preferences-submit": "Dir hutt är Astellungen aktualiséiert"
 }
