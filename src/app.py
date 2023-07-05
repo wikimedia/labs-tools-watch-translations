@@ -477,6 +477,7 @@ def cli_send_changes(no_emails, force, email_inactive):
                 msg['From'] = app.config.get('FROM_EMAIL')
                 msg['To'] = email
                 msg['Subject'] = '[Watch Translations] Translations needed'
+                msg['Precedence'] = 'bulk'
                 if no_emails:
                     print(msg)
                 else:
