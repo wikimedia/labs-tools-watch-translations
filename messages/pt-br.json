@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Eduardo Addad de Oliveira",
-			"Eduardoaddad"
+			"Eduardoaddad",
+			"Felipe L. Ewald"
 		]
 	},
 	"introduction-please-login": "Por favor, <a href=\"login\">entre</a>",
@@ -21,6 +22,8 @@
 	"success-edit": "Você editou um componente monitorado.",
 	"success-delete": "Você excluiu um componente monitorado.",
 	"delete": "Excluir",
+	"delete-all": "Apagar tudo",
+	"delete-all-title": "Apagar todos os componentes",
 	"permission-denied": "Permissão negada",
 	"permission-denied-more": "Você não está autorizado a continuar. Verifique se você inseriu o URL correto.",
 	"permission-denied-login": "Você não está autorizado a continuar. Talvez você deva tentar <a href=\"login{addon}\">entrar</a>?",
