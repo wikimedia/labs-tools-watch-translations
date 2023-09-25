@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GuoPC",
 			"VulpesVulpes825",
 			"佛壁灯",
 			"沈澄心",
@@ -23,10 +24,14 @@
 	"success-edit": "您已编辑一个监视项目。",
 	"success-delete": "您已删除一个监视项目。",
 	"delete": "删除",
+	"delete-all": "删除全部",
+	"delete-all-title": "删除全部组件",
+	"delete-all-body": "您确定要删除您监视的全部组件吗？此操作不可还原。",
+	"delete-all-success": "您已删除全部组件。感谢您使用WatchTranslations！",
 	"permission-denied": "权限被拒绝",
 	"permission-denied-more": "您无权继续。请确保您输入了正确的网址。",
 	"permission-denied-login": "您无权继续。请您尝试<a href=\"login{addon}\">登陆</a>。",
-	"already-watched": "您已监视此项目！",
+	"already-watched": "您已监视此组件！",
 	"duplicate-edit": "无法编辑：此操作将创建重复的监视组件",
 	"no-change": "无法编辑：此组件无更改",
 	"preferences": "设置",

@@ -24,6 +24,8 @@
 	"delete": "Excluir",
 	"delete-all": "Apagar tudo",
 	"delete-all-title": "Apagar todos os componentes",
+	"delete-all-body": "Você realmente deseja excluir todos os componentes que vigia? Esta ação é irreversível.",
+	"delete-all-success": "Você excluiu todos os componentes. Obrigado por usar a Watch Translations!",
 	"permission-denied": "Permissão negada",
 	"permission-denied-more": "Você não está autorizado a continuar. Verifique se você inseriu o URL correto.",
 	"permission-denied-login": "Você não está autorizado a continuar. Talvez você deva tentar <a href=\"login{addon}\">entrar</a>?",
