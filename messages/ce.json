@@ -1,0 +1,27 @@
+{
+	"@metadata": {
+		"authors": [
+			"Умар"
+		]
+	},
+	"introduction-please-login": "Дехар до, <a href=\"login\">чугӀо</a>",
+	"introduction": "WatchTranslations — хьуна дукха йезачу translatewiki.net проекташкахь хьан метте гочбанза хаамаш белахь хьоьга хаам бо гӀирс.",
+	"report-bug": "Хаийта гӀалатах",
+	"login": "ЧугӀо",
+	"logout": "Аравала(йала)",
+	"welcome": "Марша догӀийла!",
+	"you-watch": "Хьо хьоьжу",
+	"watch-new": "Керла хьежар",
+	"select-group": "Харжа тоба",
+	"select-language": "Харжа мотт",
+	"confirm": "Бакъдан",
+	"add": "ТӀетоха",
+	"cancel": "Йухайаккхар",
+	"delete": "ДӀайаккха",
+	"delete-all": "Массо дӀайаккха",
+	"delete-all-title": "ДӀайаха йерриге компоненташ",
+	"every-day": "ХӀор денна",
+	"every-week": "ХӀор кӀирнахь",
+	"delete-title": "ДӀайаккха компонент",
+	"confirm-delete-component": "Бакъалла лаьий хьуна, хӀара компонент дӀайаккха?"
+}
