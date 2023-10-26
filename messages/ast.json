@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"YoaR"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">Anicia</a> sesión",
@@ -16,7 +17,7 @@
 	"select-language": "Seleiciona una llingua",
 	"confirm": "Confirmar",
 	"add": "Amestar",
-	"cancel": "Encaboxar",
+	"cancel": "Zarrar",
 	"success-edit": "Editasti un componente siguíu.",
 	"success-delete": "Desaniciasti un componente siguíu.",
 	"delete": "Desaniciar",
