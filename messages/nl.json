@@ -6,7 +6,7 @@
 			"McDutchie"
 		]
 	},
-	"introduction-please-login": "Gelieve <a href=\"login\">in te loggen</a>",
+	"introduction-please-login": "Gelieve u <a href=\"login\">aan te melden</a>",
 	"introduction": "WatchTranslations waarschuwt u wanneer een bericht in een van uw favoriete projecten op translatewiki.net niet is vertaald in de taal van uw keuze.",
 	"report-bug": "Een probleem melden",
 	"login": "Aanmelden",
@@ -28,7 +28,7 @@
 	"delete-all-success": "U hebt alle componenten verwijderd. Bedankt dat u Watch Translations hebt gebruikt!",
 	"permission-denied": "Toegang geweigerd",
 	"permission-denied-more": "U bent niet bevoegd om verder te gaan. Zorg ervoor dat u de juiste URL hebt ingevoerd.",
-	"permission-denied-login": "U bent niet bevoegd om verder te gaan. Misschien moet u eerst <a href=\"login{addon}\">inloggen</a>.",
+	"permission-denied-login": "U bent niet bevoegd om verder te gaan. Wellicht moet u zich eerst <a href=\"login{addon}\">aanmelden</a>.",
 	"already-watched": "U volgt dit onderdeel al!",
 	"duplicate-edit": "Kan niet bewerken: er zou een dubbel gevolgd onderdeel worden aangemaakt",
 	"no-change": "Kan niet bewerken: er zijn geen wijzigingen in dit onderdeel",
