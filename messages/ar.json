@@ -3,6 +3,7 @@
 		"authors": [
 			"FShbib",
 			"Meno25",
+			"Sandra Hanbo",
 			"Shbib Al-Subaie",
 			"ديفيد"
 		]
@@ -23,6 +24,10 @@
 	"success-edit": "لقد قمت بتحرير مكون مراقب.",
 	"success-delete": "لقد حذفت مكون مراقب.",
 	"delete": "احذف",
+	"delete-all": "حذف الكل",
+	"delete-all-title": "حذف كافة المكونات",
+	"delete-all-body": "هل تريد حقًا حذف جميع المكونات التي تراقبها؟ هذا الإجراء غير قابل للتراجع.",
+	"delete-all-success": "لقد قمت بحذف كافة المكونات. شكرًا لاستخدامك ترجمات ووتش!",
 	"permission-denied": "الإذن مرفوض",
 	"permission-denied-more": "غير مصرح لك بالمتابعة؛ تأكد من إدخال المسار الصحيح.",
 	"permission-denied-login": "غير مصرح لك بالمتابعة. ربما يجب أن تحاول <a href=\"login{addon}\">تسجيل الدخول</a>؟",
