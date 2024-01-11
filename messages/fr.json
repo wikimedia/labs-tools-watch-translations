@@ -3,6 +3,7 @@
 		"authors": [
 			"Eneelk",
 			"Gomoko",
+			"Iketsi",
 			"Thibaut120094",
 			"Verdy p",
 			"Wladek92"
@@ -15,7 +16,7 @@
 	"logout": "Se déconnecter",
 	"welcome": "Bienvenue",
 	"you-watch": "Vous suivez",
-	"watch-new": "Suivre un nouveau",
+	"watch-new": "Ajouter à la liste",
 	"select-group": "Sélectionner un groupe",
 	"select-language": "Sélectionner une langue",
 	"confirm": "Confirmer",
@@ -24,7 +25,7 @@
 	"success-edit": "Vous avez modifié un composant suivi.",
 	"success-delete": "Vous avez supprimé un composant suivi.",
 	"delete": "Supprimer",
-	"delete-all": "Tout supprimer",
+	"delete-all": "Effacer la liste",
 	"delete-all-title": "Supprimer tous les composants",
 	"delete-all-body": "Voulez-vous vraiment supprimer tous les composants que vous suivez ? Cette action n’est pas réversible.",
 	"delete-all-success": "Vous avez supprimé tous les composants. Merci pour votre utilisation de <em>WatchTranslations</em> !",
