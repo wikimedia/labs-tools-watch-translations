@@ -4,13 +4,19 @@
 			"Tomasdd"
 		]
 	},
+	"introduction-please-login": "Prašome <a href=\"login\">prisijungti</a>",
 	"report-bug": "Pranešti apie klaidą",
+	"login": "Prisijungti",
 	"welcome": "Sveiki",
 	"select-group": "Pasirinkti grupę",
 	"select-language": "Pasirinkti kalbą",
 	"confirm": "Patvirtinti",
+	"cancel": "Atšaukti",
+	"delete": "Ištrinti",
+	"delete-all": "Ištrinti viską",
 	"permission-denied": "Teisė nesuteikta",
 	"preferences": "Nustatymai",
 	"every-day": "Kiekvieną dieną",
-	"every-week": "Kiekvieną savaitę"
+	"every-week": "Kiekvieną savaitę",
+	"preferences-submit": "Atnaujinote nustatymus"
 }

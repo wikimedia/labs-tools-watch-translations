@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Akmaie Ajam",
+			"Daud I.F. Argana",
 			"RaymondSutanto94"
 		]
 	},
@@ -21,6 +22,10 @@
 	"success-edit": "Anda telah menyunting komponen yang sedang dipantau.",
 	"success-delete": "Anda telah menghapus komponen yang sedang dipantau.",
 	"delete": "Hapus",
+	"delete-all": "Hapus semua",
+	"delete-all-title": "Hapus semua komponen",
+	"delete-all-body": "Apakah Anda yakin ingin menghapus semua komponen yang Anda pantau? Tindakan ini tidak dapat dibatalkan.",
+	"delete-all-success": "Anda berhasil menghapus semua komponen. Terima kasih telah menggunakan Watch Translations!",
 	"permission-denied": "Izin ditolak",
 	"permission-denied-more": "Anda tidak dibolehkan untuk melanjutkan. Pastikan Anda memasukkan URL yang benar.",
 	"permission-denied-login": "Anda tidak dibolehkan untuk melanjutkan. Mungkin coba <a href=\"login{addon}\">masuk</a>?",
