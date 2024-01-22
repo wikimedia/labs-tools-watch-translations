@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"GolyatGeri",
 			"Orbot707"
 		]
 	},
@@ -20,6 +21,10 @@
 	"success-edit": "Seyr bıyaye yew komponent vurna",
 	"success-delete": "Seyr bıyaye yew komponent esteriya",
 	"delete": "Bestere",
+	"delete-all": "Pêroyin bıesterne",
+	"delete-all-title": "Komponenti pêroyi bıesternê",
+	"delete-all-body": "Şıma qayılê temaşe biyayey komponenti pêroyi bıesternê? No hereket peyser nêgêriyeno.",
+	"delete-all-success": "Şoma komponenti pêro esternayen. Serva gureynayışê Watch Translationsi teşekur kena!",
 	"permission-denied": "Destur red kerd",
 	"permission-denied-more": "Dewam kerdışi rê icazet çıniyo. Raşt URL nuştışi rê bawer bê",
 	"permission-denied-login": "Dewam kerdışi rê icazet çıniyo. <a href=\"login{addon}\">cı kewe </a>?",
