@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriendelucca",
 			"Eneelk",
 			"Gomoko",
 			"Iketsi",
@@ -28,7 +29,7 @@
 	"delete-all": "Effacer la liste",
 	"delete-all-title": "Supprimer tous les composants",
 	"delete-all-body": "Voulez-vous vraiment supprimer tous les composants que vous suivez ? Cette action n’est pas réversible.",
-	"delete-all-success": "Vous avez supprimé tous les composants. Merci pour votre utilisation de <em>WatchTranslations</em> !",
+	"delete-all-success": "Vous avez supprimé tous les composants. Merci d'utiliser Watch Translations !",
 	"permission-denied": "Autorisation refusée",
 	"permission-denied-more": "Vous n’êtes pas autorisé{{GENDER:||e}} à continuer. Vérifiez que vous avez saisi l’URL correcte.",
 	"permission-denied-login": "Vous n’êtes pas autorisé(e) à continuer. Peut-être devriez-vous essayer de <a href=\"login{addon}\">vous connecter</a> ?",

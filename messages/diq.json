@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"GolyatGeri",
+			"Mirzali",
 			"Orbot707"
 		]
 	},
@@ -21,10 +22,10 @@
 	"success-edit": "Seyr bıyaye yew komponent vurna",
 	"success-delete": "Seyr bıyaye yew komponent esteriya",
 	"delete": "Bestere",
-	"delete-all": "Pêroyin bıesterne",
-	"delete-all-title": "Komponenti pêroyi bıesternê",
-	"delete-all-body": "Şıma qayılê temaşe biyayey komponenti pêroyi bıesternê? No hereket peyser nêgêriyeno.",
-	"delete-all-success": "Şoma komponenti pêro esternayen. Serva gureynayışê Watch Translationsi teşekur kena!",
+	"delete-all": "Pêro bestere",
+	"delete-all-title": "Heme vıraziyayeyan bestere",
+	"delete-all-body": "Şıma qayılê vırayaziyayeyanê ke şıma qayt benê, pêro besterê? No hereket peyser nêgêriyeno.",
+	"delete-all-success": "Şıma vıraziyeyan pêro esterıti. Serba gureynayışê ''Watch Translations''i teşekur kenan!",
 	"permission-denied": "Destur red kerd",
 	"permission-denied-more": "Dewam kerdışi rê icazet çıniyo. Raşt URL nuştışi rê bawer bê",
 	"permission-denied-login": "Dewam kerdışi rê icazet çıniyo. <a href=\"login{addon}\">cı kewe </a>?",

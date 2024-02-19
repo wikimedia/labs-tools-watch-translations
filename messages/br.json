@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriendelucca",
 			"Fulup"
 		]
 	},
@@ -20,6 +21,9 @@
 	"success-edit": "Kemmet hoc'h eus un elfenn evezhiet.",
 	"success-delete": "Dilamet hoc'h eus un elfenn evezhiet.",
 	"delete": "Dilemel",
+	"delete-all": "Dilemel ar roll",
+	"delete-all-title": "Dilemel an holl elfennoù",
+	"delete-all-success": "Dilamet ho peus an holl elfennoù. Trugarez deoc'h da ober gant Watch Translations!",
 	"permission-denied": "Aotre nac'het",
 	"permission-denied-more": "N'oc'h ket aotreet da genderc'hel. Bezit sur hoc'h eus merket an URL reizh.",
 	"permission-denied-login": "N'oc'h ket aotreet da genderc'hel. Kenkoulz e vefe deoc'h klask <a href=\"login{addon}\">kevreañ</a> marteze ?",
