@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Beginneruser",
+			"Ebraminio",
 			"FarsiNevis",
 			"LordProfo"
 		]
 	},
 	"introduction-please-login": "لطفاً <a href=\"login\">وارد شوید</a>",
-	"introduction": "پی‌گیری‌ترجمه‌ها ابزاری است که وقتی پیامی در پروژه‌های مورد علاقهٔ شما در translatewiki.net به زبان مورد نظر شما ترجمه نشده‌است، به شما اطلاع می‌دهد.",
+	"introduction": "پی‌گیری‌ترجمه‌ها ابزاری است که وقتی پیامی در پروژه‌های مورد علاقهٔ شما در translatewiki.net به زبان مورد نظر شما ترجمه نشده است، به شما اطلاع می‌دهد.",
 	"report-bug": "گزارش یک اشکال",
 	"login": "ورود به سامانه",
 	"logout": "خروج از سامانه",
