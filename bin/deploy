@@ -1,5 +1,5 @@
 #!/bin/bash
-source ~/venv-bastion/bin/activate
+cd ~/www/python/
 bash ~/www/python/support/deploy.sh
 dologmsg "Deploy $(git rev-parse --short HEAD)"
 deactivate
