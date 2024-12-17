@@ -4,6 +4,6 @@
 # job to send the notifications
 - name: send-changes
   command: bash /data/project/watch-translations/bin/send-changes
-  image: tf-python39
+  image: python3.11
   schedule: "12 11 * * *"
   emails: onfailure
