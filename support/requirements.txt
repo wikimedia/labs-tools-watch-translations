@@ -4,9 +4,8 @@ requests
 simplejson
 mwparserfromhell
 toolforge
-Flask-JSONLocale==1.11
+Flask-JSONLocale
 Flask-SQLAlchemy
 SQLAlchemy-Utils
 Flask-Migrate
-mysqlclient
 flask-MWOAuth

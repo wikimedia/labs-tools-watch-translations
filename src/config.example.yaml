@@ -1,6 +1,6 @@
 SECRET_KEY: something
 MESSAGES_DIR: ../messages
-DB_URI: mysql://localhost/watchTranslations
+DB_URI: mysql+pymysql://localhost/watchTranslations
 DBCONFIG_FILE: replica.my.cnf
 STATIC_URL: /static/
 APPLICATION_ROOT: /
