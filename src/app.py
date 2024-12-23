@@ -166,6 +166,17 @@ def force_https():
         )
 
 
+def get_tokens():
+    access_token = session.get('mwoauth_access_token', {})
+    request_token_secret = access_token.get('secret')
+    if isinstance(request_token_secret, bytes):
+        request_token_secret = request_token_secret.decode('utf-8')
+    request_token_key = access_token.get('key')
+    if isinstance(request_token_key, bytes):
+        request_token_key = request_token_key.decode('utf-8')
+    return request_token_key, request_token_secret
+
+
 def get_user():
     return User.query.filter_by(
         username=get_current_user()
@@ -174,9 +185,7 @@ def get_user():
 
 def mw_request(data, user=None):
     if user is None:
-        access_token = session.get('mwoauth_access_token', {})
-        request_token_secret = access_token.get('secret').decode('utf-8')
-        request_token_key = access_token.get('key').decode('utf-8')
+        request_token_key, request_token_secret = get_tokens()
     else:
         request_token_secret = user.token_secret
         request_token_key = user.token_key
@@ -189,9 +198,7 @@ def mw_request(data, user=None):
 def db_init_user():
     if logged():
         user = get_user()
-        access_token = session.get('mwoauth_access_token', {})
-        request_token_secret = access_token.get('secret').decode('utf-8')
-        request_token_key = access_token.get('key').decode('utf-8')
+        request_token_key, request_token_secret = get_tokens()
         if user is None:
             user = User(
                 username=get_current_user(),
@@ -487,4 +494,4 @@ def cli_send_changes(no_emails, force, email_inactive):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, threaded=True)
+    app.run(debug=True, threaded=True, host='0.0.0.0')
