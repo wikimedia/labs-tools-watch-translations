@@ -5,6 +5,7 @@
 			"Meno25",
 			"Sandra Hanbo",
 			"Shbib Al-Subaie",
+			"XIDME",
 			"ديفيد"
 		]
 	},
@@ -20,7 +21,7 @@
 	"select-language": "اختر اللغة",
 	"confirm": "تأكيد",
 	"add": "إضافة",
-	"cancel": "ألغ",
+	"cancel": "إلغاء",
 	"success-edit": "لقد قمت بتحرير مكون مراقب.",
 	"success-delete": "لقد حذفت مكون مراقب.",
 	"delete": "حذف",
