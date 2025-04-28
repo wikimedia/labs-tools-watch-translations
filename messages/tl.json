@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"GinawaSaHapon",
-			"Jojit fb"
+			"Jojit fb",
+			"Ysrael214"
 		]
 	},
 	"introduction-please-login": "Pakiusap po, <a href=\"login\">mag-login</a>",
@@ -10,7 +11,7 @@
 	"report-bug": "Mag-ulat ng bug",
 	"login": "Mag-login",
 	"logout": "Mag-logout",
-	"welcome": "Kamusta",
+	"welcome": "Kumusta",
 	"you-watch": "Binabantayan mo",
 	"watch-new": "Magbantay ng bago",
 	"select-group": "Pumili ng grupo",
