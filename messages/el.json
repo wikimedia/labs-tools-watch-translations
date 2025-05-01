@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Geraki",
+			"Jimkats",
 			"Norhorn"
 		]
 	},
@@ -22,6 +23,7 @@
 	"success-delete": "Διαγράψατε υπό παρακολούθηση περιεχόμενο.",
 	"delete": "Διαγραφή",
 	"delete-all": "Διαγραφή όλων",
+	"delete-all-title": "Διαγραφή όλων των στοιχείων",
 	"permission-denied": "Δεν έχετε δικαίωμα πρόσβασης",
 	"permission-denied-more": "Δεν έχετε εξουσιοδότηση να συνεχίσετε. Σιγουρευτείτε ότι εισαγάγατε την σωστή διεύθυνση URL.",
 	"permission-denied-login": "Δεν έχετε εξουσιοδότηση να συνεχίσετε. Ίσως πρέπει να <a href=\"login{addon}\">συνδεθείτε</a>;",
