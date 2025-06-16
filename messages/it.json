@@ -1,21 +1,38 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Wheelygay"
 		]
 	},
+	"introduction-please-login": "Per favore, <a href=\"login\">accedi</a>",
+	"introduction": "WatchTranslation è uno strumento che ti avvisa quando un messaggio nei tuoi progetti preferiti su translatewiki.net non è tradotto nella tua lingua desiderata.",
+	"report-bug": "Segnala un errore",
 	"login": "Entra",
 	"logout": "Esci",
 	"welcome": "Benvenuto",
+	"you-watch": "Stai osservando",
+	"watch-new": "Guarda nuovo",
+	"select-group": "Seleziona un gruppo",
 	"select-language": "Seleziona una lingua",
 	"confirm": "Conferma",
 	"add": "Aggiungi",
 	"cancel": "Annulla",
+	"success-edit": "Hai modificato un componente osservato.",
+	"success-delete": "Hai eliminato un componente osservato.",
 	"delete": "Cancella",
+	"delete-all": "Cancella tutto",
+	"delete-all-title": "Elimina tutti i componenti",
+	"delete-all-body": "Vuoi davvero eliminare tutti i componenti che stai osservando? Quest'azione è irreversibile.",
+	"delete-all-success": "Hai eliminato tutti i componenti. Grazie per aver utilizzato Watch Translations!",
 	"permission-denied": "Permesso negato",
+	"permission-denied-more": "Non sei autorizzato a continuare. Assicurati di aver inserito l'URL corretta.",
 	"permission-denied-login": "Non sei autorizzato a continuare. Forse dovresti provare ad <a href=\"login{addon}\">accedere</a>?",
+	"already-watched": "Stai già osservando questo componente!",
 	"preferences": "Preferenze",
 	"submit": "Invia",
 	"every-day": "Ogni giorno",
-	"every-week": "Ogni settimana"
+	"every-week": "Ogni settimana",
+	"delete-title": "Elimina componente",
+	"confirm-delete-component": "Sei sicuro di volere cancellare questo componente?"
 }
