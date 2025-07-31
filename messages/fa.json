@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Beginneruser",
+			"Darafsh",
 			"Ebrahim",
 			"Ebraminio",
 			"FarsiNevis",
@@ -22,6 +23,7 @@
 	"cancel": "لغو",
 	"success-edit": "شما یک جزء پیگیری شده را ویرایش کردید.",
 	"delete": "حذف",
+	"delete-all": "حذف همه",
 	"permission-denied": "اجازه داده نشد",
 	"preferences": "ترجیحات",
 	"submit": "ارسال",
