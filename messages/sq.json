@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Besnik b"
+			"Besnik b",
+			"Xhulianoo"
 		]
 	},
 	"introduction-please-login": "Ju lutemi, <a href=\"login\">hyni</a>",
@@ -15,7 +16,7 @@
 	"select-group": "Përzgjidhni një grup",
 	"select-language": "Përzgjidhni një gjuhë",
 	"confirm": "Ripohojeni",
-	"add": "Shtoje",
+	"add": "Shto",
 	"cancel": "Anuloje",
 	"success-edit": "Përpunuar një përbërës të vëzhguar.",
 	"success-delete": "Fshitë një përbërës të vëzhguar.",
