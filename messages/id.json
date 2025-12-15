@@ -3,6 +3,7 @@
 		"authors": [
 			"Akmaie Ajam",
 			"Daud I.F. Argana",
+			"Penyuwangi",
 			"RaymondSutanto94"
 		]
 	},
@@ -13,8 +14,8 @@
 	"logout": "Keluar log",
 	"welcome": "Selamat datang",
 	"you-watch": "Anda memantau",
-	"watch-new": "Pantau sebuah grup",
-	"select-group": "Pilih grup",
+	"watch-new": "Pantau yang baru",
+	"select-group": "Pilih kelompok",
 	"select-language": "Pilih bahasa",
 	"confirm": "Konfirmasi",
 	"add": "Tambahkan",
