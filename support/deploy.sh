@@ -15,6 +15,7 @@ fi
 echo "Using branch $branch for deployment."
 git pull --ff-only
 
+toolforge jobs load ~/www/python/support/jobs.yaml
 toolforge jobs run venv-upgrade-$$ --command 'cd ~/watch-translations && venv/bin/pip install -Ur support/requirements.txt' --image "$IMAGE" --wait
 toolforge jobs run db-upgrade-$$ --command 'cd ~/src && ~/venv/bin/flask db upgrade' --image "$IMAGE" --wait
 
