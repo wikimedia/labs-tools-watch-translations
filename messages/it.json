@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
+			"Dream Indigo",
 			"Wheelygay"
 		]
 	},
@@ -26,8 +27,8 @@
 	"delete-all-body": "Vuoi davvero eliminare tutti i componenti che stai osservando? Quest'azione è irreversibile.",
 	"delete-all-success": "Hai eliminato tutti i componenti. Grazie per aver utilizzato Watch Translations!",
 	"permission-denied": "Permesso negato",
-	"permission-denied-more": "Non sei autorizzato a continuare. Assicurati di aver inserito l'URL corretta.",
-	"permission-denied-login": "Non sei autorizzato a continuare. Forse dovresti provare ad <a href=\"login{addon}\">accedere</a>?",
+	"permission-denied-more": "Non hai l'autorizzazione per continuare. Assicurati di aver inserito l'URL corretta.",
+	"permission-denied-login": "Non hai l'autorizzazione per continuare. Forse dovresti provare ad <a href=\"login{addon}\">accedere</a>?",
 	"already-watched": "Stai già osservando questo componente!",
 	"preferences": "Preferenze",
 	"submit": "Invia",
