@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"WaldiSt"
+			"WaldiSt",
+			"Woytecr"
 		]
 	},
+	"introduction-please-login": "Proszę <a href=\"login\">się zalogować</a>",
+	"introduction": "WatchTranslations to narzędzie, które powiadamia Cię, gdy komunikat w Twoich ulubionych projektach w translatewiki.net nie będzie przetłumaczony na wybrany przez Ciebie język.",
+	"report-bug": "Zgłoś błąd",
 	"login": "Zaloguj się",
 	"logout": "Wyloguj",
 	"welcome": "Witaj",
@@ -15,14 +19,30 @@
 	"add": "Dodaj",
 	"cancel": "Anuluj",
 	"success-edit": "Edytowałeś obserwowany komponent.",
+	"success-delete": "Usunąłeś obserwowany komponent.",
 	"delete": "Usuń",
+	"delete-all": "Usuń wszystkie",
+	"delete-all-title": "Usuń wszystkie komponenty",
+	"delete-all-body": "Czy na pewno chcesz usunąć wszystkie obserwowane przez siebie komponenty? Tej czynności nie można cofnąć.",
+	"delete-all-success": "Usunąłeś wszystkie komponenty. Dziękujemy za korzystanie z Watch Translations!",
 	"permission-denied": "Brak dostępu",
+	"permission-denied-more": "Nie masz uprawnień, aby kontynuować. Upewnij się, że podałeś prawidłowy adres URL.",
+	"permission-denied-login": "Nie masz uprawnień, aby kontynuować. Może spróbuj się <a href=\"login{addon}\">zalogować</a>?",
+	"already-watched": "Obserwujesz już ten komponent!",
+	"duplicate-edit": "Nie można edytować: utworzyłoby to duplikat obserwowania komponentu",
+	"no-change": "Nie można edytować: nie wprowadzono żadnych zmian w tym komponencie",
 	"preferences": "Preferencje",
 	"preferences-frequency-hours": "Jak często narzędzie powinno wysyłać Ci e-maile?",
+	"preferences-pref-language": "Który język powinien być Twoim domyślnym obserwowanym językiem?",
+	"preferences-pref-locale": "Który język powinien być używany w interfejsie narzędzia?",
+	"submit": "Wyślij",
 	"every-day": "Codziennie",
 	"every-week": "Co tydzień",
 	"none-currently-watched-header": "Nic nie obserwujesz!",
 	"none-currently-watched": "Kliknij poniższy przycisk, aby rozpocząć oglądanie nowych tłumaczeń.",
+	"delete-title": "Usuń komponent",
+	"confirm-delete-component": "Czy na pewno chcesz usunąć ten komponent?",
+	"success-create": "Utworzyłeś nowy obserwowany komponent.",
 	"form-error": "Nie można przesłać: nieprawidłowe dane wejściowe. Proszę spróbuj ponownie",
 	"preferences-submit": "Zaktualizowałeś swoje preferencje"
 }
