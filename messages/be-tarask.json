@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Renessaince"
+			"Renessaince",
+			"Ucukor"
 		]
 	},
 	"introduction-please-login": "Калі ласка, <a href=\"login\">увайдзіце</a>",
-	"introduction": "WatchTranslations — інструмэнт, які паведамляе вам, што паведамленьні ў вашых любімых праектах на translatewiki.net не перакладзеныя выбранай вамі мовай.",
+	"introduction": "WatchTranslations — інструмэнт, які абвяшчае вас, што радок ў вашых улюблёных праектах на translatewiki.net не перакладзены абранай вамі мовай.",
 	"report-bug": "Паведаміць пра памылку",
 	"login": "Увайсьці",
 	"logout": "Выйсьці",
