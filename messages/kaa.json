@@ -1,0 +1,33 @@
+{
+	"@metadata": {
+		"authors": [
+			"Inabat Allanova"
+		]
+	},
+	"introduction-please-login": "Ótinish, <a href=\"login\">kiriń</a>",
+	"introduction": "WatchTranslations - bul translatewiki.net saytındaǵı súyikli jobalarıńızdaǵı xabar siz tańlaǵan tilge awdarılmaǵanda xabar beretuǵın qural.",
+	"report-bug": "Qátelik haqqında xabar beriń",
+	"login": "Kiriw",
+	"logout": "Shıǵıw",
+	"welcome": "Xosh keldińiz",
+	"you-watch": "Siz baqlaysız",
+	"watch-new": "Jańa baqlaw",
+	"select-group": "Topardı saylaw",
+	"select-language": "Tildi saylaw",
+	"confirm": "Tastıyıqlaw",
+	"add": "Qosıw",
+	"cancel": "Biykar etiw",
+	"success-edit": "Siz baqlanǵan quram bólekti redaktorladıńız.",
+	"success-delete": "Siz baqlanǵan quram bólekti óshirdińiz.",
+	"delete": "Óshiriw",
+	"delete-all": "Hámmesin óshiriw",
+	"delete-all-title": "Barlıq quramlıq bólimlerdi óshiriw",
+	"preferences": "Sazlawlar",
+	"submit": "Jiberiw",
+	"every-day": "Hár kúni",
+	"every-week": "Hár hápte",
+	"none-currently-watched-header": "Hesh nárse kóre almaysız!",
+	"delete-title": "Quramlıq bólimlerdi óshiriw",
+	"confirm-delete-component": "Usı quramlıq bólimdi óshiriwdi anıq qálep tursız ba?",
+	"preferences-submit": "Siz sazlamalarıńızdı jańaladıńız"
+}

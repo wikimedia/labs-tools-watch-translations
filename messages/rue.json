@@ -1,0 +1,24 @@
+{
+	"@metadata": {
+		"authors": [
+			"Oujon"
+		]
+	},
+	"introduction-please-login": "Прошу, <a href=\"login\">Приголосити ся </a>",
+	"login": "Приголосити ся",
+	"logout": "Одголосити ся",
+	"welcome": "Вітайте",
+	"select-group": "Выберте группу",
+	"select-language": "Выберте язык:",
+	"confirm": "Підтвердити",
+	"add": "Придати",
+	"cancel": "Зрушити",
+	"delete": "Вымазати",
+	"delete-all": "змазати вшытко",
+	"delete-all-title": "Змазати вшытки компоненты",
+	"preferences": "Наставлїня",
+	"submit": "Одослати",
+	"every-day": "Каждый день",
+	"every-week": "Каждый тыждень",
+	"delete-title": "Змазати компонент"
+}
