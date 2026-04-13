@@ -3,10 +3,11 @@
 		"authors": [
 			"Elroy",
 			"Mainframe98",
-			"McDutchie"
+			"McDutchie",
+			"Siebrand"
 		]
 	},
-	"introduction-please-login": "Gelieve u <a href=\"login\">aan te melden</a>",
+	"introduction-please-login": "<a href=\"login\">Meld u aan</a>",
 	"introduction": "WatchTranslations waarschuwt u wanneer een bericht in een van uw favoriete projecten op translatewiki.net niet is vertaald in de taal van uw keuze.",
 	"report-bug": "Een probleem melden",
 	"login": "Aanmelden",
