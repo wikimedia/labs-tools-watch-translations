@@ -3,7 +3,8 @@
 		"authors": [
 			"MathXplore",
 			"Omotecho",
-			"Shirayuki"
+			"Shirayuki",
+			"Tensama0415"
 		]
 	},
 	"introduction-please-login": "<a href=\"login\">ログイン</a>してください",
@@ -23,6 +24,7 @@
 	"success-delete": "ウォッチ中の要素を削除しました。",
 	"delete": "削除",
 	"delete-all": "すべて削除",
+	"delete-all-title": "全ての要素を削除",
 	"permission-denied": "アクセスが拒否されました",
 	"permission-denied-more": "次へ進む権限がありません。入力したURLが正しいかご確認ください。",
 	"permission-denied-login": "次へ進む権限がありません。<a href=\"login{addon}\">ログイン</a>はお済みでしょうか？",
