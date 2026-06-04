@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Luky001"
+			"Luky001",
+			"Wizzard"
 		]
 	},
 	"introduction-please-login": "Prosím, <a href=\"login\">prihláste sa</a>",
@@ -20,6 +21,10 @@
 	"success-edit": "Upravili ste sledovací komponent.",
 	"success-delete": "Odstránili ste sledovací komponent.",
 	"delete": "Odstrániť",
+	"delete-all": "Vymazať všetko",
+	"delete-all-title": "Vymazať všetky komponenty",
+	"delete-all-body": "Naozaj chcete odstrániť všetky komponenty, ktoré ste si pozreli? Táto akcia nie je reverzibilná.",
+	"delete-all-success": "Vymazali ste všetky komponenty. Ďakujeme, že používate Watch Translations!",
 	"permission-denied": "Prístup zamietnutý",
 	"permission-denied-more": "Nie ste oprávnení pokračovať. Uistite sa, že ste zadali správnu URL adresu.",
 	"permission-denied-login": "Nie ste oprávnení pokračovať. Možno by ste sa mali <a href=\"/login{addon}\">prihlásiť</a>.",
