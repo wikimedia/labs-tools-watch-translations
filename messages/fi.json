@@ -4,7 +4,8 @@
 			"Majavah",
 			"Moj",
 			"Pyscowicz",
-			"Taavi"
+			"Taavi",
+			"Wikipeedikko"
 		]
 	},
 	"introduction-please-login": "Ole hyvä, <a href=\"login\">kirjaudu</a>",
@@ -25,6 +26,7 @@
 	"delete": "Poista",
 	"delete-all": "Poista kaikki",
 	"delete-all-title": "Poista kaikki komponentit",
+	"delete-all-body": "Haluatko varmasti poistaa kaikki tarkkailemasi komponentit? Tätä toimintoa ei voi perua.",
 	"delete-all-success": "Poistit kaikki komponentit. Kiitos, että käytit Watch Translations -palvelua!",
 	"permission-denied": "Käyttö estetty",
 	"permission-denied-more": "Sinun ei ole sallittu jatkaa. Tarkista, että syötit oikean URL-osoitteen.",
