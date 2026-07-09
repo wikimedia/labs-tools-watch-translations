@@ -25,6 +25,8 @@
 	"delete": "削除",
 	"delete-all": "すべて削除",
 	"delete-all-title": "全ての要素を削除",
+	"delete-all-body": "本当に全ての要素を削除しますか？この操作は取り消せません。",
+	"delete-all-success": "全ての要素を削除しました。Watch Translationsを使用してくださってありがとうございました！",
 	"permission-denied": "アクセスが拒否されました",
 	"permission-denied-more": "次へ進む権限がありません。入力したURLが正しいかご確認ください。",
 	"permission-denied-login": "次へ進む権限がありません。<a href=\"login{addon}\">ログイン</a>はお済みでしょうか？",
