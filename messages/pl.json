@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"PanWor",
 			"WaldiSt",
 			"Woytecr"
 		]
@@ -26,7 +27,7 @@
 	"delete-all-body": "Czy na pewno chcesz usunąć wszystkie obserwowane przez siebie komponenty? Tej czynności nie można cofnąć.",
 	"delete-all-success": "Usunąłeś wszystkie komponenty. Dziękujemy za korzystanie z Watch Translations!",
 	"permission-denied": "Brak dostępu",
-	"permission-denied-more": "Nie masz uprawnień, aby kontynuować. Upewnij się, że podałeś prawidłowy adres URL.",
+	"permission-denied-more": "Nie masz uprawnień, aby kontynuować. Upewnij się, że podany adres URL jest prawidłowy.",
 	"permission-denied-login": "Nie masz uprawnień, aby kontynuować. Może spróbuj się <a href=\"login{addon}\">zalogować</a>?",
 	"already-watched": "Obserwujesz już ten komponent!",
 	"duplicate-edit": "Nie można edytować: utworzyłoby to duplikat obserwowania komponentu",
