@@ -43,7 +43,7 @@
 	"none-currently-watched": "Kliknij poniższy przycisk, aby rozpocząć oglądanie nowych tłumaczeń.",
 	"delete-title": "Usuń komponent",
 	"confirm-delete-component": "Czy na pewno chcesz usunąć ten komponent?",
-	"success-create": "Utworzyłeś nowy obserwowany komponent.",
+	"success-create": "Utworzono nowy obserwowany komponent.",
 	"form-error": "Nie można przesłać: nieprawidłowe dane wejściowe. Proszę spróbuj ponownie",
 	"preferences-submit": "Zaktualizowano Twoje preferencje"
 }
