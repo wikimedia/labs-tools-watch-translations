@@ -1,23 +1,48 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saraiki"
+			"Saraiki",
+			"Tauqeerkhansurani"
 		]
 	},
 	"introduction-please-login": "سوہݨا، <a href=\"login\">لاگ ان تھیوو</a>",
+	"introduction": "WatchTranslations ایندا اوزار ہے جیہڑا تیکوں اطلاع ݙیندا ہے جڈاں translatewiki.net دے تہاݙے پسندیدہ منصوبیاں وچ کوئی پیغام تہاݙی پسند دی زبان وچ ترجمہ نی تھیندا۔",
 	"report-bug": "بڳ رپورٹ کرو",
 	"login": "لاگ ان تھیوو",
 	"logout": "لاگ آؤٹ",
 	"welcome": "ست بسم اللہ",
+	"you-watch": "تساں ݙیکھݙے ہو",
+	"watch-new": "نواں ݙیکھو",
 	"select-group": "گروپ چݨو",
+	"select-language": "ہک زبان چݨو",
 	"confirm": "پک کرو",
 	"add": "شامل کرو",
 	"cancel": "منسوخ",
+	"success-edit": "تساں نگرانی والے ہک جزو وچ ترمیم کیتی ہے۔",
+	"success-delete": "تساں نگرانی والے ہک جزو کوں مٹا ݙتا ہے۔",
 	"delete": "مٹاؤ",
 	"delete-all": "سارے مٹاؤ",
+	"delete-all-title": "سارے جزو مٹاؤ",
+	"delete-all-body": "کیا تساں واقعی سارے او جزو مٹاوݨ چاہندے ہو جنہاں دی تساں نگرانی کریندے ہو؟ ایہ عمل واپس نی تھی سڳدا۔",
+	"delete-all-success": "تساں سارے جزو مٹا ݙتے ہن۔ Watch Translations ورتݨ دا شکریہ!",
 	"permission-denied": "اجازت دا انکار تھی ڳیا",
+	"permission-denied-more": "تیکوں اڳوں ودھݨ دی اجازت کائنی۔ ایندا پکا کرو جو تساں درست URL درج کیتا ہے۔",
+	"permission-denied-login": "تیکوں اڳوں ودھݨ دی اجازت کائنی۔ شاید تیکوں <a href=\"login{addon}\">لاگ اِن</a> کرݨ دی کوشش کرݨی چاہیدی ہے؟",
+	"already-watched": "تساں پہلے ای ایں جزو دی نگرانی کریندے ہو!",
+	"duplicate-edit": "ترمیم نی تھی سڳدی: ڈپلیکیٹ نگرانی والا جزو بݨ ویسی",
+	"no-change": "ترمیم نی تھی سڳدی: ایں جزو وچ کوئی تبدیلی نی تھئی",
 	"preferences": "ترجیحاں",
+	"preferences-frequency-hours": "ایندا اوزار تیکوں کتنی وار ای میل بھیجے؟",
+	"preferences-pref-language": "تہاݙی ڈیفالٹ نگرانی والی زبان کیہڑی ہووے؟",
+	"preferences-pref-locale": "اوزار دا انٹرفیس کیہڑی زبان ورتے؟",
 	"submit": "جمع کرواؤ",
 	"every-day": "ہر روز",
-	"every-week": "ہر ہفتے"
+	"every-week": "ہر ہفتے",
+	"none-currently-watched-header": "تساں کجھ وی نی ݙیکھݙے!",
+	"none-currently-watched": "نویں ترجمیاں دی نگرانی شروع کرݨ کیتے تھلے ݙتے ڳئے بٹݨ تے کلک کرو۔",
+	"delete-title": "جزو مٹاؤ",
+	"confirm-delete-component": "کیا تساں واقعی ایں جزو کوں مٹاوݨ چاہندے ہو؟",
+	"success-create": "تساں نگرانی والا نواں جزو بݨایا ہے۔",
+	"form-error": "جمع نی تھی سڳیا: فارم وچ غلط اندراج ہے۔ براہ کرم ٻیا کوشش کرو",
+	"preferences-submit": "تساں آپݨیاں ترجیحاں کوں تازہ کیتا ہے"
 }
